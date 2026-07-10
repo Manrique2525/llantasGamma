@@ -55,17 +55,22 @@ export default function HomePage() {
 
         {/* Segment Grid */}
         <section className="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
-            <div>
-              <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-xs">
-                SEGMENTOS ESPECIALIZADOS
-              </h2>
-              <p className="text-on-surface-variant max-w-md">
-                Diseñadas matemáticamente para cada tipo de ruta y exigencia de
-                carga.
-              </p>
+          <div className="max-w-2xl mb-xl">
+            <div className="inline-flex items-center gap-xs px-3 py-1 bg-surface-container border-l-4 border-primary mb-sm">
+              <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>
+                category
+              </span>
+              <span className="text-label-sm font-label-bold font-weight-label-sm tracking-widest uppercase">
+                Soluciones por Sector
+              </span>
             </div>
-            <div className="h-1 w-24 bg-primary" />
+            <h2 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-on-surface uppercase mb-xs">
+              Segmentos <span className="text-primary">Especializados</span>
+            </h2>
+            <p className="text-body-lg text-on-surface-variant">
+              Diseñadas matemáticamente para cada tipo de ruta y exigencia de
+              carga.
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             {[
