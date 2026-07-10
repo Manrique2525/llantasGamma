@@ -1,0 +1,412 @@
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+export default function IndustrialPage() {
+  return (
+    <>
+      <Navbar />
+      <main className="pt-20">
+        {/* Hero */}
+        <section className="relative min-h-[500px] lg:min-h-[819px] flex items-center overflow-hidden">
+          <div className="absolute inset-0 z-0 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10" />
+            <img
+              className="w-full h-full object-cover grayscale brightness-50"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw9TxZ3uxmUFXZxfOuLYkYYXOKWQDZSMMFqBG8myw8hUVaTSIhmSL0PuK4QUdQYb60hiMFru8ZODdpMMRDzFi5gqi4COo39yI0bL1K6ZZYjGzHwCZxTbfmavG35pXmiktfYDv45kGw_UJKLojnN3V8BnJpiSyWEdcqh2qvyOhR02KRv7XZ_0K524dSAYEGHZi4K3_PH3Ei8fHoedc7Ws_UE6etPjv5_lFVFnmI-LW8Oz8Du-mebMXjb6rEQ57jR6LDdM7HRQLmGfE"
+              alt="Industrial machinery"
+            />
+          </div>
+          <div className="relative z-20 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop w-full">
+            <div className="max-w-2xl">
+              <div className="flex items-center gap-sm mb-sm">
+                <span className="bg-primary text-on-primary px-xs py-1 text-label-sm font-weight-label-sm font-label-bold uppercase">
+                  División Industrial
+                </span>
+                <div className="h-px w-24 bg-primary" />
+              </div>
+              <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl mb-md leading-tight">
+                POTENCIA QUE MUEVE LA INDUSTRIA.
+              </h1>
+              <p className="font-body text-body-lg text-on-surface-variant mb-lg max-w-xl">
+                Soluciones de alto rendimiento en neumáticos para montacargas,
+                maquinaria pesada y minería. Ingeniería de precisión para
+                minimizar el tiempo de inactividad.
+              </p>
+              <div className="flex flex-wrap gap-md">
+                <button className="bg-primary text-on-primary px-xl py-md font-label-bold uppercase tracking-widest text-label-bold tracking-label-bold font-weight-label-bold hover:brightness-110 transition-all">
+                  Ver Catálogo
+                </button>
+                <div className="flex flex-col">
+                  <span className="text-primary font-label-bold mono-numbers">
+                    99.8% UPTIME
+                  </span>
+                  <span className="text-label-sm font-weight-label-sm text-on-surface-variant">
+                    Garantía de Continuidad
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Response Time */}
+        <section className="bg-surface-container-lowest py-sm border-y border-outline-variant">
+          <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center overflow-hidden whitespace-nowrap">
+            <div className="flex items-center gap-sm">
+              <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>
+                timer
+              </span>
+              <span className="font-label-bold uppercase">
+                Tiempo de Respuesta:
+              </span>
+              <span className="text-primary font-label-bold mono-numbers">
+                &lt; 4 HORAS EN SITIO
+              </span>
+            </div>
+            <div className="hidden md:flex items-center gap-lg opacity-50">
+              <span className="font-label-bold italic">PRECISION</span>
+              <span className="font-label-bold italic">PERFORMANCE</span>
+              <span className="font-label-bold italic">RELIABILITY</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Tire Types Bento Grid */}
+        <section className="py-xl max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+          <div className="mb-lg">
+            <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-2">
+              NEUMÁTICOS ESPECIALIZADOS
+            </h2>
+            <p className="text-on-surface-variant max-w-xl font-body">
+              Diseñados para resistir las condiciones más extremas en logística,
+              construcción y extracción.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+            {/* Forklifts */}
+            <div className="md:col-span-8 group relative overflow-hidden bg-surface-container-low ghost-border header-strip p-lg flex flex-col justify-between min-h-[280px] lg:min-h-[400px]">
+              <div className="z-10 relative">
+                <span className="text-primary font-label-bold uppercase tracking-widest block mb-2">
+                  Logística
+                </span>
+                <h3 className="font-headline text-headline-md font-weight-headline-md mb-3">
+                  Montacargas y Elevadores
+                </h3>
+                <ul className="space-y-2 text-on-surface-variant font-body">
+                  <li className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-primary text-[18px]">
+                      check_circle
+                    </span>{" "}
+                    Sólidos y Neumáticos
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-primary text-[18px]">
+                      check_circle
+                    </span>{" "}
+                    No manchantes para interiores
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-primary text-[18px]">
+                      check_circle
+                    </span>{" "}
+                    Máxima tracción en carga pesada
+                  </li>
+                </ul>
+              </div>
+              <img
+                className="absolute right-0 bottom-0 w-2/3 h-full object-cover object-left-bottom opacity-40 group-hover:scale-105 transition-transform duration-700"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs-q7IvdMUjnaGI69ZTUA1Fo7faykMQ_aVjmey2xZgDaNFZJn3GDeQsuy7U4E1YxrhuUKYElGfi60EPGW3-PG_8GOxc7S-vBH9oXdRy0VqbQTNV6ykNAWILuHbYyGrdLtL1tYAT_O9ZWpQj7TT5uqHijkFMB9yKGCWtlmwTcnn4IjX59HWu5R3NG1C3kRej9HG86oMv0ZmazujewHdyPqlrIK8DB5OzmbdtvL3EqAdq2WKZhu5PcgwbgrOz2jNZDpPHTts7PgDNk4"
+                alt="Montacargas"
+              />
+              <button className="z-10 w-fit text-primary font-label-bold flex items-center gap-xs group-hover:translate-x-2 transition-transform">
+                Explorar Especificaciones{" "}
+                <span className="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+
+            {/* Heavy Machinery */}
+            <div className="md:col-span-4 group relative overflow-hidden bg-surface-container-low ghost-border p-lg flex flex-col justify-between">
+              <div className="z-10 relative">
+                <span className="text-secondary font-label-bold uppercase tracking-widest block mb-2">
+                  Construcción
+                </span>
+                <h3 className="font-headline text-headline-md font-weight-headline-md mb-3">
+                  Maquinaria Pesada
+                </h3>
+              </div>
+              <div className="z-10 relative">
+                <p className="text-on-surface-variant mb-4 font-body">
+                  Resistencia superior al corte y al desgaste para excavadoras
+                  y retroexcavadoras.
+                </p>
+                <button className="bg-on-surface text-background px-4 py-2 font-label-bold text-label-sm font-weight-label-sm uppercase">
+                  Ver Medidas
+                </button>
+              </div>
+              <div className="absolute inset-0 z-0">
+                <img
+                  className="w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs_1eQLT9cwXptLLLGFQrFcgxeT8cj2xAZMyYjfNxjwgiOPeX0CdKF64e1Cd5TCvm1kZ6idcv3vtfLR_i_QTCudndPFc6px0Fgo_oacyLi_Plmph5raXQs0ehaI85ks2WROkSnZkMv0NxAMk1G40B7N25YKRGkk6x9NknWjoF9YrLaV-GrFMvZTpi9gWYZFMtgU-Cn-Sawu51Oa8Z777sxbGMlyAWa5OVMw9lwbinNYafSK4hz-8PHeCqk0N4a5yXGHj1EBUrq0gg"
+                  alt="Maquinaria pesada"
+                />
+              </div>
+            </div>
+
+            {/* Mining */}
+            <div className="md:col-span-4 group relative overflow-hidden bg-surface-container-low ghost-border p-lg flex flex-col justify-between min-h-[300px]">
+              <div className="z-10 relative">
+                <span className="text-on-tertiary-container font-label-bold uppercase tracking-widest block mb-2">
+                  Minería
+                </span>
+                <h3 className="font-headline text-headline-md font-weight-headline-md">
+                  Operaciones OTR
+                </h3>
+              </div>
+              <div className="absolute bottom-4 left-4 z-10">
+                <div className="flex items-center gap-2 bg-background/80 backdrop-blur p-2 border border-outline-variant">
+                  <span className="material-symbols-outlined text-primary">
+                    priority_high
+                  </span>
+                  <span className="text-label-sm font-weight-label-sm font-label-bold">
+                    Dureza Extrema E-4 / L-4
+                  </span>
+                </div>
+              </div>
+              <div className="absolute inset-0 z-0">
+                <img
+                  className="w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsrHFVG0gb5XYo3Ix4UAU5-wnAkDqiCEobLqpxwOFZFqNr8rMHX6BUZAwmE9zVQqyR_eShJjajZHOfaho0NTcONQ5ZoR9G2ePva8hUWjnrQ_-dbUTla1Z6ivUf5prQ3lSYMJHKAnvCnWdgEPOH1JuvRiRlQLuibZZJ-kkR9gG7__ywQKN9h6zibWIaCE8dAZ-s565wZdSL6UfYWfyqprDxriY5wseryxxswggBIht-h1q_r9PxIigmfqDDlAIvEoRMrrRMh1QAtQA"
+                  alt="Minería OTR"
+                />
+              </div>
+            </div>
+
+            {/* Brands */}
+            <div className="md:col-span-8 bg-surface-container-highest ghost-border p-lg">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 gap-4">
+                <h3 className="font-headline text-headline-md font-weight-headline-md">
+                  Alianzas Estratégicas
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {["Continental", "Michelin OTR", "Camso", "Trelleborg"].map(
+                    (brand) => (
+                      <span
+                        key={brand}
+                        className="px-2 py-1 bg-surface-container border border-outline-variant text-label-sm font-weight-label-sm uppercase"
+                      >
+                        {brand}
+                      </span>
+                    )
+                  )}
+                </div>
+              </div>
+              <p className="text-on-surface-variant font-body mb-lg">
+                Distribuidores oficiales de las marcas líderes en el sector
+                industrial global. Garantía directa de fábrica.
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+                {["PARTNER 01", "PARTNER 02", "PARTNER 03", "PARTNER 04"].map(
+                  (partner) => (
+                    <div
+                      key={partner}
+                      className="h-16 bg-surface-container flex items-center justify-center border border-outline-variant group hover:border-primary transition-all cursor-pointer"
+                    >
+                      <span className="font-bold opacity-30 group-hover:opacity-100 group-hover:text-primary transition-all">
+                        {partner}
+                      </span>
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Corporate Services */}
+        <section className="bg-surface-container-low py-xl relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-xl items-center relative z-10">
+            <div>
+              <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-md">
+                SERVICIOS CORPORATIVOS & MANTENIMIENTO
+              </h2>
+              <div className="space-y-md">
+                {[
+                  {
+                    icon: "engineering",
+                    title: "Mantenimiento Predictivo",
+                    desc: "Monitoreo de presión y temperatura en tiempo real para flotas industriales. Evite fallas catastróficas.",
+                  },
+                  {
+                    icon: "package_2",
+                    title: "Gestión de Stock In-Situ",
+                    desc: "Administramos su inventario crítico directamente en sus instalaciones para respuesta inmediata.",
+                  },
+                  {
+                    icon: "groups",
+                    title: "Capacitación de Operadores",
+                    desc: "Talleres técnicos sobre cuidado y prolongación de la vida útil del neumático.",
+                  },
+                ].map((service) => (
+                  <div key={service.title} className="flex gap-4 group">
+                    <div className="flex-shrink-0 w-12 h-12 bg-primary flex items-center justify-center text-on-primary">
+                      <span className="material-symbols-outlined">
+                        {service.icon}
+                      </span>
+                    </div>
+                    <div>
+                      <h4 className="font-label-bold text-lg mb-1 uppercase group-hover:text-primary transition-colors">
+                        {service.title}
+                      </h4>
+                      <p className="text-on-surface-variant font-body">
+                        {service.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="relative">
+              <div className="absolute -top-12 -right-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+              <div className="bg-surface-container-high p-lg ghost-border relative z-10">
+                <div className="flex justify-between items-center mb-lg">
+                  <h3 className="font-headline text-headline-md font-weight-headline-md">
+                    Plan Empresarial
+                  </h3>
+                  <span className="bg-primary/20 text-primary border border-primary/40 px-3 py-1 text-label-sm font-weight-label-sm font-label-bold uppercase">
+                    Más Solicitado
+                  </span>
+                </div>
+                <div className="space-y-3 mb-lg">
+                  {[
+                    "Soporte 24/7",
+                    "Visitas Técnicas Mensuales",
+                    "Precios Flotantes de Fábrica",
+                  ].map((feature) => (
+                    <div
+                      key={feature}
+                      className="flex justify-between items-center py-2 border-b border-outline-variant"
+                    >
+                      <span className="text-on-surface-variant font-body">
+                        {feature}
+                      </span>
+                      <span className="material-symbols-outlined text-primary">
+                        done
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                <button className="w-full bg-primary text-on-primary py-4 font-label-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:brightness-110">
+                  Consultar con un Asesor
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Form */}
+        <section className="bg-surface py-xl border-t border-outline-variant">
+          <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+            <div className="grid md:grid-cols-2 gap-xl">
+              <div>
+                <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-md">
+                  SOLICITE UNA AUDITORÍA DE FLOTA
+                </h2>
+                <p className="text-on-surface-variant font-body mb-lg">
+                  Optimice sus costos operativos. Nuestros expertos realizarán un
+                  diagnóstico detallado del estado de sus neumáticos y sugerirán
+                  el plan de mantenimiento ideal para su operación.
+                </p>
+                <div className="space-y-sm">
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 border border-outline-variant flex items-center justify-center">
+                      <span className="material-symbols-outlined text-primary">
+                        call
+                      </span>
+                    </div>
+                    <div>
+                      <p className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase font-label-bold">
+                        Atención Inmediata
+                      </p>
+                      <p className="font-label-bold text-lg mono-numbers">
+                        01-800-GAMA-IND
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 border border-outline-variant flex items-center justify-center">
+                      <span className="material-symbols-outlined text-primary">
+                        location_on
+                      </span>
+                    </div>
+                    <div>
+                      <p className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase font-label-bold">
+                        Sede Industrial
+                      </p>
+                      <p className="font-label-bold text-lg">
+                        Industrial Sector 7, Tech Park
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-surface-container-high p-lg ghost-border">
+                <form className="space-y-sm">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+                    <div className="flex flex-col gap-2">
+                      <label className="text-label-sm font-weight-label-sm font-label-bold uppercase text-on-surface-variant">
+                        Nombre de Empresa
+                      </label>
+                      <input
+                        className="bg-surface-container border border-outline-variant focus:border-primary focus:ring-0 text-on-surface p-3 transition-colors"
+                        placeholder="Empresa S.A."
+                        type="text"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <label className="text-label-sm font-weight-label-sm font-label-bold uppercase text-on-surface-variant">
+                        Sector
+                      </label>
+                      <select className="bg-surface-container border border-outline-variant focus:border-primary focus:ring-0 text-on-surface p-3 transition-colors">
+                        <option>Logística</option>
+                        <option>Minería</option>
+                        <option>Construcción</option>
+                        <option>Otros</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label className="text-label-sm font-weight-label-sm font-label-bold uppercase text-on-surface-variant">
+                      Correo Electrónico
+                    </label>
+                    <input
+                      className="bg-surface-container border border-outline-variant focus:border-primary focus:ring-0 text-on-surface p-3 transition-colors"
+                      placeholder="contacto@empresa.com"
+                      type="email"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label className="text-label-sm font-weight-label-sm font-label-bold uppercase text-on-surface-variant">
+                      Mensaje / Requerimiento
+                    </label>
+                    <textarea
+                      className="bg-surface-container border border-outline-variant focus:border-primary focus:ring-0 text-on-surface p-3 transition-colors"
+                      placeholder="Describa su flota o necesidad..."
+                      rows={4}
+                    />
+                  </div>
+                  <button
+                    className="w-full bg-primary text-on-primary py-4 font-label-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:brightness-110 metallic-glow"
+                    type="submit"
+                  >
+                    Enviar Solicitud Técnica
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}

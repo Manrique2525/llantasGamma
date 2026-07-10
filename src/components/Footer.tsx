@@ -1,0 +1,117 @@
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="bg-surface-container-lowest border-t border-outline-variant">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-margin-mobile md:px-margin-desktop py-xl max-w-7xl mx-auto">
+        <div className="space-y-4">
+          <div className="font-headline text-headline-md font-bold text-primary">
+            Llantas Gama
+          </div>
+          <p className="text-on-surface-variant text-body-md">
+            Ingeniería de precisión y rendimiento para la industria moderna.
+          </p>
+          <div className="flex gap-3 pt-2">
+            <a
+              href="#"
+              className="w-10 h-10 bg-surface-container flex items-center justify-center hover:text-primary transition-colors border border-outline-variant"
+            >
+              <span className="material-symbols-outlined">public</span>
+            </a>
+            <a
+              href="#"
+              className="w-10 h-10 bg-surface-container flex items-center justify-center hover:text-primary transition-colors border border-outline-variant"
+            >
+              <span className="material-symbols-outlined">mail</span>
+            </a>
+            <a
+              href="#"
+              className="w-10 h-10 bg-surface-container flex items-center justify-center hover:text-primary transition-colors border border-outline-variant"
+            >
+              <span className="material-symbols-outlined">chat</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h4 className="font-label-bold uppercase text-primary tracking-widest">
+            Contacto
+          </h4>
+          <ul className="space-y-2 text-on-surface-variant text-body-md">
+            <li>Horario: Lun-Vie 9am-6pm</li>
+            <li>WhatsApp: +123456789</li>
+            <li>Tel: 01-800-GAMA</li>
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <h4 className="font-label-bold uppercase text-primary tracking-widest">
+            Enlaces
+          </h4>
+          <ul className="space-y-2">
+            <li>
+              <Link
+                href="/auto"
+                className="text-on-surface-variant hover:text-primary transition-colors"
+              >
+                Auto/Camioneta
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/camion"
+                className="text-on-surface-variant hover:text-primary transition-colors"
+              >
+                Camión
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/agricola"
+                className="text-on-surface-variant hover:text-primary transition-colors"
+              >
+                Agrícola
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/industrial"
+                className="text-on-surface-variant hover:text-primary transition-colors"
+              >
+                Industrial
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <h4 className="font-label-bold uppercase text-primary tracking-widest">
+            Newsletter
+          </h4>
+          <p className="text-on-surface-variant text-label-sm">
+            Reciba actualizaciones técnicas y promociones de temporada.
+          </p>
+          <div className="flex border border-outline-variant">
+            <input
+              className="bg-transparent border-none focus:ring-0 text-on-surface p-2 w-full text-label-sm"
+              placeholder="Email"
+              type="email"
+            />
+            <button className="bg-primary-container text-on-primary px-4 py-2 hover:brightness-110">
+              <span className="material-symbols-outlined text-[18px]">
+                send
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-sm border-t border-outline-variant/30 text-center md:text-left">
+        <p className="text-on-surface-variant text-label-sm">
+          &copy; {new Date().getFullYear()} Llantas Gama. Todos los derechos
+          reservados. Precision Performance Engineering.
+        </p>
+      </div>
+    </footer>
+  );
+}
