@@ -30,7 +30,7 @@ export default function ExitPopup() {
 
   const handleAccept = () => {
     window.open(
-      "https://wa.me/5218123456789?text=Hola%2C%20vi%20la%20oferta%20en%20la%20p%C3%A1gina%20y%20me%20interesa%20un%2010%25%20de%20descuento",
+      "https://wa.me/5219933987711?text=Hola%2C%20vi%20la%20oferta%20en%20la%20p%C3%A1gina%20y%20me%20interesa%20un%2010%25%20de%20descuento",
       "_blank"
     );
     handleDismiss();

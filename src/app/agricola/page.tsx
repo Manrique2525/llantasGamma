@@ -76,7 +76,7 @@ export default function AgricolaPage() {
                   Cotizar para Mi Temporada
                 </Link>
                 <a
-                  href="https://wa.me/5218123456789?text=Hola%2C%20necesito%20llantas%20agr%C3%ADcolas"
+                  href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20llantas%20agr%C3%ADcolas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ghost-border text-white px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:bg-surface-container transition-all text-center"
@@ -270,7 +270,7 @@ export default function AgricolaPage() {
                 <p className="text-label-sm text-on-surface-variant mt-4">
                   ¿No encuentras tu medida?{" "}
                   <a
-                    href="https://wa.me/5218123456789?text=Hola%2C%20necesito%20una%20medida%20agr%C3%ADcola%20espec%C3%ADfica"
+                    href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20una%20medida%20agr%C3%ADcola%20espec%C3%ADfica"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:underline"

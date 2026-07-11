@@ -75,7 +75,7 @@ export default function IndustrialPage() {
                   Solicitar Auditoría GRATIS
                 </Link>
                 <a
-                  href="https://wa.me/5218123456789?text=Hola%2C%20necesito%20llantas%20industriales"
+                  href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20llantas%20industriales"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ghost-border text-white px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:bg-surface-container transition-all text-center"

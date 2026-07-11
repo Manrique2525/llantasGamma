@@ -27,7 +27,7 @@ export default function Footer() {
               <span className="material-symbols-outlined">mail</span>
             </a>
             <a
-              href="https://wa.me/5218123456789"
+              href="https://wa.me/5219933987711"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-surface-container flex items-center justify-center hover:text-primary transition-colors border border-outline-variant"

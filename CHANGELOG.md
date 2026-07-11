@@ -46,6 +46,9 @@ Este release agrega interactividad avanzada y mejoras de UX/UI al sitio web.
 - JSX parsing errors en agricola/page.tsx y camion/page.tsx porScrollReveal mal cerrado
 - Lint errors: unused variable en ScrollReveal, setState en effect en ImageLightbox, <a> en vez de <Link> en StickyCTA
 
+#### Changed
+- **Teléfono de contacto**: Actualizado de `5218123456789` a `5219933987711` en 15 ubicaciones (WhatsApp, Navbar, Footer, StickyCTA, ContactForm, páginas de segmento)
+
 ---
 
 ## [0.1.0] - 2026-07-11

@@ -77,7 +77,7 @@ export default function AutoPage() {
                   Cotizar Mi Par de Llantas
                 </Link>
                 <a
-                  href="https://wa.me/5218123456789?text=Hola%2C%20necesito%20llantas%20para%20mi%20auto"
+                  href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20llantas%20para%20mi%20auto"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ghost-border text-white px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:bg-surface-container transition-all text-center"
@@ -161,7 +161,7 @@ export default function AutoPage() {
                 <p className="text-label-sm text-on-surface-variant mt-4">
                   ¿No encuentras tu medida?{" "}
                   <a
-                    href="https://wa.me/5218123456789?text=Hola%2C%20necesito%20una%20medida%20espec%C3%ADfica"
+                    href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20una%20medida%20espec%C3%ADfica"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:underline"

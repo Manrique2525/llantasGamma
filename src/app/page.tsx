@@ -134,7 +134,7 @@ export default function HomePage() {
                   Cotización Gratis
                 </Link>
                 <a
-                  href="https://wa.me/5218123456789?text=Hola%2C%20necesito%20asesor%C3%ADa%20t%C3%A9cnica"
+                  href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20asesor%C3%ADa%20t%C3%A9cnica"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border border-outline text-on-surface px-xl py-md font-label-bold text-label-bold tracking-label-bold font-weight-label-bold uppercase tracking-widest hover:bg-white hover:text-background transition-all active:scale-95 duration-200 text-center"
@@ -619,7 +619,7 @@ export default function HomePage() {
                   icon: "chat",
                   title: "WhatsApp 24/7",
                   text: "+52 1 81 2345 6789",
-                  href: "https://wa.me/5218123456789",
+                  href: "https://wa.me/5219933987711",
                 },
                 {
                   icon: "mail",
