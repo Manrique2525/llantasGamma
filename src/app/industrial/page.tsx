@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -16,34 +17,43 @@ export default function IndustrialPage() {
               alt="Industrial machinery"
             />
           </div>
-          <div className="relative z-20 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop w-full">
+          <div className="relative z-20 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop w-full py-xl">
             <div className="max-w-2xl">
-              <div className="flex items-center gap-sm mb-sm">
-                <span className="bg-primary text-on-primary px-xs py-1 text-label-sm font-weight-label-sm font-label-bold uppercase">
-                  División Industrial
-                </span>
-                <div className="h-px w-24 bg-primary" />
+              <div className="inline-block px-3 py-1 bg-primary text-on-primary font-bold text-label-bold tracking-label-bold font-weight-label-bold mb-md tracking-widest">
+                DIVISIÓN INDUSTRIAL
               </div>
-              <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl mb-md leading-tight">
-                POTENCIA QUE MUEVE LA INDUSTRIA.
+              <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-white mb-md leading-tight">
+                99.8% DE <span className="text-primary">UPTIME</span> GARANTIZADO
               </h1>
-              <p className="font-body text-body-lg text-on-surface-variant mb-lg max-w-xl">
-                Soluciones de alto rendimiento en neumáticos para montacargas,
-                maquinaria pesada y minería. Ingeniería de precisión para
-                minimizar el tiempo de inactividad.
+              <p className="font-body text-body-lg text-on-surface-variant mb-lg">
+                Montacargas, excavadoras, minería OTR. Soporte técnico en &lt;4
+                horas. Si no llegamos, 10% de descuento.
               </p>
-              <div className="flex flex-wrap gap-md">
-                <button className="bg-primary text-on-primary px-xl py-md font-label-bold uppercase tracking-widest text-label-bold tracking-label-bold font-weight-label-bold hover:brightness-110 transition-all">
-                  Ver Catálogo
-                </button>
-                <div className="flex flex-col">
-                  <span className="text-primary font-label-bold mono-numbers">
-                    99.8% UPTIME
-                  </span>
-                  <span className="text-label-sm font-weight-label-sm text-on-surface-variant">
-                    Garantía de Continuidad
-                  </span>
+              <div className="flex flex-wrap gap-lg pt-sm">
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-primary text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
+                  <span className="text-label-sm text-on-surface-variant">99.8% Uptime Garantizado</span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-primary text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>schedule</span>
+                  <span className="text-label-sm text-on-surface-variant">Respuesta en &lt;4 horas</span>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-md mt-md">
+                <Link
+                  href="/#contacto-industrial"
+                  className="bg-primary text-on-primary px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold primary-glow transition-all hover:scale-105 active:scale-95 text-center"
+                >
+                  Solicitar Auditoría GRATIS
+                </Link>
+                <a
+                  href="https://wa.me/5218123456789?text=Hola%2C%20necesito%20llantas%20industriales"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ghost-border text-white px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:bg-surface-container transition-all text-center"
+                >
+                  WhatsApp Industrial
+                </a>
               </div>
             </div>
           </div>
@@ -51,7 +61,7 @@ export default function IndustrialPage() {
 
         {/* Response Time */}
         <section className="bg-surface-container-lowest py-sm border-y border-outline-variant">
-          <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center overflow-hidden whitespace-nowrap">
+          <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex flex-wrap justify-between items-center gap-lg overflow-hidden whitespace-nowrap">
             <div className="flex items-center gap-sm">
               <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>
                 timer
@@ -61,6 +71,9 @@ export default function IndustrialPage() {
               </span>
               <span className="text-primary font-label-bold mono-numbers">
                 &lt; 4 HORAS EN SITIO
+              </span>
+              <span className="text-label-sm text-on-surface-variant ml-2">
+                | GARANTÍA: 10% DTO. SI NO LLEGAMOS
               </span>
             </div>
             <div className="hidden md:flex items-center gap-lg opacity-50">
@@ -73,11 +86,13 @@ export default function IndustrialPage() {
 
         {/* Tire Types Bento Grid */}
         <section className="py-xl max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="mb-lg">
-            <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-2">
-              NEUMÁTICOS ESPECIALIZADOS
-            </h2>
-            <p className="text-on-surface-variant max-w-xl font-body">
+          <div className="mb-xl">
+            <div className="inline-block border-l-2 border-primary pl-4 mb-sm">
+              <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg uppercase">
+                NEUMÁTICOS <span className="text-primary">ESPECIALIZADOS</span>
+              </h2>
+            </div>
+            <p className="text-body-lg text-on-surface-variant max-w-2xl">
               Diseñados para resistir las condiciones más extremas en logística,
               construcción y extracción.
             </p>
@@ -97,7 +112,7 @@ export default function IndustrialPage() {
                     <span className="material-symbols-outlined text-primary text-[18px]">
                       check_circle
                     </span>{" "}
-                    Sólidos y Neumáticos
+                    Sólidos y Neumáticos — 50+ medidas
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-[18px]">
@@ -119,7 +134,7 @@ export default function IndustrialPage() {
                 alt="Montacargas"
               />
               <button className="z-10 w-fit text-primary font-label-bold flex items-center gap-xs group-hover:translate-x-2 transition-transform">
-                Explorar Especificaciones{" "}
+                Explorar Catálogo Montacargas{" "}
                 <span className="material-symbols-outlined">arrow_forward</span>
               </button>
             </div>
@@ -137,7 +152,7 @@ export default function IndustrialPage() {
               <div className="z-10 relative">
                 <p className="text-on-surface-variant mb-4 font-body">
                   Resistencia superior al corte y al desgaste para excavadoras
-                  y retroexcavadoras.
+                  y retroexcavadoras. 30+ medidas disponibles.
                 </p>
                 <button className="bg-on-surface text-background px-4 py-2 font-label-bold text-label-sm font-weight-label-sm uppercase">
                   Ver Medidas
@@ -161,6 +176,11 @@ export default function IndustrialPage() {
                 <h3 className="font-headline text-headline-md font-weight-headline-md">
                   Operaciones OTR
                 </h3>
+              </div>
+              <div className="z-10 relative mt-4">
+                <p className="text-on-surface-variant mb-4 font-body text-label-sm">
+                  Dureza Extrema E-4 / L-4: Diseñada para terrenos rocosos con alto riesgo de cortes. 20+ medidas.
+                </p>
               </div>
               <div className="absolute bottom-4 left-4 z-10">
                 <div className="flex items-center gap-2 bg-background/80 backdrop-blur p-2 border border-outline-variant">
@@ -188,7 +208,7 @@ export default function IndustrialPage() {
                   Alianzas Estratégicas
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Continental", "Michelin OTR", "Camso", "Trelleborg"].map(
+                  {["MICHELIN OTR", "CAMSO", "TRELLEBORG", "CONTINENTAL"].map(
                     (brand) => (
                       <span
                         key={brand}
@@ -205,13 +225,13 @@ export default function IndustrialPage() {
                 industrial global. Garantía directa de fábrica.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
-                {["PARTNER 01", "PARTNER 02", "PARTNER 03", "PARTNER 04"].map(
+                {["MICHELIN OTR", "CAMSO", "TRELLEBORG", "CONTINENTAL"].map(
                   (partner) => (
                     <div
                       key={partner}
                       className="h-16 bg-surface-container flex items-center justify-center border border-outline-variant group hover:border-primary transition-all cursor-pointer"
                     >
-                      <span className="font-bold opacity-30 group-hover:opacity-100 group-hover:text-primary transition-all">
+                      <span className="font-bold opacity-60 group-hover:opacity-100 group-hover:text-primary transition-all text-label-sm">
                         {partner}
                       </span>
                     </div>
@@ -226,9 +246,11 @@ export default function IndustrialPage() {
         <section className="bg-surface-container-low py-xl relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-xl items-center relative z-10">
             <div>
-              <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-md">
-                SERVICIOS CORPORATIVOS & MANTENIMIENTO
-              </h2>
+              <div className="inline-block border-l-2 border-primary pl-4 mb-md">
+                <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg uppercase">
+                  SERVICIOS CORPORATIVOS
+                </h2>
+              </div>
               <div className="space-y-md">
                 {[
                   {
@@ -295,26 +317,36 @@ export default function IndustrialPage() {
                     </div>
                   ))}
                 </div>
-                <button className="w-full bg-primary text-on-primary py-4 font-label-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:brightness-110">
-                  Consultar con un Asesor
-                </button>
+                <div>
+                  <Link
+                    href="/#contacto-industrial"
+                    className="block w-full bg-primary text-on-primary py-4 font-label-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:brightness-110 text-center"
+                  >
+                    Solicitar Propuesta Personalizada
+                  </Link>
+                  <p className="text-label-sm text-on-surface-variant text-center mt-2">
+                    Planes desde $5,000/mes | Incluye soporte 24/7
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Contact Form */}
-        <section className="bg-surface py-xl border-t border-outline-variant">
+        <section id="contacto-industrial" className="bg-surface py-xl border-t border-outline-variant">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
             <div className="grid md:grid-cols-2 gap-xl">
               <div>
-                <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-md">
-                  SOLICITE UNA AUDITORÍA DE FLOTA
-                </h2>
+                <div className="inline-block border-l-2 border-primary pl-4 mb-md">
+                  <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg uppercase">
+                    SOLICITE UNA AUDITORÍA
+                  </h2>
+                </div>
                 <p className="text-on-surface-variant font-body mb-lg">
                   Optimice sus costos operativos. Nuestros expertos realizarán un
                   diagnóstico detallado del estado de sus neumáticos y sugerirán
-                  el plan de mantenimiento ideal para su operación.
+                  el plan de mantenimiento ideal para su operación. Auditoría sin compromiso.
                 </p>
                 <div className="space-y-sm">
                   <div className="flex items-center gap-4">
@@ -343,7 +375,7 @@ export default function IndustrialPage() {
                         Sede Industrial
                       </p>
                       <p className="font-label-bold text-lg">
-                        Industrial Sector 7, Tech Park
+                        Av Universidad 494, El Recreo, 86029 Villahermosa, Tab.
                       </p>
                     </div>
                   </div>
@@ -360,6 +392,7 @@ export default function IndustrialPage() {
                         className="bg-surface-container border border-outline-variant focus:border-primary focus:ring-0 text-on-surface p-3 transition-colors"
                         placeholder="Empresa S.A."
                         type="text"
+                        required
                       />
                     </div>
                     <div className="flex flex-col gap-2">
@@ -382,6 +415,7 @@ export default function IndustrialPage() {
                       className="bg-surface-container border border-outline-variant focus:border-primary focus:ring-0 text-on-surface p-3 transition-colors"
                       placeholder="contacto@empresa.com"
                       type="email"
+                      required
                     />
                   </div>
                   <div className="flex flex-col gap-2">
@@ -398,8 +432,11 @@ export default function IndustrialPage() {
                     className="w-full bg-primary text-on-primary py-4 font-label-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:brightness-110 metallic-glow"
                     type="submit"
                   >
-                    Enviar Solicitud Técnica
+                    Agendar Auditoría GRATIS
                   </button>
+                  <p className="text-label-sm text-on-surface-variant text-center">
+                    Te llamamos en &lt;2 horas | Incluye diagnóstico de 12 puntos
+                  </p>
                 </form>
               </div>
             </div>

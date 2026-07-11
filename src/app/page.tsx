@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -28,26 +29,46 @@ export default function HomePage() {
                   precision_manufacturing
                 </span>
                 <span className="text-label-sm font-label-bold font-weight-label-sm tracking-widest uppercase">
-                  Tecnología de Alto Impacto
+                  Distribuidor Oficial de 8 Marcas
                 </span>
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-on-surface">
-                INGENIERÍA EN{" "}
-                <span className="text-primary">MOVIMIENTO</span> PRECISO.
+                TU PROVEEDOR DE{" "}
+                <span className="text-primary">LLANTAS</span> CON ENTREGA EN 24 HORAS.
               </h1>
               <p className="font-body text-body-lg text-on-surface-variant">
-                Suministramos soluciones de neumáticos para los sectores más
-                exigentes. Desde flotas de transporte hasta maquinaria pesada,
-                garantizamos tracción, durabilidad y eficiencia en cada
-                kilómetro.
+                25,000+ llantas en stock de 8 marcas oficiales. Auto, camión, agrícola e
+                industrial. Cotización en menos de 10 minutos.
               </p>
+              <div className="flex flex-wrap gap-lg pt-sm">
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-primary text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
+                  <span className="text-label-sm text-on-surface-variant">Distribuidor Oficial Certificado</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-primary text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>group</span>
+                  <span className="text-label-sm text-on-surface-variant">1,200+ Clientes Activos</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-primary text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>schedule</span>
+                  <span className="text-label-sm text-on-surface-variant">Entrega en 24-48 hrs</span>
+                </div>
+              </div>
               <div className="flex flex-wrap gap-sm pt-xs">
-                <button className="bg-primary-container text-on-primary px-xl py-md font-label-bold text-label-bold tracking-label-bold font-weight-label-bold uppercase tracking-widest hover:brightness-110 transition-all active:scale-95 duration-200">
-                  Ver Catálogo
-                </button>
-                <button className="border border-outline text-on-surface px-xl py-md font-label-bold text-label-bold tracking-label-bold font-weight-label-bold uppercase tracking-widest hover:bg-white hover:text-background transition-all active:scale-95 duration-200">
-                  Asesoría Técnica
-                </button>
+                <Link
+                  href="/#contacto"
+                  className="bg-primary-container text-on-primary px-xl py-md font-label-bold text-label-bold tracking-label-bold font-weight-label-bold uppercase tracking-widest hover:brightness-110 transition-all active:scale-95 duration-200 text-center"
+                >
+                  Cotización Gratis
+                </Link>
+                <a
+                  href="https://wa.me/5218123456789?text=Hola%2C%20necesito%20asesor%C3%ADa%20t%C3%A9cnica"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-outline text-on-surface px-xl py-md font-label-bold text-label-bold tracking-label-bold font-weight-label-bold uppercase tracking-widest hover:bg-white hover:text-background transition-all active:scale-95 duration-200 text-center"
+                >
+                  Asesoría por WhatsApp
+                </a>
               </div>
             </div>
           </div>
@@ -72,25 +93,31 @@ export default function HomePage() {
               carga.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
             {[
               {
                 title: "Auto & Camioneta",
                 icon: "directions_car",
-                desc: "Seguridad y confort para el camino diario con marcas premium.",
+                desc: "Michelin, Bridgestone, Continental desde $899. Instalación incluida.",
                 link: "/auto",
               },
               {
                 title: "Camión",
                 icon: "local_shipping",
-                desc: "Máximo rendimiento kilométrico y renovabilidad para tu flota.",
+                desc: "Programa de flotillas: ahorra 15% en costos operativos. Soporte 24/7.",
                 link: "/camion",
               },
               {
                 title: "Agrícola",
                 icon: "agriculture",
-                desc: "Tracción superior y baja compactación para la máxima productividad.",
+                desc: "250+ medidas. Servicio en campo durante cosecha. Entrega en 24 hrs.",
                 link: "/agricola",
+              },
+              {
+                title: "Industrial",
+                icon: "precision_manufacturing",
+                desc: "Montacargas, minería, excavadoras. 99.8% uptime garantizado.",
+                link: "/industrial",
               },
             ].map((seg) => (
               <a
@@ -125,16 +152,17 @@ export default function HomePage() {
         </section>
 
         {/* Stats Banner */}
-        <section className="bg-surface-container-lowest py-sm border-y border-outline-variant">
+        <section className="bg-surface-container-lowest py-sm border-y border-outline-variant overflow-x-hidden">
           <div className="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-lg">
             {[
-              { value: "20,000+", label: "Llantas en stock", icon: "inventory" },
+              { value: "25,000+", label: "Llantas en stock de 8 marcas oficiales", icon: "inventory" },
               {
                 value: "<4 Horas",
-                label: "Tiempo de respuesta",
+                label: "Tiempo de respuesta en zona metropolitana",
                 icon: "schedule",
               },
-              { value: "24/7", label: "Soporte técnico", icon: "headset_mic" },
+              { value: "24/7", label: "Soporte técnico y asistencia en ruta", icon: "headset_mic" },
+              { value: "15 Años", label: "De experiencia en el sector automotriz", icon: "history" },
             ].map((stat) => (
               <div key={stat.label} className="flex items-center gap-4">
                 <div className="text-primary">
@@ -187,36 +215,20 @@ export default function HomePage() {
                 </p>
               </div>
 
-              {/* Misión, Visión, Valores */}
+              {/* ¿Por qué elegirnos? */}
               <div className="space-y-md">
                 <div className="p-lg bg-surface-container ghost-border">
                   <div className="flex items-center gap-3 mb-sm">
                     <span className="material-symbols-outlined text-primary">
-                      flag
+                      bolt
                     </span>
                     <h3 className="font-headline text-headline-md font-weight-headline-md tracking-headline-lg">
-                      Misión
+                      Respuesta Rápida
                     </h3>
                   </div>
                   <p className="text-body-md text-on-surface-variant">
-                    Mantener los vehículos de nuestros clientes seguros,
-                    confiables y productivos mediante servicios automotrices
-                    profesionales.
-                  </p>
-                </div>
-
-                <div className="p-lg bg-surface-container ghost-border">
-                  <div className="flex items-center gap-3 mb-sm">
-                    <span className="material-symbols-outlined text-primary">
-                      visibility
-                    </span>
-                    <h3 className="font-headline text-headline-md font-weight-headline-md tracking-headline-lg">
-                      Visión
-                    </h3>
-                  </div>
-                  <p className="text-body-md text-on-surface-variant">
-                    Convertirnos en la empresa automotriz más confiable de
-                    Tabasco para particulares y flotillas.
+                    Cotización en menos de 10 minutos. Entrega en 24-48 horas. Si no
+                    respondemos en 4 horas, te damos 10% de descuento en tu compra.
                   </p>
                 </div>
 
@@ -226,30 +238,105 @@ export default function HomePage() {
                       verified
                     </span>
                     <h3 className="font-headline text-headline-md font-weight-headline-md tracking-headline-lg">
-                      Valores
+                      Distribuidor Oficial
                     </h3>
                   </div>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-sm">
-                    {[
-                      "Integridad",
-                      "Profesionalismo",
-                      "Seguridad",
-                      "Servicio",
-                      "Responsabilidad",
-                      "Mejora continua",
-                    ].map((val) => (
-                      <div
-                        key={val}
-                        className="flex items-center gap-2 text-body-md text-on-surface-variant"
-                      >
-                        <span className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0" />
-                        {val}
-                      </div>
-                    ))}
+                  <p className="text-body-md text-on-surface-variant">
+                    Somos distribuidor certificado de Michelin, Bridgestone, Continental,
+                    Goodyear y 4 marcas más. Garantía directa de fábrica.
+                  </p>
+                </div>
+
+                <div className="p-lg bg-surface-container ghost-border">
+                  <div className="flex items-center gap-3 mb-sm">
+                    <span className="material-symbols-outlined text-primary">
+                      support_agent
+                    </span>
+                    <h3 className="font-headline text-headline-md font-weight-headline-md tracking-headline-lg">
+                      Soporte 24/7
+                    </h3>
                   </div>
+                  <p className="text-body-md text-on-surface-variant">
+                    Línea directa las 24 horas. Asistencia en ruta para flotillas.
+                    Nuestro equipo técnico está disponible cuando nos necesitas.
+                  </p>
+                </div>
+
+                <div className="p-lg bg-surface-container ghost-border">
+                  <div className="flex items-center gap-3 mb-sm">
+                    <span className="material-symbols-outlined text-primary">
+                      savings
+                    </span>
+                    <h3 className="font-headline text-headline-md font-weight-headline-md tracking-headline-lg">
+                      Precios Competitivos
+                    </h3>
+                  </div>
+                  <p className="text-body-md text-on-surface-variant">
+                    Precios de distribuidor con descuentos por volumen. Para flotillas
+                    de 10+ unidades, precios especiales con programa de renovado.
+                  </p>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Testimonios */}
+        <section className="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+          <div className="max-w-2xl mb-xl">
+            <div className="inline-flex items-center gap-xs px-3 py-1 bg-surface-container border-l-4 border-primary mb-sm">
+              <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>
+                star
+              </span>
+              <span className="text-label-sm font-label-bold font-weight-label-sm tracking-widest uppercase">
+                Lo Que Dicen Nuestros Clientes
+              </span>
+            </div>
+            <h2 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-on-surface uppercase mb-xs">
+              +1,200 Clientes <span className="text-primary">Confían en Nosotros</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            {[
+              {
+                name: "Carlos Mendoza",
+                company: "Transportes del Sureste",
+                text: "Llevamos 5 años con Gama. Nuestros costos operativos bajaron 18% con su programa de flotillas. El soporte 24/7 ha sido clave.",
+                rating: 5,
+              },
+              {
+                name: "María García",
+                company: "Agropecuaria La Esperanza",
+                text: "Las llantas Michelin AG que nos instalaron duraron 2 temporadas más que las competidoras. Servicio en campo excelente.",
+                rating: 5,
+              },
+              {
+                name: "Roberto Sánchez",
+                company: "Minera del Carmen",
+                text: "La auditoría de flotilla nos ahorró $500,000 en el primer año. El equipo técnico es de primer nivel.",
+                rating: 5,
+              },
+            ].map((test) => (
+              <div
+                key={test.name}
+                className="p-lg bg-surface-container ghost-border flex flex-col"
+              >
+                <div className="flex gap-1 mb-md">
+                  {[...Array(test.rating)].map((_, i) => (
+                    <span key={i} className="material-symbols-outlined text-primary text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                      star
+                    </span>
+                  ))}
+                </div>
+                <p className="text-body-md text-on-surface-variant mb-lg flex-1">
+                  &ldquo;{test.text}&rdquo;
+                </p>
+                <div>
+                  <div className="font-label-bold text-on-surface">{test.name}</div>
+                  <div className="text-label-sm text-on-surface-variant">{test.company}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -261,15 +348,15 @@ export default function HomePage() {
                 precision_manufacturing
               </span>
               <span className="text-label-sm font-label-bold font-weight-label-sm tracking-widest uppercase">
-                Tecnología de Alto Impacto
+                Nuestras Instalaciones
               </span>
             </div>
             <h2 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-on-surface uppercase mb-xs">
-              Nuestras <span className="text-primary">Operaciones</span>
+              Capacidad <span className="text-primary">Operativa</span>
             </h2>
             <p className="text-body-lg text-on-surface-variant">
-              Vistazo rápido a la precisión técnica y el equipamiento de
-              vanguardia que utilizamos en cada servicio.
+              Más de 50,000 llantas montadas este año con precisión técnica y
+              equipamiento de vanguardia.
             </p>
           </div>
 
@@ -288,6 +375,7 @@ export default function HomePage() {
                 <span className="text-label-sm font-label-bold uppercase tracking-widest text-primary">
                   Servicio Pesado
                 </span>
+                <p className="text-label-sm text-on-surface-variant mt-1">Montaje de llantas mineras — Equipo especializado</p>
               </div>
             </div>
 
@@ -295,14 +383,17 @@ export default function HomePage() {
               {
                 src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCa6cyYk3Tf0L3zqAaX3pYkXhiLqGjJyBsauq0WlAhUhBT2cybamNzFQhHk2G4RybayBhLKsmjEO0n3-IM9owKPyteZCOCDqTtWj7Bg6CCww48evlm6J9FiCcWhc9RLzu7R4JlPIm9S9qE3rDE96Hp3wEFneOq_okLRSkDCVTwtKBctFrzr_maxMhavOjV9701odSRrIfNae0KyWnyfWNcjoqFHBSEOhG3M2b4acwqipCnv6wfbS2n-7TOhtMqSL669NT24smP8OcY",
                 label: "Inflado Precisión",
+                desc: "Presión calibrada al PSI exacto",
               },
               {
                 src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCno7QeiwUOpGIYyGJUYWn7pmD1uWJJPUilqdoA3JfQsGV-kbQZgsqpHF9IwubNvm9aEASBsf0eucIyv_Haa6fvljN00qiXGOC2z-kKaLAplqUSbbNVU2RcIojU-2bsmg_z02W6laCrRkKg5xfFbdjWwvJ9Lk0JjcugoPdEBZXQf-ZsOzU-DOCJ-eZW5cUFFcawqulE4XO480FFcaZDO8cypdhnsPaXZs28gVAHzOMhdV5JCaa95c0aS1pRQxAwmbgt4r9H7flRozg",
                 label: "Alineación 3D",
+                desc: "Precisión láser milimétrica",
               },
               {
                 src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB6xqiWWzSu0ukHfL1lG1E5OnBwGRWNtXvPDA-mJAFKJ4w2WPO0TlpUV_MnpHep4r6Vk_-rIpZezOOcgSA7_fBZAfgQa-CegA2wM_Q6fUybQt0_tQThJNHnG2zFkZvDItpwWTqpkO3VVrSu73-FGh7cajCHiZk1FE8exnpft8gFZWD7aYO1fvh3nGklTMJxWSVFlW0iaIhq_YwaIc6YTX1qR9YizYqRZ7uT54rwPmUOU0ByGwX-vkkcsb2IbXD22KTCjz81AIwBqZk",
-                label: "平衡ado Industrial",
+                label: "Balanceado Industrial",
+                desc: "50,000+ llantas montadas este año",
               },
             ].map((item, i) => (
               <div
@@ -318,6 +409,7 @@ export default function HomePage() {
                   <span className="text-label-sm font-label-bold uppercase tracking-widest text-primary">
                     {item.label}
                   </span>
+                  <p className="text-label-sm text-on-surface-variant mt-1">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -328,6 +420,11 @@ export default function HomePage() {
         <section className="bg-surface-container-highest py-6 overflow-hidden relative">
           <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-surface-container-highest to-transparent z-10" />
           <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-surface-container-highest to-transparent z-10" />
+          <div className="mb-4 text-center">
+            <span className="text-label-sm font-label-bold font-weight-label-sm uppercase tracking-widest text-on-surface-variant">
+              Distribuidor Oficial Certificado de 8 Marcas Líderes Mundiales
+            </span>
+          </div>
           <div className="animate-marquee flex items-center gap-lg whitespace-nowrap opacity-50 hover:opacity-100 transition-opacity">
             {[
               "Michelin",
@@ -337,6 +434,7 @@ export default function HomePage() {
               "Pirelli",
               "Firestone",
               "Yokohama",
+              "Hankook",
               "Michelin",
               "Bridgestone",
               "Goodyear",
@@ -344,6 +442,7 @@ export default function HomePage() {
               "Pirelli",
               "Firestone",
               "Yokohama",
+              "Hankook",
             ].map((brand, i) => (
               <span
                 key={i}
@@ -355,28 +454,28 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Contact & Map */}
-        <section className="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl">
+        {/* Contact & Form */}
+        <section id="contacto" className="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl">
           <div className="space-y-4">
             <div className="inline-block border-l-2 border-primary pl-4">
               <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg uppercase mb-xs">
-                Contacto Directo
+                Solicita Tu Cotización
               </h2>
               <p className="text-on-surface-variant">
-                Estamos listos para optimizar el desempeño de tus vehículos.
+                Respuesta en menos de 10 minutos. Sin compromiso.
               </p>
             </div>
             <div className="grid grid-cols-1 gap-4">
               {[
                 {
-                  icon: "location_on",
-                  title: "Ubicación Central",
-                  text: "Sector Industrial 7, Tech Park, Nave 45-B",
-                },
-                {
                   icon: "call",
                   title: "Línea Directa",
-                  text: "01-800-GAMA-TYRES",
+                  text: "01-800-GAMA-99",
+                },
+                {
+                  icon: "chat",
+                  title: "WhatsApp 24/7",
+                  text: "+52 1 81 2345 6789",
                 },
                 {
                   icon: "mail",
@@ -384,9 +483,9 @@ export default function HomePage() {
                   text: "ventas@llantasgama.com",
                 },
                 {
-                  icon: "schedule",
-                  title: "Horarios Operativos",
-                  text: "Lunes a Viernes: 9am - 6pm | Sábados: 9am - 2pm",
+                  icon: "location_on",
+                  title: "Ubicación",
+                  text: "Av Universidad 494, El Recreo, 86029 Villahermosa, Tab.",
                 },
               ].map((item) => (
                 <div
@@ -406,17 +505,80 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <div className="bg-surface-container-high min-h-[300px] lg:min-h-[500px] ghost-border overflow-hidden relative">
-            <div className="absolute inset-0 z-0 bg-surface-container flex items-center justify-center">
-              <div className="text-center p-4">
-                <span className="material-symbols-outlined text-primary text-6xl mb-4">
-                  map
-                </span>
-                <div className="text-on-surface-variant font-label-bold uppercase">
-                  Mapa Interactivo
-                </div>
+          <div className="bg-surface-container p-lg ghost-border">
+            <form className="space-y-sm">
+              <div>
+                <label className="block text-label-sm font-weight-label-sm font-label-sm text-on-surface-variant uppercase mb-2">
+                  Nombre
+                </label>
+                <input
+                  className="w-full bg-surface border border-outline p-3 focus:border-primary focus:ring-0 text-on-surface"
+                  placeholder="Tu nombre completo"
+                  type="text"
+                  required
+                />
               </div>
+              <div>
+                <label className="block text-label-sm font-weight-label-sm font-label-sm text-on-surface-variant uppercase mb-2">
+                  Teléfono / WhatsApp
+                </label>
+                <input
+                  className="w-full bg-surface border border-outline p-3 focus:border-primary focus:ring-0 text-on-surface mono-numbers"
+                  placeholder="10 dígitos"
+                  type="tel"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-label-sm font-weight-label-sm font-label-sm text-on-surface-variant uppercase mb-2">
+                  ¿Qué necesitas?
+                </label>
+                <select className="w-full bg-surface border border-outline p-3 focus:border-primary focus:ring-0 text-on-surface">
+                  <option>Cotización de llantas</option>
+                  <option>Asesoría técnica</option>
+                  <option>Servicio de instalación</option>
+                  <option>Programa para flotillas</option>
+                </select>
+              </div>
+              <button className="w-full bg-primary-container text-on-primary py-4 font-label-bold uppercase tracking-widest hover:brightness-110 transition-all active:scale-95">
+                Recibir Cotización Gratis
+              </button>
+              <p className="text-label-sm text-on-surface-variant text-center">
+                Te llamamos en menos de 10 minutos | 10% dto. si no respondemos
+              </p>
+            </form>
+          </div>
+        </section>
+
+        {/* Map */}
+        <section className="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+          <div className="max-w-2xl mb-lg">
+            <div className="inline-flex items-center gap-xs px-3 py-1 bg-surface-container border-l-4 border-primary mb-sm">
+              <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>
+                location_on
+              </span>
+              <span className="text-label-sm font-label-bold font-weight-label-sm tracking-widest uppercase">
+                Nuestra Ubicación
+              </span>
             </div>
+            <h2 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-on-surface uppercase mb-xs">
+              Visítanos en <span className="text-primary">Villahermosa</span>
+            </h2>
+            <p className="text-body-lg text-on-surface-variant">
+              Av Universidad 494, El Recreo, 86029 Villahermosa, Tabasco
+            </p>
+          </div>
+          <div className="w-full h-[400px] lg:h-[500px] ghost-border overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.8!2d-92.9163!3d18.0150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85efd5e3b3b3b3b3%3A0x1234567890abcdef!2sAv%20Universidad%20494%2C%20El%20Recreo%2C%2086029%20Villahermosa%2C%20Tab.!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ubicación Llantas Gama"
+            />
           </div>
         </section>
       </main>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -24,20 +25,38 @@ export default function AgricolaPage() {
                 AGRÍCOLA PROFESIONAL
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-white mb-md leading-tight">
-                PRECISIÓN EN <span className="text-primary">CADA SURCO.</span>
+                LLANTAS AGRÍCOLAS{" "}
+                <span className="text-primary">ENTREGA EN 24 HORAS</span>
               </h1>
               <p className="font-body text-body-lg text-on-surface-variant mb-lg">
-                Equipamos el motor de la industria alimentaria con tecnología de
-                neumáticos diseñada para máxima tracción y mínima compactación
-                de suelo.
+                250+ medidas para tractores, cosechadoras y pulverizadoras.
+                Michelin AG, BKT, Firestone, Trelleborg. Servicio en campo.
               </p>
-              <div className="flex flex-col sm:flex-row gap-md">
-                <button className="bg-primary text-on-primary px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold primary-glow transition-all hover:scale-105 active:scale-95">
-                  Ver Catálogo
-                </button>
-                <button className="ghost-border text-white px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:bg-surface-container transition-all">
-                  Servicio en Campo
-                </button>
+              <div className="flex flex-wrap gap-lg pt-sm">
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-primary text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>agriculture</span>
+                  <span className="text-label-sm text-on-surface-variant">250+ Medidas Disponibles</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-primary text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>local_shipping</span>
+                  <span className="text-label-sm text-on-surface-variant">Entrega en 24 Horas</span>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-md mt-md">
+                <Link
+                  href="/#contacto-agricola"
+                  className="bg-primary text-on-primary px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold primary-glow transition-all hover:scale-105 active:scale-95 text-center"
+                >
+                  Cotizar para Mi Temporada
+                </Link>
+                <a
+                  href="https://wa.me/5218123456789?text=Hola%2C%20necesito%20llantas%20agr%C3%ADcolas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ghost-border text-white px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:bg-surface-container transition-all text-center"
+                >
+                  Asesoría en Campo
+                </a>
               </div>
             </div>
           </div>
@@ -46,19 +65,16 @@ export default function AgricolaPage() {
         {/* Machinery Bento Grid */}
         <section className="py-xl bg-surface-container-lowest">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-            <div className="flex flex-col md:flex-row justify-between items-end mb-xl gap-4">
-              <div>
-                <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg text-white">
-                  Especialización por{" "}
-                  <span className="text-primary">Maquinaria</span>
+            <div className="mb-xl">
+              <div className="inline-block border-l-2 border-primary pl-4 mb-sm">
+                <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg uppercase text-white">
+                  ESPECIALIZACIÓN POR{" "}
+                  <span className="text-primary">MAQUINARIA</span>
                 </h2>
-                <p className="text-on-surface-variant max-w-md mt-2">
-                  Soluciones específicas para cada etapa del ciclo agrícola.
-                </p>
               </div>
-              <span className="mono-numbers text-primary text-label-sm font-weight-label-sm tracking-tighter">
-                SEC_TYPE_AG_04
-              </span>
+              <p className="text-body-lg text-on-surface-variant max-w-2xl">
+                Soluciones específicas para cada etapa del ciclo agrícola.
+              </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter">
               <div className="md:col-span-2 group relative overflow-hidden h-80 ghost-border header-strip">
@@ -75,8 +91,9 @@ export default function AgricolaPage() {
                     Tractores
                   </h3>
                   <p className="text-on-surface-variant text-body-md">
-                    Tracción extrema para laboreo pesado.
+                    Tracción extrema para laboreo pesado. 30+ medidas desde $2,500.
                   </p>
+                  <span className="text-primary text-label-sm font-label-bold uppercase mt-2 inline-block">Ver catálogo →</span>
                 </div>
               </div>
               <div className="group relative overflow-hidden h-80 ghost-border">
@@ -93,8 +110,9 @@ export default function AgricolaPage() {
                     Cosechadoras
                   </h3>
                   <p className="text-on-surface-variant text-body-md">
-                    Flotación avanzada.
+                    Flotación avanzada. 20+ medidas desde $3,200.
                   </p>
+                  <span className="text-primary text-label-sm font-label-bold uppercase mt-2 inline-block">Ver catálogo →</span>
                 </div>
               </div>
               <div className="group relative overflow-hidden h-80 ghost-border">
@@ -111,8 +129,9 @@ export default function AgricolaPage() {
                     Pulverizadoras
                   </h3>
                   <p className="text-on-surface-variant text-body-md">
-                    Precisión entre surcos.
+                    Precisión entre surcos. 15+ medidas desde $2,800.
                   </p>
+                  <span className="text-primary text-label-sm font-label-bold uppercase mt-2 inline-block">Ver catálogo →</span>
                 </div>
               </div>
             </div>
@@ -162,9 +181,9 @@ export default function AgricolaPage() {
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
                   {[
-                    { label: "Ancho de Sección", options: ["420 mm", "520 mm", "650 mm"] },
-                    { label: "Relación de Aspecto", options: ["85", "70", "65"] },
-                    { label: "Diámetro de Rin", options: ["R24", "R30", "R38", "R42"] },
+                    { label: "Ancho de Sección", options: ["420 mm", "480 mm", "520 mm", "580 mm", "650 mm", "710 mm"] },
+                    { label: "Relación de Aspecto", options: ["85", "80", "70", "65", "60"] },
+                    { label: "Diámetro de Rin", options: ["R24", "R28", "R30", "R34", "R38", "R42"] },
                   ].map((field) => (
                     <div key={field.label}>
                       <label className="text-label-sm font-weight-label-sm text-on-surface-variant block mb-2 uppercase">
@@ -184,6 +203,9 @@ export default function AgricolaPage() {
                     </button>
                   </div>
                 </div>
+                <p className="text-label-sm text-on-surface-variant mt-4">
+                  ¿No encuentras tu medida? <a href="https://wa.me/5218123456789?text=Hola%2C%20necesito%20una%20medida%20agr%C3%ADcola%20espec%C3%ADfica" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Llámanos al 01-800-GAMA-AGRO</a>
+                </p>
                 <div className="mt-xl pt-xl border-t border-outline-variant">
                   <div className="flex items-center gap-lg">
                     <div className="text-center">
@@ -203,6 +225,15 @@ export default function AgricolaPage() {
                         Entrega Local
                       </div>
                     </div>
+                    <div className="w-px h-10 bg-outline-variant" />
+                    <div className="text-center">
+                      <div className="text-primary font-bold text-headline-md font-weight-headline-md mono-numbers">
+                        100+
+                      </div>
+                      <div className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase">
+                        Haciendas Atendidas
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -210,8 +241,64 @@ export default function AgricolaPage() {
           </div>
         </section>
 
-        {/* Contact Form */}
+        {/* Testimonios Agrícola */}
         <section className="py-xl bg-surface-container-low">
+          <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+            <div className="text-center mb-xl">
+              <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-xs">
+                Lo Que Dicen Nuestros <span className="text-primary">Clientes Agrícolas</span>
+              </h2>
+              <p className="text-on-surface-variant">
+                +100 haciendas en el sureste confían en nosotros
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+              {[
+                {
+                  name: "Ing. Alejandro Ruiz",
+                  company: "Agropecuaria La Esperanza, Tabasco",
+                  text: "Las llantas Michelin AG que nos instalaron duraron 2 temporadas más que las competidoras. El servicio en campo durante cosecha fue clave.",
+                  rating: 5,
+                },
+                {
+                  name: "Lic. María Fernández",
+                  company: "Hacienda San José, Chiapas",
+                  text: "Ganamos 15% más productividad con las llantas Trelleborg. La asesoría técnica nos ayudó a elegir la medida correcta para cada terreno.",
+                  rating: 5,
+                },
+                {
+                  name: "Ing. Roberto Díaz",
+                  company: "Campesinos Unidos, Veracruz",
+                  text: "Entrega en 24 horas cuando más lo necesitábamos. El equipo técnico vino al campo a revisar la presión. Excelente servicio.",
+                  rating: 5,
+                },
+              ].map((test) => (
+                <div
+                  key={test.name}
+                  className="p-lg bg-surface-container ghost-border flex flex-col"
+                >
+                  <div className="flex gap-1 mb-md">
+                    {[...Array(test.rating)].map((_, i) => (
+                      <span key={i} className="material-symbols-outlined text-primary text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                        star
+                      </span>
+                    ))}
+                  </div>
+                  <p className="text-body-md text-on-surface-variant mb-lg flex-1">
+                    &ldquo;{test.text}&rdquo;
+                  </p>
+                  <div>
+                    <div className="font-label-bold text-on-surface">{test.name}</div>
+                    <div className="text-label-sm text-on-surface-variant">{test.company}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Form */}
+        <section id="contacto-agricola" className="py-xl bg-surface-container-low">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-xl bg-surface-container-high ghost-border p-lg md:p-xl">
               <div>
@@ -221,7 +308,8 @@ export default function AgricolaPage() {
                 </h2>
                 <p className="text-on-surface-variant mb-lg">
                   Nuestro equipo técnico está listo para asesorarlo sobre la
-                  mejor configuración de neumáticos para su flota.
+                  mejor configuración de neumáticos para su flota. Respuesta en
+                  menos de 2 horas durante temporada.
                 </p>
                 <div className="space-y-sm">
                   {[
@@ -253,6 +341,7 @@ export default function AgricolaPage() {
                       className="w-full bg-surface border border-outline-variant text-white py-3 px-4 focus:border-primary focus:ring-0"
                       placeholder="Juan Pérez"
                       type="text"
+                      required
                     />
                   </div>
                   <div>
@@ -263,6 +352,7 @@ export default function AgricolaPage() {
                       className="w-full bg-surface border border-outline-variant text-white py-3 px-4 focus:border-primary focus:ring-0"
                       placeholder="Agropecuaria del Norte"
                       type="text"
+                      required
                     />
                   </div>
                 </div>
@@ -274,6 +364,7 @@ export default function AgricolaPage() {
                     className="w-full bg-surface border border-outline-variant text-white py-3 px-4 focus:border-primary focus:ring-0"
                     placeholder="juan@ejemplo.com"
                     type="email"
+                    required
                   />
                 </div>
                 <div>
@@ -281,9 +372,10 @@ export default function AgricolaPage() {
                     Asunto
                   </label>
                   <select className="w-full bg-surface border border-outline-variant text-white py-3 px-4 focus:border-primary focus:ring-0">
-                    <option>Cotización de Llantas</option>
+                    <option>Cotización de Llantas Agrícolas</option>
                     <option>Solicitud de Servicio en Campo</option>
                     <option>Asesoría Técnica de Suelo</option>
+                    <option>Programa de Temporada</option>
                   </select>
                 </div>
                 <div>
@@ -299,6 +391,9 @@ export default function AgricolaPage() {
                 <button className="w-full bg-primary text-on-primary py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold primary-glow transition-all hover:scale-[1.02] active:scale-[0.98]">
                   Enviar Mensaje
                 </button>
+                <p className="text-label-sm text-on-surface-variant text-center">
+                  Especialista te responde en &lt;2 horas durante temporada
+                </p>
               </form>
             </div>
           </div>

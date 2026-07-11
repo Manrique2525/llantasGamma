@@ -9,23 +9,27 @@ export default function Footer() {
             Llantas Gama
           </div>
           <p className="text-on-surface-variant text-body-md">
-            Ingeniería de precisión y rendimiento para la industria moderna.
+            Ingeniería de precisión y rendimiento para la industria moderna. 15 años de experiencia.
           </p>
           <div className="flex gap-3 pt-2">
             <a
-              href="#"
+              href="https://facebook.com/llantasgama"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 bg-surface-container flex items-center justify-center hover:text-primary transition-colors border border-outline-variant"
             >
               <span className="material-symbols-outlined">public</span>
             </a>
             <a
-              href="#"
+              href="mailto:ventas@llantasgama.com"
               className="w-10 h-10 bg-surface-container flex items-center justify-center hover:text-primary transition-colors border border-outline-variant"
             >
               <span className="material-symbols-outlined">mail</span>
             </a>
             <a
-              href="#"
+              href="https://wa.me/5218123456789"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 bg-surface-container flex items-center justify-center hover:text-primary transition-colors border border-outline-variant"
             >
               <span className="material-symbols-outlined">chat</span>
@@ -38,9 +42,9 @@ export default function Footer() {
             Contacto
           </h4>
           <ul className="space-y-2 text-on-surface-variant text-body-md">
-            <li>Horario: Lun-Vie 9am-6pm</li>
-            <li>WhatsApp: +123456789</li>
-            <li>Tel: 01-800-GAMA</li>
+            <li>Av Universidad 494, El Recreo</li>
+            <li>86029 Villahermosa, Tab.</li>
+            <li>Tel: 01-800-GAMA-99</li>
           </ul>
         </div>
 
@@ -89,7 +93,7 @@ export default function Footer() {
             Newsletter
           </h4>
           <p className="text-on-surface-variant text-label-sm">
-            Reciba actualizaciones técnicas y promociones de temporada.
+            Ofertas exclusivas y tips técnicos directo a tu email.
           </p>
           <div className="flex border border-outline-variant">
             <input

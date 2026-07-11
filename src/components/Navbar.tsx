@@ -10,7 +10,7 @@ const navLinks = [
   { href: "/camion", label: "Camión" },
   { href: "/agricola", label: "Agrícola" },
   { href: "/industrial", label: "Industrial" },
-  { href: "/#contacto", label: "Contact" },
+  { href: "/#contacto", label: "Contacto" },
 ];
 
 export default function Navbar() {
@@ -47,16 +47,19 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-sm">
           <a
-            href="https://wa.me/123456789"
+            href="https://wa.me/5218123456789?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20de%20llantas"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-transparent border border-outline px-4 py-2 text-label-bold font-label-bold hover:bg-surface-variant transition-all active:scale-95"
           >
             WhatsApp
           </a>
-          <button className="bg-primary-container text-on-primary px-6 py-2 text-label-bold font-label-bold uppercase tracking-wider active:scale-95 transition-all">
+          <Link
+            href="/#contacto"
+            className="bg-primary-container text-on-primary px-6 py-2 text-label-bold font-label-bold uppercase tracking-wider active:scale-95 transition-all text-center"
+          >
             Cotizar
-          </button>
+          </Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -94,16 +97,19 @@ export default function Navbar() {
           ))}
           <div className="flex gap-sm pt-3">
             <a
-              href="https://wa.me/123456789"
+              href="https://wa.me/5218123456789?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20de%20llantas"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 text-center bg-transparent border border-outline px-4 py-3 text-label-bold font-label-bold hover:bg-surface-variant transition-all"
             >
               WhatsApp
             </a>
-            <button className="flex-1 bg-primary-container text-on-primary px-4 py-3 text-label-bold font-label-bold uppercase tracking-wider transition-all">
+            <Link
+              href="/#contacto"
+              className="flex-1 bg-primary-container text-on-primary px-4 py-3 text-label-bold font-label-bold uppercase tracking-wider transition-all text-center"
+            >
               Cotizar
-            </button>
+            </Link>
           </div>
         </div>
       </div>
