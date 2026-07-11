@@ -1,6 +1,15 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SectionHeader from "@/components/SectionHeader";
+import TestimonialCard from "@/components/TestimonialCard";
+import ContactForm from "@/components/ContactForm";
+
+export const metadata = {
+  title: "Llantas Industriales - Montacargas, Minería, Excavadoras",
+  description:
+    "99.8% uptime garantizado. Montacargas, excavadoras, minería OTR. Soporte técnico en <4 horas. Auditoría sin compromiso.",
+};
 
 export default function IndustrialPage() {
   return (
@@ -23,20 +32,38 @@ export default function IndustrialPage() {
                 DIVISIÓN INDUSTRIAL
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-white mb-md leading-tight">
-                99.8% DE <span className="text-primary">UPTIME</span> GARANTIZADO
+                99.8% DE <span className="text-primary">UPTIME</span>{" "}
+                GARANTIZADO
               </h1>
               <p className="font-body text-body-lg text-on-surface-variant mb-lg">
-                Montacargas, excavadoras, minería OTR. Soporte técnico en &lt;4
-                horas. Si no llegamos, 10% de descuento.
+                Montacargas, excavadoras, minería OTR.{" "}
+                <strong className="text-on-surface">
+                  Soporte técnico en &lt;4 horas.
+                </strong>{" "}
+                Si no llegamos, 10% de descuento.
               </p>
               <div className="flex flex-wrap gap-lg pt-sm">
                 <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-primary text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
-                  <span className="text-label-sm text-on-surface-variant">99.8% Uptime Garantizado</span>
+                  <span
+                    className="material-symbols-outlined text-primary text-[18px]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    verified
+                  </span>
+                  <span className="text-label-sm text-on-surface-variant">
+                    99.8% Uptime Garantizado
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-primary text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>schedule</span>
-                  <span className="text-label-sm text-on-surface-variant">Respuesta en &lt;4 horas</span>
+                  <span
+                    className="material-symbols-outlined text-primary text-[18px]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    schedule
+                  </span>
+                  <span className="text-label-sm text-on-surface-variant">
+                    Respuesta en &lt;4 horas
+                  </span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-md mt-md">
@@ -59,11 +86,14 @@ export default function IndustrialPage() {
           </div>
         </section>
 
-        {/* Response Time */}
+        {/* Response Time Banner */}
         <section className="bg-surface-container-lowest py-sm border-y border-outline-variant">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex flex-wrap justify-between items-center gap-lg overflow-hidden whitespace-nowrap">
             <div className="flex items-center gap-sm">
-              <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>
+              <span
+                className="material-symbols-outlined text-primary"
+                style={{ fontVariationSettings: "'FILL' 1" }}
+              >
                 timer
               </span>
               <span className="font-label-bold uppercase">
@@ -86,17 +116,13 @@ export default function IndustrialPage() {
 
         {/* Tire Types Bento Grid */}
         <section className="py-xl max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="mb-xl">
-            <div className="inline-block border-l-2 border-primary pl-4 mb-sm">
-              <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg uppercase">
-                NEUMÁTICOS <span className="text-primary">ESPECIALIZADOS</span>
-              </h2>
-            </div>
-            <p className="text-body-lg text-on-surface-variant max-w-2xl">
-              Diseñados para resistir las condiciones más extremas en logística,
-              construcción y extracción.
-            </p>
-          </div>
+          <SectionHeader
+            badge="Neumáticos Especializados"
+            badgeIcon="precision_manufacturing"
+            title="Neumáticos"
+            titleHighlight="Especializados"
+            subtitle="Diseñados para resistir las condiciones más extremas en logística, construcción y extracción."
+          />
           <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
             {/* Forklifts */}
             <div className="md:col-span-8 group relative overflow-hidden bg-surface-container-low ghost-border header-strip p-lg flex flex-col justify-between min-h-[280px] lg:min-h-[400px]">
@@ -179,7 +205,8 @@ export default function IndustrialPage() {
               </div>
               <div className="z-10 relative mt-4">
                 <p className="text-on-surface-variant mb-4 font-body text-label-sm">
-                  Dureza Extrema E-4 / L-4: Diseñada para terrenos rocosos con alto riesgo de cortes. 20+ medidas.
+                  Dureza Extrema E-4 / L-4: Diseñada para terrenos rocosos con
+                  alto riesgo de cortes. 20+ medidas.
                 </p>
               </div>
               <div className="absolute bottom-4 left-4 z-10">
@@ -333,8 +360,54 @@ export default function IndustrialPage() {
           </div>
         </section>
 
+        {/* Testimonios Industrial */}
+        <section className="py-xl">
+          <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+            <SectionHeader
+              badge="Resultados Industriales"
+              badgeIcon="factory"
+              title="Clientes"
+              titleHighlight="Industriales"
+              subtitle="Empresas que confían en nosotros para mantener su operación al 100%."
+              align="center"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+              <TestimonialCard
+                name="Ing. Fernando López"
+                role="Gerente de Mantenimiento"
+                company="Grupo Industrial del Sur"
+                text="La auditoría de neumáticos nos identificó $800,000 en ahorro potencial. Su plan de mantenimiento predictivo eliminó las paradas no programadas."
+                rating={5}
+                metric="$800K MXN"
+                metricLabel="Ahorro anual identificado"
+              />
+              <TestimonialCard
+                name="Ing. Carlos Ruiz"
+                role="Director de Operaciones"
+                company="Minera del Carmen, S.A."
+                text="Sus llantas OTR Michelin duraron 40% más que las competidoras. El soporte en sitio es excepcional — siempre响应en en menos de 4 horas."
+                rating={5}
+                metric="+40%"
+                metricLabel="Vida útil extendida"
+              />
+              <TestimonialCard
+                name="Lic. María García"
+                role="Jefa de Logística"
+                company="Almacenes Centrales"
+                text="Pasamos de 3 paradas mensuales a cero. El plan empresarial con visitas técnicas mensuales transformó nuestra operación de montacargas."
+                rating={5}
+                metric="0 Paradas"
+                metricLabel="Paradas no programadas"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Contact Form */}
-        <section id="contacto-industrial" className="bg-surface py-xl border-t border-outline-variant">
+        <section
+          id="contacto-industrial"
+          className="bg-surface py-xl border-t border-outline-variant"
+        >
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
             <div className="grid md:grid-cols-2 gap-xl">
               <div>
@@ -346,7 +419,10 @@ export default function IndustrialPage() {
                 <p className="text-on-surface-variant font-body mb-lg">
                   Optimice sus costos operativos. Nuestros expertos realizarán un
                   diagnóstico detallado del estado de sus neumáticos y sugerirán
-                  el plan de mantenimiento ideal para su operación. Auditoría sin compromiso.
+                  el plan de mantenimiento ideal para su operación.{" "}
+                  <strong className="text-primary">
+                    Auditoría sin compromiso.
+                  </strong>
                 </p>
                 <div className="space-y-sm">
                   <div className="flex items-center gap-4">
@@ -381,64 +457,7 @@ export default function IndustrialPage() {
                   </div>
                 </div>
               </div>
-              <div className="bg-surface-container-high p-lg ghost-border">
-                <form className="space-y-sm">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
-                    <div className="flex flex-col gap-2">
-                      <label className="text-label-sm font-weight-label-sm font-label-bold uppercase text-on-surface-variant">
-                        Nombre de Empresa
-                      </label>
-                      <input
-                        className="bg-surface-container border border-outline-variant focus:border-primary focus:ring-0 text-on-surface p-3 transition-colors"
-                        placeholder="Empresa S.A."
-                        type="text"
-                        required
-                      />
-                    </div>
-                    <div className="flex flex-col gap-2">
-                      <label className="text-label-sm font-weight-label-sm font-label-bold uppercase text-on-surface-variant">
-                        Sector
-                      </label>
-                      <select className="bg-surface-container border border-outline-variant focus:border-primary focus:ring-0 text-on-surface p-3 transition-colors">
-                        <option>Logística</option>
-                        <option>Minería</option>
-                        <option>Construcción</option>
-                        <option>Otros</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <label className="text-label-sm font-weight-label-sm font-label-bold uppercase text-on-surface-variant">
-                      Correo Electrónico
-                    </label>
-                    <input
-                      className="bg-surface-container border border-outline-variant focus:border-primary focus:ring-0 text-on-surface p-3 transition-colors"
-                      placeholder="contacto@empresa.com"
-                      type="email"
-                      required
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <label className="text-label-sm font-weight-label-sm font-label-bold uppercase text-on-surface-variant">
-                      Mensaje / Requerimiento
-                    </label>
-                    <textarea
-                      className="bg-surface-container border border-outline-variant focus:border-primary focus:ring-0 text-on-surface p-3 transition-colors"
-                      placeholder="Describa su flota o necesidad..."
-                      rows={4}
-                    />
-                  </div>
-                  <button
-                    className="w-full bg-primary text-on-primary py-4 font-label-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:brightness-110 metallic-glow"
-                    type="submit"
-                  >
-                    Agendar Auditoría GRATIS
-                  </button>
-                  <p className="text-label-sm text-on-surface-variant text-center">
-                    Te llamamos en &lt;2 horas | Incluye diagnóstico de 12 puntos
-                  </p>
-                </form>
-              </div>
+              <ContactForm segment="industrial" />
             </div>
           </div>
         </section>

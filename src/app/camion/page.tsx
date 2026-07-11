@@ -1,6 +1,15 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SectionHeader from "@/components/SectionHeader";
+import TestimonialCard from "@/components/TestimonialCard";
+import ContactForm from "@/components/ContactForm";
+
+export const metadata = {
+  title: "Llantas para Camión y Flotillas",
+  description:
+    "Programa de flotillas: ahorra 15% en costos operativos. 200+ flotillas atendidas. Soporte en ruta 24/7. Cotización corporativa gratis.",
+};
 
 export default function CamionPage() {
   return (
@@ -26,20 +35,36 @@ export default function CamionPage() {
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-white mb-md leading-tight">
                 LLANTAS PARA FLOTILLAS |{" "}
-                <span className="text-primary">AHORRA 15%</span> EN COSTOS OPERATIVOS
+                <span className="text-primary">AHORRA 15%</span> EN COSTOS
+                OPERATIVOS
               </h1>
               <p className="font-body text-body-lg text-on-surface-variant mb-lg">
-                200+ flotillas nos eligen. Programa de mantenimiento predictivo +
-                soporte en ruta 24/7. Precios especiales para 10+ unidades.
+                <strong className="text-on-surface">200+ flotillas nos eligen.</strong>{" "}
+                Programa de mantenimiento predictivo + soporte en ruta 24/7.
+                Precios especiales para 10+ unidades.
               </p>
               <div className="flex flex-wrap gap-lg pt-sm">
                 <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-primary text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>local_shipping</span>
-                  <span className="text-label-sm text-on-surface-variant">200+ Flotillas Atendidas</span>
+                  <span
+                    className="material-symbols-outlined text-primary text-[18px]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    local_shipping
+                  </span>
+                  <span className="text-label-sm text-on-surface-variant">
+                    200+ Flotillas Atendidas
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-primary text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>schedule</span>
-                  <span className="text-label-sm text-on-surface-variant">Soporte en Ruta 24/7</span>
+                  <span
+                    className="material-symbols-outlined text-primary text-[18px]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    schedule
+                  </span>
+                  <span className="text-label-sm text-on-surface-variant">
+                    Soporte en Ruta 24/7
+                  </span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-md mt-md">
@@ -62,19 +87,47 @@ export default function CamionPage() {
           </div>
         </section>
 
+        {/* ROI Banner */}
+        <section className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 py-lg border-y border-primary/20">
+          <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              <div>
+                <div className="font-headline text-[36px] font-bold text-primary">
+                  15%
+                </div>
+                <div className="text-label-sm font-label-bold uppercase tracking-wider text-on-surface-variant">
+                  Ahorro promedio en costos operativos
+                </div>
+              </div>
+              <div>
+                <div className="font-headline text-[36px] font-bold text-primary">
+                  200+
+                </div>
+                <div className="text-label-sm font-label-bold uppercase tracking-wider text-on-surface-variant">
+                  Flotillas atendidas en el sureste
+                </div>
+              </div>
+              <div>
+                <div className="font-headline text-[36px] font-bold text-primary">
+                  &lt;2 hrs
+                </div>
+                <div className="text-label-sm font-label-bold uppercase tracking-wider text-on-surface-variant">
+                  Tiempo de respuesta en zona metropolitana
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Bento Grid - Tire Types */}
         <section className="py-xl max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="mb-xl">
-            <div className="inline-block border-l-2 border-primary pl-4 mb-sm">
-              <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg uppercase">
-                SEGMENTOS <span className="text-primary">ESPECIALIZADOS</span>
-              </h2>
-            </div>
-            <p className="text-body-lg text-on-surface-variant max-w-2xl">
-              Diseñadas matemáticamente para cada tipo de ruta y exigencia de
-              carga.
-            </p>
-          </div>
+          <SectionHeader
+            badge="Segmentos Especializados"
+            badgeIcon="category"
+            title="Segmentos"
+            titleHighlight="Especializados"
+            subtitle="Diseñadas matemáticamente para cada tipo de ruta y exigencia de carga."
+          />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             {[
               {
@@ -197,9 +250,13 @@ export default function CamionPage() {
                     ATENCIÓN A FLOTILLAS Y LOGÍSTICA
                   </h2>
                   <p className="text-body-lg font-body text-on-surface-variant mb-md">
-                    Entendemos que un camión detenido es pérdida de dinero. Nuestro
-                    programa de mantenimiento predictivo reduce costos operativos
-                    hasta un 15%. Ya lo hacen 200+ flotillas en el sureste.
+                    Entendemos que{" "}
+                    <strong className="text-on-surface">
+                      un camión detenido es pérdida de dinero
+                    </strong>
+                    . Nuestro programa de mantenimiento predictivo reduce costos
+                    operativos hasta un 15%. Ya lo hacen 200+ flotillas en el
+                    sureste.
                   </p>
                 </div>
                 <div className="space-y-md">
@@ -251,6 +308,49 @@ export default function CamionPage() {
           </div>
         </section>
 
+        {/* Testimonios Flotillas */}
+        <section className="py-xl bg-surface-container-lowest">
+          <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+            <SectionHeader
+              badge="Resultados Comprobados"
+              badgeIcon="trending_up"
+              title="Lo Que Dicen"
+              titleHighlight="Nuestros Clientes"
+              subtitle="200+ flotillas ya optimizan sus costos operativos con nosotros."
+              align="center"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+              <TestimonialCard
+                name="Ing. Carlos Mendoza"
+                role="Director de Operaciones"
+                company="Transportes del Sureste"
+                text="Llevamos 5 años con Gama. Nuestros costos operativos bajaron 18% con su programa de flotillas. El soporte 24/7 ha sido clave para mantener nuestra flota en movimiento."
+                rating={5}
+                metric="-18%"
+                metricLabel="Costos operativos reducidos"
+              />
+              <TestimonialCard
+                name="Ing. Fernando López"
+                role="Gerente de Flotilla"
+                company="Grupo Logístico del Sur"
+                text="La auditoría inicial nos identificó 3 camiones con desgaste irregular. Con su programa de rotación,延长amos la vida útil 40%."
+                rating={5}
+                metric="+40%"
+                metricLabel="Vida útil extendida"
+              />
+              <TestimonialCard
+                name="Lic. Roberto Sánchez"
+                role="Gerente de Mantenimiento"
+                company="Minera del Carmen"
+                text="La auditoría de flotilla nos ahorró $500,000 en el primer año. El equipo técnico es de primer nivel y siempre disponibles cuando los necesitamos."
+                rating={5}
+                metric="$500K MXN"
+                metricLabel="Ahorro primer año"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Service Photos Grid */}
         <section className="py-xl bg-surface-container-lowest">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
@@ -265,10 +365,26 @@ export default function CamionPage() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
               {[
-                { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuATQ3xnNcTRAMk1WRA80bARpCusQIcV8pcer8SnBLnlcdZs7UQ5kGX9felvD_qAF3r79HzDA0k_Qw3LfEF2fuDNt7jT7oqd1XcbjGSRgzeUdNFJUKzoferV3ZKaJmK3HIWSdf_Ymm_XpV1hBxOxIdbWeFni3_8GaaDyiEkUV_sb5FImD59OwTZXUj8qDRHrPyK3S2QvyMn8pJqZqd8tBvsywxnz9tRunrDQw2n9lVJS9mtnx48okCzOavAhIbt-pELewlu7eEgmqPU", label: "Montaje de Llantas", desc: "Equipo especializado" },
-                { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB_Udt5yzb7x1qCr2LLANWrlyJSZ7W00-L4PawjjQXC6x-Qg5DbujMiWTpniwXYQVVL2kuxTmvg56KBbXGW95E4JocXngUR3vw2cpDQtMF4ENuHAO8UutiquX7YP6GjENrSEgbHXvceFn5jbNozoW3a0jter8wn-GkWe4bEdkIADClcT6K6REhICJiYz6V5o3Q6yuFStdIjCvNpXy-uz0U9EXioR05wQoY9D9YQQwybbACYGqieTAmM2kDWjr8wE3KshaW8BYtSUSI", label: "Alineación 3D", desc: "Precisión láser" },
-                { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBhyHi9KYeIGeX5QHLu290ewGIQz7nTgJv-Kh2QWXsiAjdLHPRLdujomKPkgEyl3duSxS3Ys0ojGLAPb_dF4TmpquwxiCGhNS8utBoJ_il180CVRJqAGHJPm5ud-rAEM9ysdWS41xKuoQDp3_8jHBSY1XW4JXcRfO9hCdtMoj_kC-yCFAVQp1cjuCSzVFVRUpVdRvoNZ0v82cbf4QVZE5J3bbuYxpj8UprhI9Ncm5lzH13TGdfCFR4synuYIXfJXJJoO3FZJUKLguU", label: "Balanceado", desc: "Conducción suave" },
-                { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDK2meZBOs191QEFmmIwUKdJldhaaa1zsVeRmUrqc7K8d_7MW4P3wq-xu4RTQeWsVi7Pd94cCiOTy_uCmDGHF55Gg-rUOHsriD7SbGOgmIjZ8fqvTNfkVeY4bqDcqWWXvo96tAT5NQhhHeoQNoPJLfZGZuUBOsAm5ihBEOhVgz3kwBTFfoaMsSxgLB58-Z_yUDunmTt8c0SRJn3s57ID_UqH8iIIFo4zDDxWglEzjKZixuFoknqJvrer5v5f1rhsOionB_0KJ_6uaU", label: "Inflado Precisión", desc: "PSI calibrado" },
+                {
+                  src: "https://lh3.googleusercontent.com/aida-public/AB6AXuATQ3xnNcTRAMk1WRA80bARpCusQIcV8pcer8SnBLnlcdZs7UQ5kGX9felvD_qAF3r79HzDA0k_Qw3LfEF2fuDNt7jT7oqd1XcbjGSRgzeUdNFJUKzoferV3ZKaJmK3HIWSdf_Ymm_XpV1hBxOxIdbWeFni3_8GaaDyiEkUV_sb5FImD59OwTZXUj8qDRHrPyK3S2QvyMn8pJqZqd8tBvsywxnz9tRunrDQw2n9lVJS9mtnx48okCzOavAhIbt-pELewlu7eEgmqPU",
+                  label: "Montaje de Llantas",
+                  desc: "Equipo especializado",
+                },
+                {
+                  src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB_Udt5yzb7x1qCr2LLANWrlyJSZ7W00-L4PawjjQXC6x-Qg5DbujMiWTpniwXYQVVL2kuxTmvg56KBbXGW95E4JocXngUR3vw2cpDQtMF4ENuHAO8UutiquX7YP6GjENrSEgbHXvceFn5jbNozoW3a0jter8wn-GkWe4bEdkIADClcT6K6REhICJiYz6V5o3Q6yuFStdIjCvNpXy-uz0U9EXioR05wQoY9D9YQQwybbACYGqieTAmM2kDWjr8wE3KshaW8BYtSUSI",
+                  label: "Alineación 3D",
+                  desc: "Precisión láser",
+                },
+                {
+                  src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBhyHi9KYeIGeX5QHLu290ewGIQz7nTgJv-Kh2QWXsiAjdLHPRLdujomKPkgEyl3duSxS3Ys0ojGLAPb_dF4TmpquwxiCGhNS8utBoJ_il180CVRJqAGHJPm5ud-rAEM9ysdWS41xKuoQDp3_8jHBSY1XW4JXcRfO9hCdtMoj_kC-yCFAVQp1cjuCSzVFVRUpVdRvoNZ0v82cbf4QVZE5J3bbuYxpj8UprhI9Ncm5lzH13TGdfCFR4synuYIXfJXJJoO3FZJUKLguU",
+                  label: "Balanceado",
+                  desc: "Conducción suave",
+                },
+                {
+                  src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDK2meZBOs191QEFmmIwUKdJldhaaa1zsVeRmUrqc7K8d_7MW4P3wq-xu4RTQeWsVi7Pd94cCiOTy_uCmDGHF55Gg-rUOHsriD7SbGOgmIjZ8fqvTNfkVeY4bqDcqWWXvo96tAT5NQhhHeoQNoPJLfZGZuUBOsAm5ihBEOhVgz3kwBTFfoaMsSxgLB58-Z_yUDunmTt8c0SRJn3s57ID_UqH8iIIFo4zDDxWglEzjKZixuFoknqJvrer5v5f1rhsOionB_0KJ_6uaU",
+                  label: "Inflado Precisión",
+                  desc: "PSI calibrado",
+                },
               ].map((item, i) => (
                 <div
                   key={i}
@@ -280,7 +396,9 @@ export default function CamionPage() {
                     <span className="text-label-sm font-label-bold uppercase tracking-widest text-primary">
                       {item.label}
                     </span>
-                    <p className="text-label-sm text-on-surface-variant">{item.desc}</p>
+                    <p className="text-label-sm text-on-surface-variant">
+                      {item.desc}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -289,7 +407,10 @@ export default function CamionPage() {
         </section>
 
         {/* Contact & Coverage */}
-        <section id="contacto-camion" className="py-xl max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-xl">
+        <section
+          id="contacto-camion"
+          className="py-xl max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-xl"
+        >
           <div className="lg:col-span-5 space-y-lg">
             <div>
               <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-md">
@@ -301,90 +422,22 @@ export default function CamionPage() {
                 atención en menos de 2 horas en zonas metropolitanas.
               </p>
             </div>
-              <div className="aspect-video w-full ghost-border overflow-hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.8!2d-92.9163!3d18.0150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85efd5e3b3b3b3b3%3A0x1234567890abcdef!2sAv%20Universidad%20494%2C%20El%20Recreo%2C%2086029%20Villahermosa%2C%20Tab.!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, minHeight: "300px" }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Cobertura Llantas Gama"
-                  className="w-full h-full"
-                />
-              </div>
+            <div className="aspect-video w-full ghost-border overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.8!2d-92.9163!3d18.0150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85efd5e3b3b3b3b3%3A0x1234567890abcdef!2sAv%20Universidad%20494%2C%20El%20Recreo%2C%2086029%20Villahermosa%2C%20Tab.!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: "300px" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Cobertura Llantas Gama"
+                className="w-full h-full"
+              />
+            </div>
           </div>
           <div className="lg:col-span-7">
-            <div className="bg-surface-container p-lg ghost-border relative">
-              <div className="absolute top-0 right-0 p-4 opacity-20">
-                <span className="material-symbols-outlined text-[120px]">
-                  request_quote
-                </span>
-              </div>
-              <h3 className="font-headline text-headline-md font-weight-headline-md mb-lg">
-                SOLICITE UNA COTIZACIÓN CORPORATIVA
-              </h3>
-              <form className="grid grid-cols-1 md:grid-cols-2 gap-md relative z-10">
-                {[
-                  { label: "Nombre de la Empresa", type: "text", placeholder: "Transportes XYZ" },
-                  { label: "Correo Electrónico", type: "email", placeholder: "contacto@empresa.com" },
-                ].map((field) => (
-                  <div key={field.label} className="space-y-xs">
-                    <label className="font-label-bold text-label-sm font-weight-label-sm uppercase opacity-70">
-                      {field.label}
-                    </label>
-                    <input
-                      className="w-full bg-background border border-outline p-3 text-on-surface focus:border-primary focus:ring-0 outline-none transition-colors"
-                      type={field.type}
-                      placeholder={field.placeholder}
-                      required
-                    />
-                  </div>
-                ))}
-                <div className="space-y-xs">
-                  <label className="font-label-bold text-label-sm font-weight-label-sm uppercase opacity-70">
-                    Tamaño de Flotilla
-                  </label>
-                  <select className="w-full bg-background border border-outline p-3 text-on-surface focus:border-primary focus:ring-0 outline-none transition-colors">
-                    <option>1-10 Unidades</option>
-                    <option>11-50 Unidades</option>
-                    <option>50+ Unidades</option>
-                  </select>
-                </div>
-                <div className="space-y-xs">
-                  <label className="font-label-bold text-label-sm font-weight-label-sm uppercase opacity-70">
-                    Tipo de Aplicación
-                  </label>
-                  <select className="w-full bg-background border border-outline p-3 text-on-surface focus:border-primary focus:ring-0 outline-none transition-colors">
-                    <option>Larga Distancia</option>
-                    <option>Reparto Regional</option>
-                    <option>Construcción / Minería</option>
-                  </select>
-                </div>
-                <div className="md:col-span-2 space-y-xs">
-                  <label className="font-label-bold text-label-sm font-weight-label-sm uppercase opacity-70">
-                    Mensaje / Requerimientos Especiales
-                  </label>
-                  <textarea
-                    className="w-full bg-background border border-outline p-3 text-on-surface focus:border-primary focus:ring-0 outline-none transition-colors"
-                    rows={4}
-                    placeholder="Describa las necesidades de su flotilla..."
-                  />
-                </div>
-                <div className="md:col-span-2">
-                  <button
-                    className="w-full bg-primary-container text-on-primary py-4 font-label-bold text-label-bold tracking-label-bold font-weight-label-bold uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all"
-                    type="submit"
-                  >
-                    Recibir Propuesta Corporativa
-                  </button>
-                  <p className="text-label-sm text-on-surface-variant text-center mt-2">
-                    Te llamamos en &lt;2 horas | Auditoría sin compromiso incluida
-                  </p>
-                </div>
-              </form>
-            </div>
+            <ContactForm segment="camion" />
           </div>
         </section>
       </main>
