@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
 import TestimonialCard from "@/components/TestimonialCard";
 import ContactForm from "@/components/ContactForm";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
   title: "Llantas Agrícolas - Tractores, Cosechadoras, Pulverizadoras",
@@ -90,28 +91,32 @@ export default function AgricolaPage() {
         {/* Seasonal Urgency */}
         <section className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 py-lg border-y border-primary/20">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop text-center">
-            <div className="flex items-center justify-center gap-3">
-              <span className="material-symbols-outlined text-primary text-[24px]">
-                event
-              </span>
-              <span className="text-body-lg font-label-bold">
-                <span className="text-primary">Temporada de cosecha</span> —
-                Stock limitado en medidas especiales. Aparta tu pedido hoy.
-              </span>
-            </div>
+            <ScrollReveal>
+              <div className="flex items-center justify-center gap-3">
+                <span className="material-symbols-outlined text-primary text-[24px]">
+                  event
+                </span>
+                <span className="text-body-lg font-label-bold">
+                  <span className="text-primary">Temporada de cosecha</span> —
+                  Stock limitado en medidas especiales. Aparta tu pedido hoy.
+                </span>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
         {/* Machinery Bento Grid */}
         <section className="py-xl bg-surface-container-lowest">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-            <SectionHeader
-              badge="Especialización por Maquinaria"
-              badgeIcon="agriculture"
-              title="Especialización por"
-              titleHighlight="Maquinaria"
-              subtitle="Soluciones específicas para cada etapa del ciclo agrícola."
-            />
+            <ScrollReveal>
+              <SectionHeader
+                badge="Especialización por Maquinaria"
+                badgeIcon="agriculture"
+                title="Especialización por"
+                titleHighlight="Maquinaria"
+                subtitle="Soluciones específicas para cada etapa del ciclo agrícola."
+              />
+            </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter">
               <div className="md:col-span-2 group relative overflow-hidden h-80 ghost-border header-strip">
                 <div

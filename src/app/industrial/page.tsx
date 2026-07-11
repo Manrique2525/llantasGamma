@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
 import TestimonialCard from "@/components/TestimonialCard";
 import ContactForm from "@/components/ContactForm";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
   title: "Llantas Industriales - Montacargas, Minería, Excavadoras",
@@ -116,13 +117,15 @@ export default function IndustrialPage() {
 
         {/* Tire Types Bento Grid */}
         <section className="py-xl max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-          <SectionHeader
-            badge="Neumáticos Especializados"
-            badgeIcon="precision_manufacturing"
-            title="Neumáticos"
-            titleHighlight="Especializados"
-            subtitle="Diseñados para resistir las condiciones más extremas en logística, construcción y extracción."
-          />
+          <ScrollReveal>
+            <SectionHeader
+              badge="Neumáticos Especializados"
+              badgeIcon="precision_manufacturing"
+              title="Neumáticos"
+              titleHighlight="Especializados"
+              subtitle="Diseñados para resistir las condiciones más extremas en logística, construcción y extracción."
+            />
+          </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
             {/* Forklifts */}
             <div className="md:col-span-8 group relative overflow-hidden bg-surface-container-low ghost-border header-strip p-lg flex flex-col justify-between min-h-[280px] lg:min-h-[400px]">

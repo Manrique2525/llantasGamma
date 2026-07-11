@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
 import ServiceCard from "@/components/ServiceCard";
 import ContactForm from "@/components/ContactForm";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
   title: "Llantas para Auto y Camioneta",
@@ -91,16 +92,18 @@ export default function AutoPage() {
         {/* Brand Catalog */}
         <section className="py-xl bg-surface-container-lowest">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-lg gap-4">
-              <div>
-                <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg text-on-surface border-l-4 border-primary pl-4">
-                  Marcas Premium
-                </h2>
-                <p className="text-label-sm text-on-surface-variant mt-2 pl-4">
-                  Distribuidor oficial certificado con garantía de fábrica
-                </p>
+            <ScrollReveal>
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-lg gap-4">
+                <div>
+                  <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg text-on-surface border-l-4 border-primary pl-4">
+                    Marcas Premium
+                  </h2>
+                  <p className="text-label-sm text-on-surface-variant mt-2 pl-4">
+                    Distribuidor oficial certificado con garantía de fábrica
+                  </p>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-gutter items-center grayscale opacity-60 hover:opacity-100 transition-opacity">
               {[
                 "MICHELIN",
@@ -200,14 +203,16 @@ export default function AutoPage() {
         {/* Service Cards */}
         <section className="py-xl bg-surface-container-low">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-            <SectionHeader
-              badge="Servicios"
-              badgeIcon="build"
-              title="Servicios"
-              titleHighlight="Especializados"
-              subtitle="Pack de seguridad: Alineación + Balanceo + Parchado = $899 (ahorra 20%)"
-              align="center"
-            />
+            <ScrollReveal>
+              <SectionHeader
+                badge="Servicios"
+                badgeIcon="build"
+                title="Servicios"
+                titleHighlight="Especializados"
+                subtitle="Pack de seguridad: Alineación + Balanceo + Parchado = $899 (ahorra 20%)"
+                align="center"
+              />
+            </ScrollReveal>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-gutter">
               <ServiceCard
                 icon="straighten"

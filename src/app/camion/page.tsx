@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
 import TestimonialCard from "@/components/TestimonialCard";
 import ContactForm from "@/components/ContactForm";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
   title: "Llantas para Camión y Flotillas",
@@ -90,32 +91,34 @@ export default function CamionPage() {
         {/* ROI Banner */}
         <section className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 py-lg border-y border-primary/20">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-              <div>
-                <div className="font-headline text-[36px] font-bold text-primary">
-                  15%
+            <ScrollReveal>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div>
+                  <div className="font-headline text-[36px] font-bold text-primary">
+                    15%
+                  </div>
+                  <div className="text-label-sm font-label-bold uppercase tracking-wider text-on-surface-variant">
+                    Ahorro promedio en costos operativos
+                  </div>
                 </div>
-                <div className="text-label-sm font-label-bold uppercase tracking-wider text-on-surface-variant">
-                  Ahorro promedio en costos operativos
+                <div>
+                  <div className="font-headline text-[36px] font-bold text-primary">
+                    200+
+                  </div>
+                  <div className="text-label-sm font-label-bold uppercase tracking-wider text-on-surface-variant">
+                    Flotillas atendidas en el sureste
+                  </div>
+                </div>
+                <div>
+                  <div className="font-headline text-[36px] font-bold text-primary">
+                    &lt;2 hrs
+                  </div>
+                  <div className="text-label-sm font-label-bold uppercase tracking-wider text-on-surface-variant">
+                    Tiempo de respuesta en zona metropolitana
+                  </div>
                 </div>
               </div>
-              <div>
-                <div className="font-headline text-[36px] font-bold text-primary">
-                  200+
-                </div>
-                <div className="text-label-sm font-label-bold uppercase tracking-wider text-on-surface-variant">
-                  Flotillas atendidas en el sureste
-                </div>
-              </div>
-              <div>
-                <div className="font-headline text-[36px] font-bold text-primary">
-                  &lt;2 hrs
-                </div>
-                <div className="text-label-sm font-label-bold uppercase tracking-wider text-on-surface-variant">
-                  Tiempo de respuesta en zona metropolitana
-                </div>
-              </div>
-            </div>
+            </ScrollReveal>
           </div>
         </section>
 

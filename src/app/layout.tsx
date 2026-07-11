@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Montserrat, Hanken_Grotesk } from "next/font/google";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ExitPopup from "@/components/ExitPopup";
+import StickyCTA from "@/components/StickyCTA";
+import SocialProofToast from "@/components/SocialProofToast";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -113,6 +115,8 @@ export default function RootLayout({
         {children}
         <WhatsAppButton />
         <ExitPopup />
+        <StickyCTA />
+        <SocialProofToast />
       </body>
     </html>
   );
