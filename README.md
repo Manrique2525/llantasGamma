@@ -20,7 +20,13 @@ Sitio web de venta de llantas B2B diseñado para llanteras, talleres mecánicos,
 - **Urgency Banner**: Banner de stock dinámico que crea urgencia
 - **SEO Optimizado**: Schema.org, metadata por página, Open Graph
 - **Diseño Responsive**: Mobile-first, funciona en todos los dispositivos
-- **Componentes Reutilizables**: 7 componentes modulares
+- **Componentes Reutilizables**: 14 componentes modulares
+- **Scroll Reveal**: Animaciones de entrada al hacer scroll
+- **Animated Counters**: Contadores animados en estadísticas
+- **FAQ Interactivo**: Acordeón de preguntas frecuentes
+- **Image Lightbox**: Modal para ver imágenes de galería
+- **Sticky CTA (Móvil)**: Barra fija con WhatsApp y Cotizar
+- **Social Proof Toast**: Notificación de actividad reciente
 
 ## Instalación
 
@@ -72,7 +78,14 @@ llantasGamma/
 │       ├── UrgencyBanner.tsx  # Banner de urgencia dinámico
 │       ├── SectionHeader.tsx  # Encabezado de sección reutilizable
 │       ├── TestimonialCard.tsx # Tarjeta de testimonio
-│       └── ServiceCard.tsx    # Tarjeta de servicio
+│       ├── ServiceCard.tsx    # Tarjeta de servicio
+│       ├── ScrollReveal.tsx   # Animación de scroll
+│       ├── AnimatedCounter.tsx # Contador animado
+│       ├── StickyCTA.tsx      # CTA fijo en móvil
+│       ├── FAQAccordion.tsx   # Acordeón de preguntas frecuentes
+│       ├── ImageLightbox.tsx  # Modal de imágenes
+│       ├── SocialProofToast.tsx # Toast de prueba social
+│       └── Toast.tsx          # Sistema de notificaciones
 ├── .opencode/                 # Configuración de opencode
 ├── package.json
 ├── tsconfig.json
@@ -102,6 +115,27 @@ Tarjeta de testimonio con iniciales del cliente, empresa, rol, métrica de resul
 
 ### ServiceCard
 Tarjeta de servicio con icono, título, descripción, precio y CTA.
+
+### ScrollReveal
+Componente wrapper que agrega animaciones de entrada al hacer scroll. Soporta delay para animaciones escalonadas.
+
+### AnimatedCounter
+Contador animado que cuenta desde 0 hasta un valor objetivo. Se activa cuando el elemento es visible en el viewport.
+
+### StickyCTA
+Barra fija en la parte inferior del viewport en móvil. Muestra botones de WhatsApp y Cotizar. Se oculta al llegar al footer.
+
+### FAQAccordion
+Acordeón interactivo con preguntas frecuentes. Incluye 7 preguntas comunes sobre entrega, garantía, flotillas, marcas, instalación y pagos.
+
+### ImageLightbox
+Modal para ver imágenes de galería en tamaño completo. Soporta navegación con teclado (ESC, flechas) y contador de imágenes.
+
+### SocialProofToast
+Notificación toast que muestra actividad reciente de clientes. Aparece cada 25 segundos con datos de ubicación y acción.
+
+### Toast
+Sistema de notificaciones para feedback. Soporta tipos success, info y error.
 
 ## Segmentos de Mercado
 
