@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Hanken_Grotesk } from "next/font/google";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ExitPopup from "@/components/ExitPopup";
 import StickyCTA from "@/components/StickyCTA";
 import SocialProofToast from "@/components/SocialProofToast";
 import "./globals.css";
@@ -114,7 +113,6 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-background text-on-surface selection:bg-primary selection:text-on-primary overflow-x-hidden">
         {children}
         <WhatsAppButton />
-        <ExitPopup />
         <StickyCTA />
         <SocialProofToast />
       </body>
