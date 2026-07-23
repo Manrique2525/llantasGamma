@@ -55,7 +55,12 @@ export default function ImageLightbox({
   const image = images[currentIndex];
 
   return (
-    <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
+    <div
+      className="fixed inset-0 z-[200] flex items-center justify-center p-4"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Galería de imágenes"
+    >
       <div
         className="absolute inset-0 bg-black/90 backdrop-blur-sm"
         onClick={onClose}
@@ -107,7 +112,7 @@ export default function ImageLightbox({
             )}
           </div>
         )}
-        <div className="text-center mt-4 text-white/50 text-sm">
+        <div className="text-center mt-4 text-white/50 text-sm" aria-live="polite">
           {currentIndex + 1} / {images.length}
         </div>
       </div>

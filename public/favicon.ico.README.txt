@@ -1,0 +1,6 @@
+Coloca aqui tu favicon.ico
+
+Tamano recomendado: 32x32 o 16x16 pixeles
+Formato: ICO (compatible con todos los navegadores)
+
+El navegador busca este archivo automaticamente en /favicon.ico

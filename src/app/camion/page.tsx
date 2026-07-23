@@ -10,13 +10,16 @@ export const metadata = {
   title: "Llantas para Camión y Flotillas",
   description:
     "Programa de flotillas: ahorra 15% en costos operativos. 200+ flotillas atendidas. Soporte en ruta 24/7. Cotización corporativa gratis.",
+  alternates: {
+    canonical: "https://llantasgama.com/camion",
+  },
 };
 
 export default function CamionPage() {
   return (
     <>
       <Navbar />
-      <main className="pt-20">
+      <main id="main-content" tabIndex={-1} className="pt-20">
         {/* Hero */}
         <section className="relative min-h-[500px] lg:min-h-[819px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
@@ -76,7 +79,7 @@ export default function CamionPage() {
                   Solicitar Auditoría GRATIS
                 </Link>
                 <a
-                  href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20cotizaci%C3%B3n%20para%20mi%20flotilla"
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20necesito%20cotizaci%C3%B3n%20para%20mi%20flotilla`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ghost-border text-white px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:bg-surface-container transition-all text-center"
@@ -336,7 +339,7 @@ export default function CamionPage() {
                 name="Ing. Fernando López"
                 role="Gerente de Flotilla"
                 company="Grupo Logístico del Sur"
-                text="La auditoría inicial nos identificó 3 camiones con desgaste irregular. Con su programa de rotación,延长amos la vida útil 40%."
+                text="La auditoría inicial nos identificó 3 camiones con desgaste irregular. Con su programa de rotación, extendemos la vida útil 40%."
                 rating={5}
                 metric="+40%"
                 metricLabel="Vida útil extendida"

@@ -44,6 +44,7 @@ export default function SocialProofToast() {
 
   return (
     <div
+      aria-hidden="true"
       className={`fixed bottom-24 md:bottom-6 left-6 z-40 max-w-[300px] bg-surface-container border border-outline-variant p-4 shadow-xl transition-all duration-500 ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
       }`}

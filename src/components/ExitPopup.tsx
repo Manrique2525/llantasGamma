@@ -6,6 +6,12 @@ export default function ExitPopup() {
   const [show, setShow] = useState(false);
   const dismissedRef = useRef(false);
 
+  const handleDismiss = useCallback(() => {
+    setShow(false);
+    dismissedRef.current = true;
+    sessionStorage.setItem("exit-popup-seen", "true");
+  }, []);
+
   const handleMouseLeave = useCallback((e: MouseEvent) => {
     if (!dismissedRef.current && e.clientY <= 0) {
       setShow(true);
@@ -22,30 +28,49 @@ export default function ExitPopup() {
     return () => document.removeEventListener("mouseleave", handleMouseLeave);
   }, [handleMouseLeave]);
 
-  const handleDismiss = () => {
-    setShow(false);
-    dismissedRef.current = true;
-    sessionStorage.setItem("exit-popup-seen", "true");
-  };
+  const closeRef = useRef<HTMLButtonElement>(null);
 
-  const handleAccept = () => {
+  useEffect(() => {
+    if (show && closeRef.current) {
+      closeRef.current.focus();
+    }
+  }, [show]);
+
+  useEffect(() => {
+    if (!show) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") handleDismiss();
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [show, handleDismiss]);
+
+  const handleAccept = useCallback(() => {
     window.open(
-      "https://wa.me/5219933987711?text=Hola%2C%20vi%20la%20oferta%20en%20la%20p%C3%A1gina%20y%20me%20interesa%20un%2010%25%20de%20descuento",
+      `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=${encodeURIComponent("Hola, vi la oferta en la página y me interesa un 10% de descuento")}`,
       "_blank"
     );
     handleDismiss();
-  };
+  }, [handleDismiss]);
 
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+    <div
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Oferta especial de descuento"
+    >
       <div
         className="absolute inset-0 bg-black/70 backdrop-blur-sm"
         onClick={handleDismiss}
       />
       <div className="relative bg-surface-container border border-primary/30 shadow-2xl max-w-lg w-full animate-in fade-in zoom-in-95 duration-200">
         <button
+          ref={closeRef}
           onClick={handleDismiss}
           className="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface transition-colors z-10"
           aria-label="Cerrar"

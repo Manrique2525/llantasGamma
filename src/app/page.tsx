@@ -53,7 +53,7 @@ export default function HomePage() {
     <>
       <Navbar />
       <UrgencyBanner />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         {/* Hero Section */}
         <section className="relative min-h-[500px] lg:min-h-[870px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
@@ -134,7 +134,7 @@ export default function HomePage() {
                   Cotización Gratis
                 </Link>
                 <a
-                  href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20asesor%C3%ADa%20t%C3%A9cnica"
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20necesito%20asesor%C3%ADa%20t%C3%A9cnica`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border border-outline text-on-surface px-xl py-md font-label-bold text-label-bold tracking-label-bold font-weight-label-bold uppercase tracking-widest hover:bg-white hover:text-background transition-all active:scale-95 duration-200 text-center"
@@ -186,7 +186,7 @@ export default function HomePage() {
                 tag: "99.8% Uptime",
               },
             ].map((seg) => (
-              <a
+              <Link
                 key={seg.title}
                 href={seg.link}
                 className="metallic-edge bg-surface-container p-lg flex flex-col justify-between group hover:border-primary transition-all cursor-pointer"
@@ -217,7 +217,7 @@ export default function HomePage() {
                     arrow_forward
                   </span>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -619,7 +619,7 @@ export default function HomePage() {
                   icon: "chat",
                   title: "WhatsApp 24/7",
                   text: "+52 1 81 2345 6789",
-                  href: "https://wa.me/5219933987711",
+                  href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}`,
                 },
                 {
                   icon: "mail",

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import TireSearchForm from "@/components/TireSearchForm";
 import SectionHeader from "@/components/SectionHeader";
 import ServiceCard from "@/components/ServiceCard";
 import ContactForm from "@/components/ContactForm";
@@ -10,13 +11,16 @@ export const metadata = {
   title: "Llantas para Auto y Camioneta",
   description:
     "Llantas Michelin, Bridgestone, Continental desde $899. Instalación profesional incluida. Cotiza en 2 minutos. Entrega en 24-48 hrs.",
+  alternates: {
+    canonical: "https://llantasgama.com/auto",
+  },
 };
 
 export default function AutoPage() {
   return (
     <>
       <Navbar />
-      <main className="pt-20">
+      <main id="main-content" tabIndex={-1} className="pt-20">
         {/* Hero */}
         <section className="relative w-full min-h-[500px] lg:min-h-[716px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
@@ -77,7 +81,7 @@ export default function AutoPage() {
                   Cotizar Mi Par de Llantas
                 </Link>
                 <a
-                  href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20llantas%20para%20mi%20auto"
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20necesito%20llantas%20para%20mi%20auto`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ghost-border text-white px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:bg-surface-container transition-all text-center"
@@ -132,43 +136,15 @@ export default function AutoPage() {
                 <h3 className="font-headline text-headline-md font-weight-headline-md mb-md">
                   Buscador por Medida
                 </h3>
-                <form className="grid grid-cols-1 sm:grid-cols-4 gap-gutter">
-                  {[
+                <TireSearchForm
+                  fields={[
                     { label: "Ancho", placeholder: "205" },
                     { label: "Perfil", placeholder: "55" },
                     { label: "Rin", placeholder: "R16" },
-                  ].map((field) => (
-                    <div key={field.label}>
-                      <label className="block text-label-sm font-weight-label-sm font-label-sm text-on-surface-variant uppercase mb-2">
-                        {field.label}
-                      </label>
-                      <input
-                        className="w-full bg-surface border border-outline p-3 focus:border-primary focus:ring-0 text-on-surface mono-numbers"
-                        placeholder={field.placeholder}
-                        type="text"
-                      />
-                    </div>
-                  ))}
-                  <div className="flex items-end">
-                    <button
-                      type="button"
-                      className="w-full bg-primary-container text-on-primary py-3 font-label-bold uppercase hover:brightness-110 transition-all"
-                    >
-                      Buscar en Stock
-                    </button>
-                  </div>
-                </form>
-                <p className="text-label-sm text-on-surface-variant mt-4">
-                  ¿No encuentras tu medida?{" "}
-                  <a
-                    href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20una%20medida%20espec%C3%ADfica"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline"
-                  >
-                    Llámanos al 01-800-GAMA-99
-                  </a>
-                </p>
+                  ]}
+                  whatsappMessage="Hola, busco llantas para auto"
+                  fallbackLabel="No encuentras tu medida"
+                />
               </div>
               <div className="md:col-span-4 bg-surface-container-high ghost-border p-lg">
                 <h3 className="font-headline text-headline-md font-weight-headline-md mb-md">
@@ -322,9 +298,9 @@ export default function AutoPage() {
                       <p className="text-label-sm font-weight-label-sm font-label-sm text-on-surface-variant uppercase">
                         Línea Directa
                       </p>
-                      <p className="text-headline-md font-weight-headline-md mono-numbers">
-                        01-800-GAMA-99
-                      </p>
+                      <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "01800426299"}`} className="text-headline-md font-weight-headline-md mono-numbers hover:text-primary transition-colors">
+                        {process.env.NEXT_PUBLIC_PHONE_DISPLAY || "01-800-GAMA-99"}
+                      </a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4 p-4 ghost-border bg-surface-container-high">
@@ -336,7 +312,7 @@ export default function AutoPage() {
                         WhatsApp 24/7
                       </p>
                       <p className="text-headline-md font-weight-headline-md mono-numbers">
-                        +52 1 81 2345 6789
+                        {process.env.NEXT_PUBLIC_PHONE_DISPLAY || "01-800-GAMA-99"}
                       </p>
                     </div>
                   </div>

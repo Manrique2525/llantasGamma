@@ -10,13 +10,16 @@ export const metadata = {
   title: "Llantas Agrícolas - Tractores, Cosechadoras, Pulverizadoras",
   description:
     "250+ medidas agrícolas. Michelin AG, BKT, Firestone, Trelleborg. Servicio en campo. Entrega en 24 horas. Cotiza con especialista.",
+  alternates: {
+    canonical: "https://llantasgama.com/agricola",
+  },
 };
 
 export default function AgricolaPage() {
   return (
     <>
       <Navbar />
-      <main className="pt-20">
+      <main id="main-content" tabIndex={-1} className="pt-20">
         {/* Hero */}
         <section className="relative min-h-[500px] lg:min-h-[819px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
@@ -76,7 +79,7 @@ export default function AgricolaPage() {
                   Cotizar para Mi Temporada
                 </Link>
                 <a
-                  href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20llantas%20agr%C3%ADcolas"
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20necesito%20llantas%20agr%C3%ADcolas`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ghost-border text-white px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:bg-surface-container transition-all text-center"
@@ -270,7 +273,7 @@ export default function AgricolaPage() {
                 <p className="text-label-sm text-on-surface-variant mt-4">
                   ¿No encuentras tu medida?{" "}
                   <a
-                    href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20una%20medida%20agr%C3%ADcola%20espec%C3%ADfica"
+                    href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20necesito%20una%20medida%20agr%C3%ADcola%20espec%C3%ADfica`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:underline"
@@ -375,12 +378,13 @@ export default function AgricolaPage() {
                     {
                       icon: "location_on",
                       title: "Centro de Distribución Regional",
-                      text: "Sector Industrial Norte, Nave 42. CDMX.",
+                      text: "Av Universidad 494, El Recreo. Villahermosa, Tab.",
                     },
                     {
                       icon: "call",
                       title: "Línea Directa Agrícola",
                       text: "01-800-GAMA-AGRO",
+                      href: `tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "01800426299"}`,
                     },
                     {
                       icon: "mail",
@@ -396,7 +400,13 @@ export default function AgricolaPage() {
                       </div>
                       <div>
                         <h4 className="font-bold text-white">{item.title}</h4>
-                        <p className="text-on-surface-variant">{item.text}</p>
+                        {item.href ? (
+                          <a href={item.href} className="text-on-surface-variant hover:text-primary transition-colors">
+                            {item.text}
+                          </a>
+                        ) : (
+                          <p className="text-on-surface-variant">{item.text}</p>
+                        )}
                       </div>
                     </div>
                   ))}

@@ -3,6 +3,7 @@ import { Montserrat, Hanken_Grotesk } from "next/font/google";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import StickyCTA from "@/components/StickyCTA";
 import SocialProofToast from "@/components/SocialProofToast";
+import ExitPopup from "@/components/ExitPopup";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -18,6 +19,7 @@ const hankenGrotesk = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://llantasgama.com"),
   title: {
     default: "Llantas Gama | Distribuidor Oficial de 8 Marcas Premium",
     template: "%s | Llantas Gama",
@@ -39,12 +41,35 @@ export const metadata: Metadata = {
     "Tabasco",
     "distribuidor oficial",
   ],
+  alternates: {
+    canonical: "https://llantasgama.com",
+    languages: {
+      "es-MX": "https://llantasgama.com",
+    },
+  },
   openGraph: {
     title: "Llantas Gama | Distribuidor Oficial de 8 Marcas Premium",
     description:
       "25,000+ llantas en stock. Auto, camión, agrícola e industrial. Entrega en 24-48 hrs.",
+    url: "https://llantasgama.com",
+    siteName: "Llantas Gama",
     locale: "es_MX",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Llantas Gama - Distribuidor Oficial de llantas en Villahermosa",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Llantas Gama | Distribuidor Oficial de 8 Marcas Premium",
+    description:
+      "25,000+ llantas en stock. Auto, camión, agrícola e industrial. Entrega en 24-48 hrs.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -63,6 +88,7 @@ export default function RootLayout({
       className={`dark ${montserrat.variable} ${hankenGrotesk.variable} h-full antialiased`}
     >
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
@@ -111,10 +137,14 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-background text-on-surface selection:bg-primary selection:text-on-primary overflow-x-hidden">
+        <a href="#main-content" className="skip-link">
+          Saltar al contenido
+        </a>
         {children}
         <WhatsAppButton />
         <StickyCTA />
         <SocialProofToast />
+        <ExitPopup />
       </body>
     </html>
   );

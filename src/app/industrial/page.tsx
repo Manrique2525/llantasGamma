@@ -10,13 +10,16 @@ export const metadata = {
   title: "Llantas Industriales - Montacargas, Minería, Excavadoras",
   description:
     "99.8% uptime garantizado. Montacargas, excavadoras, minería OTR. Soporte técnico en <4 horas. Auditoría sin compromiso.",
+  alternates: {
+    canonical: "https://llantasgama.com/industrial",
+  },
 };
 
 export default function IndustrialPage() {
   return (
     <>
       <Navbar />
-      <main className="pt-20">
+      <main id="main-content" tabIndex={-1} className="pt-20">
         {/* Hero */}
         <section className="relative min-h-[500px] lg:min-h-[819px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0 overflow-hidden">
@@ -75,7 +78,7 @@ export default function IndustrialPage() {
                   Solicitar Auditoría GRATIS
                 </Link>
                 <a
-                  href="https://wa.me/5219933987711?text=Hola%2C%20necesito%20llantas%20industriales"
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20necesito%20llantas%20industriales`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ghost-border text-white px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:bg-surface-container transition-all text-center"
@@ -388,7 +391,7 @@ export default function IndustrialPage() {
                 name="Ing. Carlos Ruiz"
                 role="Director de Operaciones"
                 company="Minera del Carmen, S.A."
-                text="Sus llantas OTR Michelin duraron 40% más que las competidoras. El soporte en sitio es excepcional — siempre响应en en menos de 4 horas."
+                text="Sus llantas OTR Michelin duraron 40% más que las competidoras. El soporte en sitio es excepcional — siempre responden en menos de 4 horas."
                 rating={5}
                 metric="+40%"
                 metricLabel="Vida útil extendida"
@@ -438,9 +441,9 @@ export default function IndustrialPage() {
                       <p className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase font-label-bold">
                         Atención Inmediata
                       </p>
-                      <p className="font-label-bold text-lg mono-numbers">
-                        01-800-GAMA-IND
-                      </p>
+                      <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "01800426299"}`} className="font-label-bold text-lg mono-numbers hover:text-primary transition-colors">
+                        {process.env.NEXT_PUBLIC_PHONE_DISPLAY || "01-800-GAMA-IND"}
+                      </a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">

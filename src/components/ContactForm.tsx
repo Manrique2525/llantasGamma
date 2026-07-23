@@ -108,7 +108,7 @@ export default function ContactForm({
     e.preventDefault();
     setIsSubmitting(true);
 
-    const phone = "5219933987711";
+    const phone = process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711";
     let message = config.whatsappMessage;
 
     if (formData.name) {
@@ -177,7 +177,7 @@ export default function ContactForm({
       <h3 className="font-headline text-headline-md font-weight-headline-md mb-md">
         {config.title}
       </h3>
-      <form onSubmit={handleSubmit} className="space-y-sm">
+      <form onSubmit={handleSubmit} aria-label={config.title} className="space-y-sm">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-sm">
           <div>
             <label className="block text-label-sm font-weight-label-sm font-label-sm text-on-surface-variant uppercase mb-2">

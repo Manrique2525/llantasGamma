@@ -28,7 +28,7 @@ export default function StickyCTA() {
     <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-surface-container border-t border-outline-variant p-3 animate-in slide-in-from-bottom duration-300">
       <div className="flex gap-3">
         <a
-          href="https://wa.me/5219933987711?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20de%20llantas"
+          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20de%20llantas`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 font-label-bold uppercase tracking-wider text-sm"

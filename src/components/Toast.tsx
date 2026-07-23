@@ -40,6 +40,8 @@ export default function Toast({
 
   return (
     <div
+      role="status"
+      aria-live="polite"
       className={`fixed bottom-24 md:bottom-6 left-6 z-50 flex items-center gap-3 bg-surface-container border border-outline-variant p-4 shadow-xl transition-all duration-300 ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
       }`}
@@ -79,18 +81,5 @@ export function useToast() {
     setToasts((prev) => prev.filter((t) => t.id !== id));
   }, []);
 
-  const ToastContainer = () => (
-    <>
-      {toasts.map((toast) => (
-        <Toast
-          key={toast.id}
-          message={toast.message}
-          type={toast.type}
-          onClose={() => removeToast(toast.id)}
-        />
-      ))}
-    </>
-  );
-
-  return { addToast, ToastContainer };
+  return { addToast, toasts, removeToast };
 }

@@ -1,0 +1,8 @@
+Archivo necesario para OpenGraph y Twitter Cards.
+
+Tamano: 1200x630 pixeles
+Formato: PNG
+Contenido sugerido: Logo de Llantas Gama + texto "Distribuidor Oficial de 8 Marcas Premium" + numero de WhatsApp
+
+Este archivo ES REQERIDO por las redes sociales. Sin el, las previews de 
+Facebook, Twitter, LinkedIn, WhatsApp se veran vacias o sin imagen.

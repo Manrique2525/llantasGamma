@@ -5,9 +5,13 @@ export default function Footer() {
     <footer className="bg-surface-container-lowest border-t border-outline-variant">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-margin-mobile md:px-margin-desktop py-xl max-w-7xl mx-auto">
         <div className="space-y-4">
-          <div className="font-headline text-headline-md font-bold text-primary">
-            Llantas Gama
-          </div>
+          <img
+            src="/images/logo/logo-light-bg.jpeg"
+            alt="Llantas Gama"
+            className="h-12 w-auto"
+            width={160}
+            height={66}
+          />
           <p className="text-on-surface-variant text-body-md">
             Ingeniería de precisión y rendimiento para la industria moderna. 15 años de experiencia.
           </p>
@@ -21,13 +25,13 @@ export default function Footer() {
               <span className="material-symbols-outlined">public</span>
             </a>
             <a
-              href="mailto:ventas@llantasgama.com"
+              href={`mailto:${process.env.NEXT_PUBLIC_EMAIL || "ventas@llantasgama.com"}`}
               className="w-10 h-10 bg-surface-container flex items-center justify-center hover:text-primary transition-colors border border-outline-variant"
             >
               <span className="material-symbols-outlined">mail</span>
             </a>
             <a
-              href="https://wa.me/5219933987711"
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-surface-container flex items-center justify-center hover:text-primary transition-colors border border-outline-variant"
@@ -44,7 +48,11 @@ export default function Footer() {
           <ul className="space-y-2 text-on-surface-variant text-body-md">
             <li>Av Universidad 494, El Recreo</li>
             <li>86029 Villahermosa, Tab.</li>
-            <li>Tel: 01-800-GAMA-99</li>
+            <li>
+              <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "01800426299"}`} className="hover:text-primary transition-colors">
+                Tel: {process.env.NEXT_PUBLIC_PHONE_DISPLAY || "01-800-GAMA-99"}
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -93,20 +101,20 @@ export default function Footer() {
             Newsletter
           </h4>
           <p className="text-on-surface-variant text-label-sm">
-            Ofertas exclusivas y tips técnicos directo a tu email.
+            Ofertas exclusivas y tips técnicos directo a tu WhatsApp.
           </p>
-          <div className="flex border border-outline-variant">
-            <input
-              className="bg-transparent border-none focus:ring-0 text-on-surface p-2 w-full text-label-sm"
-              placeholder="Email"
-              type="email"
-            />
-            <button className="bg-primary-container text-on-primary px-4 py-2 hover:brightness-110">
-              <span className="material-symbols-outlined text-[18px]">
-                send
-              </span>
-            </button>
-          </div>
+          <a
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=${encodeURIComponent("Hola, quiero suscribirme al newsletter de ofertas y tips técnicos")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Suscribirse al newsletter por WhatsApp"
+            className="flex items-center justify-center gap-2 bg-primary-container text-on-primary px-4 py-3 hover:brightness-110 transition-all text-label-sm font-label-bold uppercase"
+          >
+            <span className="material-symbols-outlined text-[18px]">
+              chat
+            </span>
+            Suscribirme
+          </a>
         </div>
       </div>
 

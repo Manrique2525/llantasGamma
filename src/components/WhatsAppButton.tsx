@@ -8,7 +8,7 @@ interface WhatsAppButtonProps {
 }
 
 export default function WhatsAppButton({
-  phone = "5219933987711",
+  phone = process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711",
   message = "Hola, me interesa una cotización de llantas",
 }: WhatsAppButtonProps) {
   const [showTooltip, setShowTooltip] = useState(false);
