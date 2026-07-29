@@ -76,7 +76,7 @@ export default function AutoPage() {
               <div className="flex flex-col sm:flex-row gap-md mt-md">
                 <Link
                   href="/#contacto-auto"
-                  className="bg-primary text-on-primary px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold primary-glow transition-all hover:scale-105 active:scale-95 text-center"
+                  className="bg-primary text-on-primary px-xl py-4 text-label-bold font-weight-label-bold uppercase tracking-label-bold primary-glow transition-all hover:scale-105 active:scale-95 text-center"
                 >
                   Cotizar Mi Par de Llantas
                 </Link>
@@ -84,7 +84,7 @@ export default function AutoPage() {
                   href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20necesito%20llantas%20para%20mi%20auto`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ghost-border text-white px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:bg-surface-container transition-all text-center"
+                  className="ghost-border text-white px-xl py-4 text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all text-center"
                 >
                   Asesoría por WhatsApp
                 </a>

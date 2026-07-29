@@ -129,7 +129,7 @@ export default function HomePage() {
               <div className="flex flex-wrap gap-sm pt-xs">
                 <Link
                   href="/#contacto"
-                  className="bg-primary-container text-on-primary px-xl py-md font-label-bold text-label-bold tracking-label-bold font-weight-label-bold uppercase tracking-widest hover:brightness-110 transition-all active:scale-95 duration-200 text-center"
+                  className="bg-primary text-on-primary px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:brightness-110 transition-all active:scale-95 duration-200 text-center"
                 >
                   Cotización Gratis
                 </Link>
@@ -137,7 +137,7 @@ export default function HomePage() {
                   href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20necesito%20asesor%C3%ADa%20t%C3%A9cnica`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border border-outline text-on-surface px-xl py-md font-label-bold text-label-bold tracking-label-bold font-weight-label-bold uppercase tracking-widest hover:bg-white hover:text-background transition-all active:scale-95 duration-200 text-center"
+                  className="border border-outline text-on-surface px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all active:scale-95 duration-200 text-center"
                 >
                   Asesoría por WhatsApp
                 </a>

@@ -74,7 +74,7 @@ export default function CamionPage() {
               <div className="flex flex-col sm:flex-row gap-md mt-md">
                 <Link
                   href="/#contacto-camion"
-                  className="bg-primary text-on-primary px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold primary-glow transition-all hover:scale-105 active:scale-95 text-center"
+                  className="bg-primary text-on-primary px-xl py-4 text-label-bold font-weight-label-bold uppercase tracking-label-bold primary-glow transition-all hover:scale-105 active:scale-95 text-center"
                 >
                   Solicitar Auditoría GRATIS
                 </Link>
@@ -82,7 +82,7 @@ export default function CamionPage() {
                   href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20necesito%20cotizaci%C3%B3n%20para%20mi%20flotilla`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ghost-border text-white px-xl py-4 font-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:bg-surface-container transition-all text-center"
+                  className="ghost-border text-white px-xl py-4 text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all text-center"
                 >
                   WhatsApp Flotillas
                 </a>

@@ -28,7 +28,7 @@ export default function Navbar() {
           <img
             src="/images/logo/logo-light-bg.jpeg"
             alt="Llantas Gama"
-            className="h-10 w-auto"
+            className="h-14 w-auto"
             width={160}
             height={66}
           />
@@ -57,13 +57,13 @@ export default function Navbar() {
             href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20de%20llantas`}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-transparent border border-outline px-4 py-2 text-label-bold font-label-bold hover:bg-surface-variant transition-all active:scale-95"
+            className="bg-transparent border border-outline px-4 py-2 text-label-bold font-weight-label-bold hover:bg-surface-variant transition-all active:scale-95"
           >
             WhatsApp
           </a>
           <Link
             href="/#contacto"
-            className="bg-primary-container text-on-primary px-6 py-2 text-label-bold font-label-bold uppercase tracking-wider active:scale-95 transition-all text-center"
+            className="bg-primary-container text-on-primary px-6 py-2 text-label-bold font-weight-label-bold uppercase tracking-label-bold active:scale-95 transition-all text-center"
           >
             Cotizar
           </Link>
@@ -109,13 +109,13 @@ export default function Navbar() {
               href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20de%20llantas`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 text-center bg-transparent border border-outline px-4 py-3 text-label-bold font-label-bold hover:bg-surface-variant transition-all"
+              className="flex-1 text-center bg-transparent border border-outline px-4 py-3 text-label-bold font-weight-label-bold hover:bg-surface-variant transition-all"
             >
               WhatsApp
             </a>
             <Link
               href="/#contacto"
-              className="flex-1 bg-primary-container text-on-primary px-4 py-3 text-label-bold font-label-bold uppercase tracking-wider transition-all text-center"
+              className="flex-1 bg-primary-container text-on-primary px-4 py-3 text-label-bold font-weight-label-bold uppercase tracking-label-bold transition-all text-center"
             >
               Cotizar
             </Link>
