@@ -111,6 +111,7 @@
 /* === Base Styles === */
 html {
   scroll-behavior: smooth;
+  touch-action: pan-y pinch-zoom;
 }
 
 body {

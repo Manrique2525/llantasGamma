@@ -137,7 +137,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-background text-on-surface selection:bg-primary selection:text-on-primary overflow-x-hidden">
+      <body className="min-h-full flex flex-col bg-background text-on-surface selection:bg-primary selection:text-on-primary">
         <a href="#main-content" className="skip-link">
           Saltar al contenido
         </a>
