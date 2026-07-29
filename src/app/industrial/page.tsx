@@ -5,6 +5,7 @@ import SectionHeader from "@/components/SectionHeader";
 import TestimonialCard from "@/components/TestimonialCard";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
+import { PHONE } from "@/lib/constants";
 
 export const metadata = {
   title: "Llantas Industriales - Montacargas, Minería, Excavadoras",
@@ -47,7 +48,7 @@ export default function IndustrialPage() {
                 </strong>{" "}
                 Si no llegamos, 10% de descuento.
               </p>
-              <div className="flex flex-wrap gap-lg pt-sm">
+              <div className="flex flex-wrap gap-y-sm gap-x-lg pt-sm">
                 <div className="flex items-center gap-2">
                   <span
                     className="material-symbols-outlined text-primary text-[18px]"
@@ -55,7 +56,7 @@ export default function IndustrialPage() {
                   >
                     verified
                   </span>
-                  <span className="text-label-sm text-on-surface-variant">
+                  <span className="text-label-sm text-on-surface">
                     99.8% Uptime Garantizado
                   </span>
                 </div>
@@ -66,12 +67,34 @@ export default function IndustrialPage() {
                   >
                     schedule
                   </span>
-                  <span className="text-label-sm text-on-surface-variant">
+                  <span className="text-label-sm text-on-surface">
                     Respuesta en &lt;4 horas
                   </span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <span
+                    className="material-symbols-outlined text-primary text-[18px]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    verified
+                  </span>
+                  <span className="text-label-sm text-on-surface">
+                    Garantía de fábrica
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span
+                    className="material-symbols-outlined text-primary text-[18px]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    today
+                  </span>
+                  <span className="text-label-sm text-on-surface">
+                    Lun-Sáb 8:00-18:00
+                  </span>
+                </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-md mt-md">
+              <div className="flex items-center gap-sm mt-md">
                 <Link
                   href="/#contacto-industrial"
                   className="bg-primary text-on-primary px-xl py-4 text-label-bold font-weight-label-bold uppercase tracking-label-bold primary-glow transition-all hover:scale-105 active:scale-95 text-center"
@@ -79,12 +102,16 @@ export default function IndustrialPage() {
                   Solicitar Auditoría GRATIS
                 </Link>
                 <a
-                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20necesito%20llantas%20industriales`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ghost-border text-white px-xl py-4 text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all text-center"
+                  href={`tel:${PHONE.tel}`}
+                  className="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors text-label-sm"
                 >
-                  WhatsApp Industrial
+                  <span
+                    className="material-symbols-outlined text-[16px]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    call
+                  </span>
+                  {PHONE.display}
                 </a>
               </div>
             </div>

@@ -203,6 +203,8 @@ export default function ContactForm({
               placeholder="10 dígitos"
               type="tel"
               required
+              pattern="[0-9]{10}"
+              title="Ingresa 10 dígitos sin espacios ni guiones"
               value={formData.phone}
               onChange={handleChange}
             />

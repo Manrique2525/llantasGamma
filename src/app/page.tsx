@@ -12,6 +12,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import FAQAccordion from "@/components/FAQAccordion";
 import ImageLightbox from "@/components/ImageLightbox";
+import TireSearchForm from "@/components/TireSearchForm";
+import { PHONE } from "@/lib/constants";
 
 const galleryImages = [
   {
@@ -92,7 +94,7 @@ export default function HomePage() {
                   Cotización en menos de 10 minutos.
                 </strong>
               </p>
-              <div className="flex flex-wrap gap-lg pt-sm">
+              <div className="flex flex-wrap gap-y-sm gap-x-lg pt-sm">
                 <div className="flex items-center gap-2">
                   <span
                     className="material-symbols-outlined text-primary text-[18px]"
@@ -100,7 +102,7 @@ export default function HomePage() {
                   >
                     verified
                   </span>
-                  <span className="text-label-sm text-on-surface-variant">
+                  <span className="text-label-sm text-on-surface">
                     Distribuidor Oficial Certificado
                   </span>
                 </div>
@@ -111,8 +113,19 @@ export default function HomePage() {
                   >
                     group
                   </span>
-                  <span className="text-label-sm text-on-surface-variant">
+                  <span className="text-label-sm text-on-surface">
                     1,200+ Clientes Activos
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span
+                    className="material-symbols-outlined text-primary text-[18px]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    verified
+                  </span>
+                  <span className="text-label-sm text-on-surface">
+                    Garantía de fábrica
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -122,12 +135,22 @@ export default function HomePage() {
                   >
                     schedule
                   </span>
-                  <span className="text-label-sm text-on-surface-variant">
-                    Entrega en 24-48 hrs
+                  <span className="text-label-sm text-on-surface">
+                    Lun-Sáb 8:00-18:00
                   </span>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-sm pt-xs">
+              <div className="pt-sm">
+                <TireSearchForm
+                  fields={[
+                    { label: "Medida", placeholder: "Ej. 205/55R16" },
+                  ]}
+                  commonSizes={["205/55R16", "215/60R16", "225/45R17", "195/65R15", "175/65R14"]}
+                  whatsappMessage="Hola, necesito cotización para la medida:"
+                  fallbackLabel="¿No encuentras tu medida"
+                />
+              </div>
+              <div className="flex items-center gap-sm pt-xs">
                 <Link
                   href="/#contacto"
                   className="bg-primary text-on-primary px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:brightness-110 transition-all active:scale-95 duration-200 text-center"
@@ -135,12 +158,16 @@ export default function HomePage() {
                   Cotización Gratis
                 </Link>
                 <a
-                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20necesito%20asesor%C3%ADa%20t%C3%A9cnica`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-outline text-on-surface px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all active:scale-95 duration-200 text-center"
+                  href={`tel:${PHONE.tel}`}
+                  className="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors text-label-sm"
                 >
-                  Asesoría por WhatsApp
+                  <span
+                    className="material-symbols-outlined text-[16px]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    call
+                  </span>
+                  {PHONE.display}
                 </a>
               </div>
             </div>
