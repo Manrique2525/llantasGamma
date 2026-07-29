@@ -18,6 +18,11 @@ export default function CookieConsent() {
     setShow(false);
   };
 
+  const handleReject = () => {
+    localStorage.setItem("cookie-consent", "rejected");
+    setShow(false);
+  };
+
   if (!show) return null;
 
   return (
@@ -39,6 +44,12 @@ export default function CookieConsent() {
           </a>.
         </p>
         <div className="flex gap-sm flex-shrink-0">
+          <button
+            onClick={handleReject}
+            className="border border-outline text-on-surface px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all active:scale-95"
+          >
+            Rechazar
+          </button>
           <button
             onClick={handleAccept}
             className="bg-primary text-on-primary px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:brightness-110 transition-all active:scale-95"
