@@ -4,6 +4,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import StickyCTA from "@/components/StickyCTA";
 import SocialProofToast from "@/components/SocialProofToast";
 import ExitPopup from "@/components/ExitPopup";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -145,6 +146,7 @@ export default function RootLayout({
         <StickyCTA />
         <SocialProofToast />
         <ExitPopup />
+        <CookieConsent />
       </body>
     </html>
   );
