@@ -91,30 +91,49 @@ export default function IndustrialPage() {
         </section>
 
         {/* Response Time Banner */}
-        <section className="bg-surface-container-lowest py-sm border-y border-outline-variant">
-          <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex flex-wrap justify-between items-center gap-lg overflow-hidden whitespace-nowrap">
-            <div className="flex items-center gap-sm">
+        <section className="bg-surface-container-lowest py-sm border-y border-outline-variant overflow-hidden relative">
+          <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-surface-container-lowest to-transparent z-10" />
+          <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-surface-container-lowest to-transparent z-10" />
+          <div className="animate-marquee flex items-center gap-lg whitespace-nowrap">
+            {[
+              { text: "Tiempo de Respuesta:", type: "label" },
+              { text: "< 4 HORAS EN SITIO", type: "value" },
+              { text: "|", type: "sep" },
+              { text: "GARANTÍA: 10% DTO. SI NO LLEGAMOS", type: "muted" },
+              { text: "|", type: "sep" },
+              { text: "PRECISION", type: "muted italic" },
+              { text: "PERFORMANCE", type: "muted italic" },
+              { text: "RELIABILITY", type: "muted italic" },
+              { text: "|", type: "sep" },
+              { text: "Tiempo de Respuesta:", type: "label" },
+              { text: "< 4 HORAS EN SITIO", type: "value" },
+              { text: "|", type: "sep" },
+              { text: "GARANTÍA: 10% DTO. SI NO LLEGAMOS", type: "muted" },
+              { text: "|", type: "sep" },
+              { text: "PRECISION", type: "muted italic" },
+              { text: "PERFORMANCE", type: "muted italic" },
+              { text: "RELIABILITY", type: "muted italic" },
+            ].map((item, i) => (
               <span
-                className="material-symbols-outlined text-primary"
-                style={{ fontVariationSettings: "'FILL' 1" }}
+                key={i}
+                className={`whitespace-nowrap ${
+                  item.type === "label"
+                    ? "font-label-bold uppercase text-on-surface"
+                    : item.type === "value"
+                    ? "text-primary font-label-bold mono-numbers"
+                    : item.type === "muted"
+                    ? "text-label-sm text-on-surface-variant font-label-bold"
+                    : item.type === "muted italic"
+                    ? "font-label-bold italic text-on-surface-variant"
+                    : "text-on-surface-variant"
+                }`}
               >
-                timer
+                {item.text === "Tiempo de Respuesta:" && (
+                  <span className="material-symbols-outlined text-primary align-middle mr-1" style={{ fontVariationSettings: "'FILL' 1" }}>timer</span>
+                )}
+                {item.text}
               </span>
-              <span className="font-label-bold uppercase">
-                Tiempo de Respuesta:
-              </span>
-              <span className="text-primary font-label-bold mono-numbers">
-                &lt; 4 HORAS EN SITIO
-              </span>
-              <span className="text-label-sm text-on-surface-variant ml-2">
-                | GARANTÍA: 10% DTO. SI NO LLEGAMOS
-              </span>
-            </div>
-            <div className="hidden md:flex items-center gap-lg opacity-50">
-              <span className="font-label-bold italic">PRECISION</span>
-              <span className="font-label-bold italic">PERFORMANCE</span>
-              <span className="font-label-bold italic">RELIABILITY</span>
-            </div>
+            ))}
           </div>
         </section>
 
