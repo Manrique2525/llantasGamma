@@ -23,9 +23,9 @@ export default function WhatsAppButton({
   const url = buildWhatsAppUrl(message);
 
   return (
-    <div className="absolute bottom-6 right-6 z-50 flex flex-col items-end gap-3 md:fixed md:bottom-6 md:right-6 md:z-50">
+    <div className="self-end md:fixed md:bottom-6 md:right-6 md:z-50 flex flex-col items-end gap-3 mt-8 md:mt-0 px-mobile md:px-0 pb-4 md:pb-0">
       {showTooltip && (
-        <div className="bg-white text-gray-800 px-4 py-3 rounded-lg shadow-xl max-w-[260px] animate-in fade-in slide-in-from-bottom-2">
+        <div className="relative bg-white text-gray-800 px-4 py-3 rounded-lg shadow-xl max-w-[260px] animate-in fade-in slide-in-from-bottom-2">
           <p className="font-bold text-sm">¿Necesitas ayuda ahora?</p>
           <p className="text-xs text-gray-600 mt-1">
             Escríbenos por WhatsApp y te atendemos en menos de 5 minutos

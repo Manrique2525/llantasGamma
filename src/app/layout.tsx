@@ -141,7 +141,7 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">
           Saltar al contenido
         </a>
-        <div className="relative flex-1">
+        <div className="flex-1 flex flex-col">
           {children}
           <WhatsAppButton />
         </div>
