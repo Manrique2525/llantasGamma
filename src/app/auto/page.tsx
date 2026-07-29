@@ -37,8 +37,14 @@ export default function AutoPage() {
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop w-full py-xl">
             <div className="max-w-2xl">
-              <div className="inline-block px-3 py-1 bg-primary text-on-primary font-bold text-label-bold tracking-label-bold font-weight-label-bold mb-md tracking-widest">
-                AUTO / CAMIONETA
+              <div className="flex flex-wrap items-center gap-3 mb-md">
+                <div className="inline-block px-3 py-1 bg-primary text-on-primary text-label-bold tracking-label-bold font-weight-label-bold tracking-widest">
+                  AUTO / CAMIONETA
+                </div>
+                <div className="inline-flex items-center gap-1 px-3 py-1 bg-primary/10 border border-primary/30">
+                  <span className="material-symbols-outlined text-primary text-[16px]" style={{ fontVariationSettings: "'FILL' 1" }}>schedule</span>
+                  <span className="text-label-sm font-bold text-primary tracking-widest uppercase">Lun-Vie 8AM-5PM</span>
+                </div>
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-white mb-md leading-tight">
                 LLANTAS PARA TU AUTO{" "}
@@ -51,7 +57,7 @@ export default function AutoPage() {
                 </strong>{" "}
                 Cotiza en 2 minutos.
               </p>
-              <div className="flex flex-wrap gap-y-sm gap-x-lg pt-sm">
+              <div className="flex flex-wrap gap-lg pt-sm">
                 <div className="flex items-center gap-2">
                   <span
                     className="material-symbols-outlined text-primary text-[18px]"
@@ -59,8 +65,19 @@ export default function AutoPage() {
                   >
                     verified
                   </span>
-                  <span className="text-label-sm text-on-surface">
-                    Distribuidor Oficial Certificado
+                  <span className="text-label-sm text-on-surface-variant">
+                    Distribuidor Oficial
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span
+                    className="material-symbols-outlined text-primary text-[18px]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    verified
+                  </span>
+                  <span className="text-label-sm text-on-surface-variant">
+                    Garantía de fábrica
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -70,34 +87,12 @@ export default function AutoPage() {
                   >
                     local_shipping
                   </span>
-                  <span className="text-label-sm text-on-surface">
+                  <span className="text-label-sm text-on-surface-variant">
                     Entrega en 24-48 hrs
                   </span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span
-                    className="material-symbols-outlined text-primary text-[18px]"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    verified
-                  </span>
-                  <span className="text-label-sm text-on-surface">
-                    Garantía de fábrica
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span
-                    className="material-symbols-outlined text-primary text-[18px]"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    schedule
-                  </span>
-                  <span className="text-label-sm text-on-surface">
-                    Lun-Vie 8:00-17:00
-                  </span>
-                </div>
               </div>
-              <div className="flex items-center gap-sm mt-md">
+              <div className="flex flex-col sm:flex-row gap-md mt-md">
                 <Link
                   href="/#contacto-auto"
                   className="bg-primary text-on-primary px-xl py-4 text-label-bold font-weight-label-bold uppercase tracking-label-bold primary-glow transition-all hover:scale-105 active:scale-95 text-center"
@@ -106,14 +101,9 @@ export default function AutoPage() {
                 </Link>
                 <a
                   href={`tel:${PHONE.tel}`}
-                  className="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors text-label-sm"
+                  className="flex items-center justify-center gap-2 ghost-border text-white px-xl py-4 text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all text-center"
                 >
-                  <span
-                    className="material-symbols-outlined text-[16px]"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    call
-                  </span>
+                  <span className="material-symbols-outlined text-[20px]">call</span>
                   {PHONE.display}
                 </a>
               </div>

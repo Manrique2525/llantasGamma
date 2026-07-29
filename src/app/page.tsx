@@ -13,7 +13,7 @@ import AnimatedCounter from "@/components/AnimatedCounter";
 import FAQAccordion from "@/components/FAQAccordion";
 import ImageLightbox from "@/components/ImageLightbox";
 import TireSearchForm from "@/components/TireSearchForm";
-import { PHONE } from "@/lib/constants";
+import { PHONE, buildWhatsAppUrl } from "@/lib/constants";
 
 const galleryImages = [
   {
@@ -71,16 +71,29 @@ export default function HomePage() {
           </div>
           <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto w-full">
             <div className="max-w-2xl space-y-md">
-              <div className="inline-flex items-center gap-xs px-3 py-1 bg-surface-container border-l-4 border-primary">
-                <span
-                  className="material-symbols-outlined text-primary"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  precision_manufacturing
-                </span>
-                <span className="text-label-sm font-label-bold font-weight-label-sm tracking-widest uppercase">
-                  Distribuidor Oficial de 8 Marcas
-                </span>
+              <div className="flex flex-wrap items-center gap-3">
+                <div className="inline-flex items-center gap-xs px-3 py-1 bg-surface-container border-l-4 border-primary">
+                  <span
+                    className="material-symbols-outlined text-primary"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    precision_manufacturing
+                  </span>
+                  <span className="text-label-sm font-label-bold font-weight-label-sm tracking-widest uppercase">
+                    Distribuidor Oficial de 8 Marcas
+                  </span>
+                </div>
+                <div className="inline-flex items-center gap-xs px-3 py-1 bg-primary/10 border border-primary/30">
+                  <span
+                    className="material-symbols-outlined text-primary"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    schedule
+                  </span>
+                  <span className="text-label-sm font-bold font-weight-label-sm tracking-widest uppercase text-primary">
+                    Lun-Vie 8AM-5PM
+                  </span>
+                </div>
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-on-surface">
                 TU PROVEEDOR DE{" "}
@@ -94,7 +107,7 @@ export default function HomePage() {
                   Cotización en menos de 10 minutos.
                 </strong>
               </p>
-              <div className="flex flex-wrap gap-y-sm gap-x-lg pt-sm">
+              <div className="flex flex-wrap gap-lg pt-sm">
                 <div className="flex items-center gap-2">
                   <span
                     className="material-symbols-outlined text-primary text-[18px]"
@@ -102,7 +115,7 @@ export default function HomePage() {
                   >
                     verified
                   </span>
-                  <span className="text-label-sm text-on-surface">
+                  <span className="text-label-sm text-on-surface-variant">
                     Distribuidor Oficial Certificado
                   </span>
                 </div>
@@ -111,10 +124,10 @@ export default function HomePage() {
                     className="material-symbols-outlined text-primary text-[18px]"
                     style={{ fontVariationSettings: "'FILL' 1" }}
                   >
-                    group
+                    verified
                   </span>
-                  <span className="text-label-sm text-on-surface">
-                    1,200+ Clientes Activos
+                  <span className="text-label-sm text-on-surface-variant">
+                    Garantía de fábrica
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -124,62 +137,35 @@ export default function HomePage() {
                   >
                     local_shipping
                   </span>
-                  <span className="text-label-sm text-on-surface">
+                  <span className="text-label-sm text-on-surface-variant">
                     Entrega en 24-48 hrs
                   </span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span
-                    className="material-symbols-outlined text-primary text-[18px]"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    verified
-                  </span>
-                  <span className="text-label-sm text-on-surface">
-                    Garantía de fábrica
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span
-                    className="material-symbols-outlined text-primary text-[18px]"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    schedule
-                  </span>
-                  <span className="text-label-sm text-on-surface">
-                    Lun-Vie 8:00-17:00
-                  </span>
-                </div>
               </div>
-              <div className="pt-sm">
-                <TireSearchForm
-                  fields={[
-                    { label: "Medida", placeholder: "Ej. 205/55R16" },
-                  ]}
-                  commonSizes={["205/55R16", "215/60R16", "225/45R17", "195/65R15", "175/65R14"]}
-                  whatsappMessage="Hola, necesito cotización para la medida:"
-                  fallbackLabel="¿No encuentras tu medida"
-                />
-              </div>
-              <div className="flex items-center gap-sm pt-xs">
+              <div className="flex flex-col sm:flex-row gap-md pt-xs">
                 <Link
                   href="/#contacto"
-                  className="bg-primary text-on-primary px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:brightness-110 transition-all active:scale-95 duration-200 text-center"
+                  className="bg-primary text-on-primary px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold primary-glow hover:brightness-110 hover:scale-105 transition-all active:scale-95 duration-200 text-center"
                 >
                   Cotización Gratis
                 </Link>
                 <a
                   href={`tel:${PHONE.tel}`}
-                  className="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors text-label-sm"
+                  className="flex items-center justify-center gap-2 border border-outline text-on-surface px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all active:scale-95 duration-200 text-center"
                 >
-                  <span
-                    className="material-symbols-outlined text-[16px]"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    call
-                  </span>
+                  <span className="material-symbols-outlined text-[20px]">call</span>
                   {PHONE.display}
                 </a>
+              </div>
+              <div className="border-t border-outline-variant/30 pt-md">
+                <p className="text-label-sm text-on-surface-variant mb-3 uppercase tracking-widest font-bold">
+                  Busca tu medida:
+                </p>
+                <TireSearchForm
+                  fields={[{ label: "Medida", placeholder: "ej. 205/55R16" }]}
+                  whatsappMessage="Hola, me interesa una cotización de llantas"
+                  fallbackLabel="¿No encuentras tu medida"
+                />
               </div>
             </div>
           </div>
@@ -577,12 +563,12 @@ export default function HomePage() {
           <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-surface-container-highest to-transparent z-10" />
           <ScrollReveal>
             <div className="mb-4 text-center">
-              <span className="text-label-sm font-label-bold font-weight-label-sm uppercase tracking-widest text-on-surface">
+              <span className="text-label-sm font-label-bold font-weight-label-sm uppercase tracking-widest text-on-surface-variant">
                 Distribuidor Oficial Certificado de 8 Marcas Líderes Mundiales
               </span>
             </div>
           </ScrollReveal>
-          <div className="animate-marquee flex items-center gap-lg whitespace-nowrap">
+          <div className="animate-marquee flex items-center gap-lg whitespace-nowrap opacity-50 hover:opacity-100 transition-opacity">
             {[
               "Michelin",
               "Bridgestone",
@@ -603,7 +589,7 @@ export default function HomePage() {
             ].map((brand, i) => (
               <span
                 key={i}
-                className="font-headline text-headline-md uppercase tracking-[0.2em] font-extrabold text-on-surface"
+                className="font-headline text-headline-md uppercase tracking-[0.2em] font-extrabold text-on-surface-variant"
               >
                 {brand}
               </span>
@@ -658,7 +644,7 @@ export default function HomePage() {
                   icon: "chat",
                   title: "WhatsApp 24/7",
                   text: "+52 1 81 2345 6789",
-                  href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}`,
+                  href: buildWhatsAppUrl("Hola, me interesa una cotización de llantas"),
                 },
                 {
                   icon: "mail",

@@ -8,6 +8,12 @@ export const PHONE = {
 
 export const EMAIL = process.env.NEXT_PUBLIC_EMAIL || "ventas@llantasgama.com";
 
-export function waUrl(text: string): string {
-  return `https://wa.me/${PHONE.whatsapp}?text=${encodeURIComponent(text)}`;
+export const WHATSAPP_LINKS = {
+  cotizacion: `https://wa.me/${PHONE.whatsapp}?text=${encodeURIComponent("Hola, me interesa una cotización de llantas")}`,
+  oferta: `https://wa.me/${PHONE.whatsapp}?text=${encodeURIComponent("Hola, vi la oferta en la página y me interesa un 10% de descuento")}`,
+  newsletter: `https://wa.me/${PHONE.whatsapp}?text=${encodeURIComponent("Hola, quiero suscribirme al newsletter de ofertas y tips técnicos")}`,
+};
+
+export function buildWhatsAppUrl(message: string): string {
+  return `https://wa.me/${PHONE.whatsapp}?text=${encodeURIComponent(message)}`;
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { buildWhatsAppUrl } from "@/lib/constants";
 
 interface ContactFormProps {
   segment?: "general" | "auto" | "camion" | "agricola" | "industrial";
@@ -106,9 +107,15 @@ export default function ContactForm({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const phoneDigits = formData.phone.replace(/\D/g, "");
+    if (phoneDigits.length !== 10) {
+      alert("Ingresa un teléfono válido de 10 dígitos (ej. 9933987711)");
+      return;
+    }
+
     setIsSubmitting(true);
 
-    const phone = process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711";
     let message = config.whatsappMessage;
 
     if (formData.name) {
@@ -118,7 +125,7 @@ export default function ContactForm({
       message += `%0AEmpresa: ${encodeURIComponent(formData.company)}`;
     }
     if (formData.phone) {
-      message += `%0ATeléfono: ${encodeURIComponent(formData.phone)}`;
+      message += `%0ATeléfono: ${encodeURIComponent(phoneDigits)}`;
     }
     if (formData.email) {
       message += `%0AEmail: ${encodeURIComponent(formData.email)}`;
@@ -130,6 +137,7 @@ export default function ContactForm({
       message += `%0AMensaje: ${encodeURIComponent(formData.message)}`;
     }
 
+    const phone = process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711";
     const url = `https://wa.me/${phone}?text=${message}`;
 
     setTimeout(() => {
@@ -200,13 +208,18 @@ export default function ContactForm({
             <input
               name="phone"
               className="w-full bg-surface border border-outline p-3 focus:border-primary focus:ring-0 text-on-surface mono-numbers transition-colors"
-              placeholder="10 dígitos"
+              placeholder="9933987711"
               type="tel"
+              inputMode="numeric"
               required
               pattern="[0-9]{10}"
-              title="Ingresa 10 dígitos sin espacios ni guiones"
+              title="Ingresa 10 dígitos (ej. 9933987711)"
+              maxLength={10}
               value={formData.phone}
-              onChange={handleChange}
+              onChange={(e) => {
+                const val = e.target.value.replace(/\D/g, "").slice(0, 10);
+                setFormData({ ...formData, phone: val });
+              }}
             />
           </div>
         </div>

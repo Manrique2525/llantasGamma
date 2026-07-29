@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { buildWhatsAppUrl } from "@/lib/constants";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -54,7 +55,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-sm">
           <a
-            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20de%20llantas`}
+            href={buildWhatsAppUrl("Hola, me interesa una cotización de llantas")}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-transparent border border-outline px-4 py-2 text-label-bold font-weight-label-bold hover:bg-surface-variant transition-all active:scale-95"
@@ -106,7 +107,7 @@ export default function Navbar() {
           ))}
           <div className="flex gap-sm pt-3">
             <a
-              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20de%20llantas`}
+              href={buildWhatsAppUrl("Hola, me interesa una cotización de llantas")}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 text-center bg-transparent border border-outline px-4 py-3 text-label-bold font-weight-label-bold hover:bg-surface-variant transition-all"

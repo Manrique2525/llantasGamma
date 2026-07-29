@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { buildWhatsAppUrl } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -31,7 +32,7 @@ export default function Footer() {
               <span className="material-symbols-outlined">mail</span>
             </a>
             <a
-              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}`}
+              href={buildWhatsAppUrl("Hola, me interesa una cotización de llantas")}
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-surface-container flex items-center justify-center hover:text-primary transition-colors border border-outline-variant"
@@ -104,7 +105,7 @@ export default function Footer() {
             Ofertas exclusivas y tips técnicos directo a tu WhatsApp.
           </p>
           <a
-            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=${encodeURIComponent("Hola, quiero suscribirme al newsletter de ofertas y tips técnicos")}`}
+            href={buildWhatsAppUrl("Hola, quiero suscribirme al newsletter de ofertas y tips técnicos")}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Suscribirse al newsletter por WhatsApp"

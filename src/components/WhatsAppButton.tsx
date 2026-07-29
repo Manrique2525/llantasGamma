@@ -1,14 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { buildWhatsAppUrl } from "@/lib/constants";
 
 interface WhatsAppButtonProps {
-  phone?: string;
   message?: string;
 }
 
 export default function WhatsAppButton({
-  phone = process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711",
   message = "Hola, me interesa una cotización de llantas",
 }: WhatsAppButtonProps) {
   const [showTooltip, setShowTooltip] = useState(false);
@@ -21,7 +20,7 @@ export default function WhatsAppButton({
 
   if (!isVisible) return null;
 
-  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  const url = buildWhatsAppUrl(message);
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { buildWhatsAppUrl } from "@/lib/constants";
 
 interface TireSearchFormProps {
   fields: { label: string; placeholder: string }[];
@@ -23,7 +24,6 @@ export default function TireSearchForm({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const phone = process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711";
     const filled = fields
       .filter((f) => values[f.label])
       .map((f) => `${f.label}: ${values[f.label]}`)
@@ -31,10 +31,7 @@ export default function TireSearchForm({
     const msg = filled
       ? `${whatsappMessage} — Medida: ${filled}`
       : whatsappMessage;
-    window.open(
-      `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`,
-      "_blank"
-    );
+    window.open(buildWhatsAppUrl(msg), "_blank");
   };
 
   return (
@@ -69,28 +66,24 @@ export default function TireSearchForm({
             Medidas comunes:
           </p>
           <div className="flex flex-wrap gap-2">
-            {commonSizes.map((size) => {
-              const phone =
-                process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711";
-              return (
-                <a
-                  key={size}
-                  href={`https://wa.me/${phone}?text=${encodeURIComponent(`${whatsappMessage} — Medida: ${size}`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-label-sm font-label-bold mono-numbers text-primary border border-primary/30 px-3 py-1 hover:bg-primary/10 transition-colors"
-                >
-                  {size}
-                </a>
-              );
-            })}
+            {commonSizes.map((size) => (
+              <a
+                key={size}
+                href={buildWhatsAppUrl(`${whatsappMessage} — Medida: ${size}`)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-label-sm font-label-bold mono-numbers text-primary border border-primary/30 px-3 py-1 hover:bg-primary/10 transition-colors"
+              >
+                {size}
+              </a>
+            ))}
           </div>
         </div>
       )}
       <p className="text-label-sm text-on-surface-variant mt-4">
         ¿{fallbackLabel}?{" "}
         <a
-          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=${encodeURIComponent(whatsappMessage)}`}
+          href={buildWhatsAppUrl(whatsappMessage)}
           target="_blank"
           rel="noopener noreferrer"
           className="text-primary hover:underline"

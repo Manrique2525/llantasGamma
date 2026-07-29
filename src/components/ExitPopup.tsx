@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
+import { buildWhatsAppUrl } from "@/lib/constants";
 
 export default function ExitPopup() {
   const [show, setShow] = useState(false);
@@ -48,10 +49,7 @@ export default function ExitPopup() {
   }, [show, handleDismiss]);
 
   const handleAccept = useCallback(() => {
-    window.open(
-      `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711"}?text=${encodeURIComponent("Hola, vi la oferta en la página y me interesa un 10% de descuento")}`,
-      "_blank"
-    );
+    window.open(buildWhatsAppUrl("Hola, vi la oferta en la página y me interesa un 10% de descuento"), "_blank");
     handleDismiss();
   }, [handleDismiss]);
 
