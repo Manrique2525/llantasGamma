@@ -43,16 +43,16 @@ export default function CookieConsent() {
             Política de Privacidad
           </a>.
         </p>
-        <div className="flex gap-md w-full md:w-auto">
+        <div className="flex flex-col-reverse md:flex-row gap-sm w-full md:w-auto">
           <button
             onClick={handleReject}
-            className="flex-1 md:flex-none border border-outline text-on-surface px-lg py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all active:scale-95"
+            className="w-full md:w-auto border border-outline text-on-surface px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all active:scale-95"
           >
             Rechazar
           </button>
           <button
             onClick={handleAccept}
-            className="flex-1 md:flex-none bg-primary text-on-primary px-lg py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:brightness-110 transition-all active:scale-95"
+            className="w-full md:w-auto bg-primary text-on-primary px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:brightness-110 transition-all active:scale-95"
           >
             Aceptar
           </button>
