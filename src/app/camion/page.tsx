@@ -27,7 +27,7 @@ export default function CamionPage() {
               className="w-full h-full bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmY5xLvEDpHW-9Dy2lQpUChWvyQiHxOnNlYAkHdy1OAXZOeCvuOCvoJYkQLsUc8rxVQvUyR-W1AxVPJGrZ3yXDkxOCtolGNMn8LgvJ8K_j9PmO4P6V2xMqEgLty7vEEFQWz2fdo_OGnwVkOpZWmrEn2FAavAKYVpWdJ8OZdY24vOBPZuBQUNCCM5dXPFDf3c-u_YOmlGYOU35dFZcT27iwj3Zl1WLuQj-OxuVLlfaduoI3dAWA_UcRz8YV_ETFgucvIxr70ajZ98M')",
+                  "url('/images/camion-hero.jpg')",
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
@@ -238,7 +238,7 @@ export default function CamionPage() {
                   className="aspect-video w-full bg-cover bg-center ghost-border"
                   style={{
                     backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCw2dyB6w2zs4aBa_AanrXhqiXf9jLfS6a2d1bH2lRgFgRH8qzNs1sKiHStWI7ZdCJfzoRljTSeR6frsDjRpQPET8Lbej14OMUa2xQbo4WUx_BnlBDiWcqWyzgxwkjFPVBpN1_zXkO0ToOeY5EkLU3s4LAvsTgWGaBRW-ymFvsiqLtU-56-LEdo7rqKXBtkoTj6a6DJ9FRPxmbCkAiN_-vBUTRiicAJ6xW1XnZlxtF-W9pyoruqciEBQgg_CuGre9TgkVvE4mgOU3U')",
+                      "url('/images/camion-fleet.jpg')",
                   }}
                 />
                 <div className="absolute bottom-4 right-4 bg-primary text-on-primary p-4 ghost-border">
@@ -372,22 +372,22 @@ export default function CamionPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
               {[
                 {
-                  src: "https://lh3.googleusercontent.com/aida-public/AB6AXuATQ3xnNcTRAMk1WRA80bARpCusQIcV8pcer8SnBLnlcdZs7UQ5kGX9felvD_qAF3r79HzDA0k_Qw3LfEF2fuDNt7jT7oqd1XcbjGSRgzeUdNFJUKzoferV3ZKaJmK3HIWSdf_Ymm_XpV1hBxOxIdbWeFni3_8GaaDyiEkUV_sb5FImD59OwTZXUj8qDRHrPyK3S2QvyMn8pJqZqd8tBvsywxnz9tRunrDQw2n9lVJS9mtnx48okCzOavAhIbt-pELewlu7eEgmqPU",
+                  src: "/images/camion-service-1.jpg",
                   label: "Montaje de Llantas",
                   desc: "Equipo especializado",
                 },
                 {
-                  src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB_Udt5yzb7x1qCr2LLANWrlyJSZ7W00-L4PawjjQXC6x-Qg5DbujMiWTpniwXYQVVL2kuxTmvg56KBbXGW95E4JocXngUR3vw2cpDQtMF4ENuHAO8UutiquX7YP6GjENrSEgbHXvceFn5jbNozoW3a0jter8wn-GkWe4bEdkIADClcT6K6REhICJiYz6V5o3Q6yuFStdIjCvNpXy-uz0U9EXioR05wQoY9D9YQQwybbACYGqieTAmM2kDWjr8wE3KshaW8BYtSUSI",
+                  src: "/images/camion-service-2.jpg",
                   label: "Alineación 3D",
                   desc: "Precisión láser",
                 },
                 {
-                  src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBhyHi9KYeIGeX5QHLu290ewGIQz7nTgJv-Kh2QWXsiAjdLHPRLdujomKPkgEyl3duSxS3Ys0ojGLAPb_dF4TmpquwxiCGhNS8utBoJ_il180CVRJqAGHJPm5ud-rAEM9ysdWS41xKuoQDp3_8jHBSY1XW4JXcRfO9hCdtMoj_kC-yCFAVQp1cjuCSzVFVRUpVdRvoNZ0v82cbf4QVZE5J3bbuYxpj8UprhI9Ncm5lzH13TGdfCFR4synuYIXfJXJJoO3FZJUKLguU",
+                  src: "/images/camion-service-3.jpg",
                   label: "Balanceado",
                   desc: "Conducción suave",
                 },
                 {
-                  src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDK2meZBOs191QEFmmIwUKdJldhaaa1zsVeRmUrqc7K8d_7MW4P3wq-xu4RTQeWsVi7Pd94cCiOTy_uCmDGHF55Gg-rUOHsriD7SbGOgmIjZ8fqvTNfkVeY4bqDcqWWXvo96tAT5NQhhHeoQNoPJLfZGZuUBOsAm5ihBEOhVgz3kwBTFfoaMsSxgLB58-Z_yUDunmTt8c0SRJn3s57ID_UqH8iIIFo4zDDxWglEzjKZixuFoknqJvrer5v5f1rhsOionB_0KJ_6uaU",
+                  src: "/images/camion-service-4.jpg",
                   label: "Inflado Precisión",
                   desc: "PSI calibrado",
                 },

@@ -28,7 +28,7 @@ export default function AutoPage() {
               className="w-full h-full bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCD9czaz_dqHtWIMWWEOwZZFt3Iuo4W8XFW9S6sn6owQnOiFkk-Vuau_GNI-_ZCfH89I0i8z4fg9gMoyegbCYSX-GuEQSga3b1dJwdft0yj2WeUWpOMOlms3EtA7zqbZQvIxmdPZLER8s-bOr2StPonNZ4cSiMCrJ77F0DKsZuuRe2NTJWvXiXxLHl7CiAzg-FwwPc1dywy3mizA5QEpEsCul6VX75vyeVfcmdHUwo5NgldG7Z6LpkzZEln31Gtq9VKT9B5PSQqts')",
+                  "url('/images/auto-hero.jpg')",
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />

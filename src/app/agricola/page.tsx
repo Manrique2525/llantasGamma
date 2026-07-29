@@ -27,7 +27,7 @@ export default function AgricolaPage() {
               className="w-full h-full bg-cover bg-center opacity-40"
               style={{
                 backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCybZWgBjltZfyt0_RAbFXcslf4sqmW9V_U1Hbi_AF8ISZKfYnzdoqQCFEakr3LpUAsfp4kZBsY-NPz9--k6S8dB6dpnByiz0TnEHJa-n3ghmvQHL_z-CvMUGobTRfCSoiH4Ktu24YUupKSQczDFDbZUotMR3Ai5OuumLB1ncBt_12LuiH8yCHB3ZhcuF-fIBTx-tp07tQpf_uJLZ6oLYCRoAzIrbSNTY8guh4Pf7as5BWS5GCW0c6OcivqxKuTT299t2_TPMgo-08')",
+                  "url('/images/agricola-hero.jpg')",
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
@@ -126,7 +126,7 @@ export default function AgricolaPage() {
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                   style={{
                     backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHJwV7Kb1mllKxXzNY7SB27WtySxgX2gLSoyqGHbXLWa0oAMybe0sFrYwIBiz_PAdxyltMFHbjvfTgnTPQEqrBo-Cc_GUOCnLDmam02gqJ0wLONeogMOGpV_ud5J54Qf2au4Sfw5A7K3h0rWPw7uBwXofjdMowYUH69am_lwGOnQeY8v32p-JiZwN5AEon96L9YyEPeYT1qPnirc6zIHmd1_F2WMAoDGAhSup6IcrG7UIHATLG1leurn5-hn8JewSKYo_lrOlvvUo')",
+                      "url('/images/agricola-bento-1.jpg')",
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
@@ -148,7 +148,7 @@ export default function AgricolaPage() {
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                   style={{
                     backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4PYj2qa-xD1b4Tl69BwN-8bWnxN4DUf_ApAsfPAcu_3X22M3tVSkiPkF1b2AVO21RpD-AKT3qSpjK4aSWdqPdERf0itnYMIxh1Lvyrol6Qg3MTtBz4B45DPmIoQqFFjYO4XKQywABqqVdQLcOin3ITzpHuuz1NpoMBfoX27b1YShG8_vKlY_CjpFhNgXkWtO1CAd9LrfhdRX5teXKy-xAZVMKkCdfUp2tDt0TtAgRIixhzuABhZwqWLNuJGl2nRhZkYF8rjvVfh4')",
+                      "url('/images/agricola-bento-2.jpg')",
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
@@ -169,7 +169,7 @@ export default function AgricolaPage() {
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                   style={{
                     backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAplBBvNOID77hI_yLpYrMcJyfvnZWCRkGtB1O-hNS25xm79fNQFRX2WB7T7WPbdCtdhLZ1UcGVkQEn71hfFLsT52jjvIgAUACf-ztGg4y2571XiSsKS_yX-b-KzmMStfyxlGnXTlEgu4yaNtZLfFXLxp-IWuBKLtZY1Ddz77JhunL0xMk4T5roOhK1ZlJH7cXonb9B1ne_dPjaEaTHuEHcBseTBnzuNn7MCPuknDDCsaXawuBCXJObDIK5d2yQJiHKcyz3YLUAJU0')",
+                      "url('/images/agricola-bento-3.jpg')",
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />

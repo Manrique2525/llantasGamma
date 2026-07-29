@@ -15,25 +15,25 @@ import ImageLightbox from "@/components/ImageLightbox";
 
 const galleryImages = [
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDwf97d3xYB_v4xhZaPzwJA0SB3mQmzz2IptS0ygumaNDGU-Fc9Q2g7KI5pTPxy30qriXqVq8GiySS1y4oCqLf1FPTdbB-4D6ly70b7oDYfNP3873RPeKC4yOlgsK3qvKuK8rc7HjV_C3zITBwFs_i_aNgxLjFSta4DMKca9qpb3fB9OzgDuXSTRJvf3KLQBpjAUnYjhZFOgskWDPYmXYZW_5RGntHjLjzDhm6ZOzZ9UdQDQ8V85rBpCVtQoOtnob-4EHnUe4l1l3g",
+    src: "/images/homepage-gallery-1.jpg",
     alt: "Servicio pesado - Montaje de llantas mineras",
     label: "Servicio Pesado",
     desc: "Montaje de llantas mineras - Equipo especializado",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCa6cyYk3Tf0L3zqAaX3pYkXhiLqGjJyBsauq0WlAhUhBT2cybamNzFQhHk2G4RybayBhLKsmjEO0n3-IM9owKPyteZCOCDqTtWj7Bg6CCww48evlm6J9FiCcWhc9RLzu7R4JlPIm9S9qE3rDE96Hp3wEFneOq_okLRSkDCVTwtKBctFrzr_maxMhavOjV9701odSRrIfNae0KyWnyfWNcjoqFHBSEOhG3M2b4acwqipCnv6wfbS2n-7TOhtMqSL669NT24smP8OcY",
+    src: "/images/homepage-gallery-2.jpg",
     alt: "Inflado de precisión",
     label: "Inflado Precisión",
     desc: "Presión calibrada al PSI exacto",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCno7QeiwUOpGIYyGJUYWn7pmD1uWJJPUilqdoA3JfQsGV-kbQZgsqpHF9IwubNvm9aEASBsf0eucIyv_Haa6fvljN00qiXGOC2z-kKaLAplqUSbbNVU2RcIojU-2bsmg_z02W6laCrRkKg5xfFbdjWwvJ9Lk0JjcugoPdEBZXQf-ZsOzU-DOCJ-eZW5cUFFcawqulE4XO480FFcaZDO8cypdhnsPaXZs28gVAHzOMhdV5JCaa95c0aS1pRQxAwmbgt4r9H7flRozg",
+    src: "/images/homepage-gallery-3.jpg",
     alt: "Alineación 3D láser",
     label: "Alineación 3D",
     desc: "Precisión láser milimétrica",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB6xqiWWzSu0ukHfL1lG1E5OnBwGRWNtXvPDA-mJAFKJ4w2WPO0TlpUV_MnpHep4r6Vk_-rIpZezOOcgSA7_fBZAfgQa-CegA2wM_Q6fUybQt0_tQThJNHnG2zFkZvDItpwWTqpkO3VVrSu73-FGh7cajCHiZk1FE8exnpft8gFZWD7aYO1fvh3nGklTMJxWSVFlW0iaIhq_YwaIc6YTX1qR9YizYqRZ7uT54rwPmUOU0ByGwX-vkkcsb2IbXD22KTCjz81AIwBqZk",
+    src: "/images/homepage-gallery-4.jpg",
     alt: "Balanceado industrial",
     label: "Balanceado Industrial",
     desc: "50,000+ llantas montadas este año",
@@ -61,7 +61,7 @@ export default function HomePage() {
               className="w-full h-full bg-cover bg-center brightness-50"
               style={{
                 backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQZJoITvOo5LSd2xMHbznTyWsHxn0leu8eJ82OMh1W9j0LfIUJZb57IXnR-boVSMh2fI-bt_oNtL5NmR0AvWMG6JcVQ0P9jOYi9SRi0t-s8CanbfPtIi3yi193mhh-rO-zp974BRJqALIwkj1FPrf9gY5dIyjWhbw0L2PbS-MzEo_Sz-Mz_dScFl9CNBPKaWJSJMT0XE9ygVCEf6YoTRMaTquFetd9k6T9HCGprgiZKGywzK8jAmYlP20fc2UL6JL2FHs2JIMtPZM')",
+                  "url('/images/homepage-hero.jpg')",
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />

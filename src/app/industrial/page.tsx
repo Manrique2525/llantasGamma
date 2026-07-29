@@ -26,8 +26,8 @@ export default function IndustrialPage() {
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10" />
             <img
               className="w-full h-full object-cover grayscale brightness-50"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw9TxZ3uxmUFXZxfOuLYkYYXOKWQDZSMMFqBG8myw8hUVaTSIhmSL0PuK4QUdQYb60hiMFru8ZODdpMMRDzFi5gqi4COo39yI0bL1K6ZZYjGzHwCZxTbfmavG35pXmiktfYDv45kGw_UJKLojnN3V8BnJpiSyWEdcqh2qvyOhR02KRv7XZ_0K524dSAYEGHZi4K3_PH3Ei8fHoedc7Ws_UE6etPjv5_lFVFnmI-LW8Oz8Du-mebMXjb6rEQ57jR6LDdM7HRQLmGfE"
-              alt="Industrial machinery"
+              src="/images/industrial-hero.jpg"
+              alt="Maquinaria industrial pesada en operación"
             />
           </div>
           <div className="relative z-20 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop w-full py-xl">
@@ -162,8 +162,8 @@ export default function IndustrialPage() {
               </div>
               <img
                 className="absolute right-0 bottom-0 w-2/3 h-full object-cover object-left-bottom opacity-40 group-hover:scale-105 transition-transform duration-700"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs-q7IvdMUjnaGI69ZTUA1Fo7faykMQ_aVjmey2xZgDaNFZJn3GDeQsuy7U4E1YxrhuUKYElGfi60EPGW3-PG_8GOxc7S-vBH9oXdRy0VqbQTNV6ykNAWILuHbYyGrdLtL1tYAT_O9ZWpQj7TT5uqHijkFMB9yKGCWtlmwTcnn4IjX59HWu5R3NG1C3kRej9HG86oMv0ZmazujewHdyPqlrIK8DB5OzmbdtvL3EqAdq2WKZhu5PcgwbgrOz2jNZDpPHTts7PgDNk4"
-                alt="Montacargas"
+                src="/images/industrial-forklift.jpg"
+                alt="Montacargas eléctrico en almacén industrial"
               />
               <button className="z-10 w-fit text-primary font-label-bold flex items-center gap-xs group-hover:translate-x-2 transition-transform">
                 Explorar Catálogo Montacargas{" "}
@@ -193,8 +193,8 @@ export default function IndustrialPage() {
               <div className="absolute inset-0 z-0">
                 <img
                   className="w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs_1eQLT9cwXptLLLGFQrFcgxeT8cj2xAZMyYjfNxjwgiOPeX0CdKF64e1Cd5TCvm1kZ6idcv3vtfLR_i_QTCudndPFc6px0Fgo_oacyLi_Plmph5raXQs0ehaI85ks2WROkSnZkMv0NxAMk1G40B7N25YKRGkk6x9NknWjoF9YrLaV-GrFMvZTpi9gWYZFMtgU-Cn-Sawu51Oa8Z777sxbGMlyAWa5OVMw9lwbinNYafSK4hz-8PHeCqk0N4a5yXGHj1EBUrq0gg"
-                  alt="Maquinaria pesada"
+                  src="/images/industrial-heavy.jpg"
+                  alt="Excavadora de maquinaria pesada en obra de construcción"
                 />
               </div>
             </div>
@@ -228,8 +228,8 @@ export default function IndustrialPage() {
               <div className="absolute inset-0 z-0">
                 <img
                   className="w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsrHFVG0gb5XYo3Ix4UAU5-wnAkDqiCEobLqpxwOFZFqNr8rMHX6BUZAwmE9zVQqyR_eShJjajZHOfaho0NTcONQ5ZoR9G2ePva8hUWjnrQ_-dbUTla1Z6ivUf5prQ3lSYMJHKAnvCnWdgEPOH1JuvRiRlQLuibZZJ-kkR9gG7__ywQKN9h6zibWIaCE8dAZ-s565wZdSL6UfYWfyqprDxriY5wseryxxswggBIht-h1q_r9PxIigmfqDDlAIvEoRMrrRMh1QAtQA"
-                  alt="Minería OTR"
+                  src="/images/industrial-mining.jpg"
+                  alt="Bulldozer minero en operación de cantera"
                 />
               </div>
             </div>
