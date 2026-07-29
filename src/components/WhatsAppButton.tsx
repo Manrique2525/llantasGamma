@@ -23,7 +23,7 @@ export default function WhatsAppButton({
   const url = buildWhatsAppUrl(message);
 
   return (
-    <div className="absolute bottom-6 right-6 z-50 flex-col items-end gap-3 md:fixed md:bottom-6 md:right-6 md:z-50">
+    <div className="absolute bottom-6 right-6 z-50 flex flex-col items-end gap-3 md:fixed md:bottom-6 md:right-6 md:z-50">
       {showTooltip && (
         <div className="bg-white text-gray-800 px-4 py-3 rounded-lg shadow-xl max-w-[260px] animate-in fade-in slide-in-from-bottom-2">
           <p className="font-bold text-sm">¿Necesitas ayuda ahora?</p>
