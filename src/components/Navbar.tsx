@@ -28,7 +28,7 @@ export default function Navbar() {
           <img
             src="/images/logo/logo-light-bg.jpeg"
             alt="Llantas Gama"
-            className="h-16 w-auto"
+            className="h-20 sm:h-16 w-auto"
             width={160}
             height={66}
           />
