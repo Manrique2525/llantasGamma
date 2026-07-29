@@ -22,15 +22,15 @@ export default function Navbar() {
       <div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 mx-auto max-w-7xl">
         <Link
           href="/"
-          className="flex items-center flex-shrink-0"
+          className="flex-1 flex justify-center md:justify-start items-center"
           aria-label="Llantas Gama - Inicio"
         >
           <img
             src="/images/logo/logo-light-bg.jpeg"
             alt="Llantas Gama"
-            className="h-20 sm:h-16 w-auto"
-            width={200}
-            height={82}
+            className="h-24 sm:h-16 w-auto"
+            width={240}
+            height={100}
           />
         </Link>
 
