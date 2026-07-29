@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <nav aria-label="Navegación principal" className="sticky top-0 z-50 bg-background border-b border-outline-variant">
-      <div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 mx-auto max-w-7xl">
+      <div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-3 mx-auto max-w-7xl">
         <Link
           href="/"
           className="flex items-center"
