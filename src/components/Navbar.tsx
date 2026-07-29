@@ -26,7 +26,7 @@ export default function Navbar() {
           aria-label="Llantas Gama - Inicio"
         >
           <img
-            src="/images/logo/logo-dark-bg.jpeg"
+            src="/images/logo/logo-light-bg.jpeg"
             alt="Llantas Gama"
             className="h-24 sm:h-16 w-auto"
             width={240}

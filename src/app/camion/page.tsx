@@ -91,7 +91,7 @@ export default function CamionPage() {
                     today
                   </span>
                   <span className="text-label-sm text-on-surface">
-                    Lun-Sáb 8:00-18:00
+                    Lun-Vie 8:00-17:00
                   </span>
                 </div>
               </div>

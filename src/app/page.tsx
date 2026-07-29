@@ -122,6 +122,17 @@ export default function HomePage() {
                     className="material-symbols-outlined text-primary text-[18px]"
                     style={{ fontVariationSettings: "'FILL' 1" }}
                   >
+                    local_shipping
+                  </span>
+                  <span className="text-label-sm text-on-surface">
+                    Entrega en 24-48 hrs
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span
+                    className="material-symbols-outlined text-primary text-[18px]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
                     verified
                   </span>
                   <span className="text-label-sm text-on-surface">
@@ -136,7 +147,7 @@ export default function HomePage() {
                     schedule
                   </span>
                   <span className="text-label-sm text-on-surface">
-                    Lun-Sáb 8:00-18:00
+                    Lun-Vie 8:00-17:00
                   </span>
                 </div>
               </div>
