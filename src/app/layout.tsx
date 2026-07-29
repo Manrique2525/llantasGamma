@@ -141,8 +141,10 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">
           Saltar al contenido
         </a>
-        {children}
-        <WhatsAppButton />
+        <div className="relative flex-1">
+          {children}
+          <WhatsAppButton />
+        </div>
         <StickyCTA />
         <SocialProofToast />
 
