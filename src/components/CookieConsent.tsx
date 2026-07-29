@@ -27,7 +27,7 @@ export default function CookieConsent() {
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 z-[90] border-t border-outline-variant bg-surface-container p-md md:p-lg shadow-2xl"
+      className="fixed bottom-0 left-0 right-0 z-[90] border-t border-outline-variant bg-surface-container p-md md:p-lg pb-20 md:pb-lg shadow-2xl"
       role="dialog"
       aria-label="Aviso de cookies"
     >
@@ -43,16 +43,16 @@ export default function CookieConsent() {
             Política de Privacidad
           </a>.
         </p>
-        <div className="flex gap-sm flex-shrink-0">
+        <div className="flex gap-sm w-full md:w-auto">
           <button
             onClick={handleReject}
-            className="border border-outline text-on-surface px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all active:scale-95"
+            className="flex-1 md:flex-none border border-outline text-on-surface px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all active:scale-95"
           >
             Rechazar
           </button>
           <button
             onClick={handleAccept}
-            className="bg-primary text-on-primary px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:brightness-110 transition-all active:scale-95"
+            className="flex-1 md:flex-none bg-primary text-on-primary px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:brightness-110 transition-all active:scale-95"
           >
             Aceptar
           </button>
