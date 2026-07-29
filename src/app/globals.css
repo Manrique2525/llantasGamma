@@ -4,13 +4,13 @@
   /* === Brand Colors === */
   --color-primary: #9CA820;
   --color-on-primary: #FFFFFF;
-  --color-primary-container: #6B7315;
+  --color-primary-container: #9CA820;
   --color-on-primary-container: #FFFFFF;
-  --color-primary-fixed: #B5C22A;
+  --color-primary-fixed: #9CA820;
   --color-primary-fixed-dim: #9CA820;
   --color-on-primary-fixed: #000000;
   --color-on-primary-fixed-variant: #1A1A00;
-  --color-inverse-primary: #6B7315;
+  --color-inverse-primary: #9CA820;
 
   --color-secondary: #6C6B6B;
   --color-on-secondary: #000000;
