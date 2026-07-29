@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const socialProofData = [
   { name: "Carlos", location: "Villahermosa", action: "solicitó una cotización", time: "hace 2 min" },
@@ -10,35 +10,57 @@ const socialProofData = [
   { name: "Refaccionarias Gama", location: "Centro", action: "recibió su pedido", time: "hace 2 horas" },
 ];
 
+const STORAGE_KEY = "social-proof-dismissed";
+
 export default function SocialProofToast() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const [hasShown, setHasShown] = useState(false);
+  const [dismissed, setDismissed] = useState(true);
+  const cycleRef = useRef(0);
 
   useEffect(() => {
+    const stored = sessionStorage.getItem(STORAGE_KEY);
+    if (!stored) setDismissed(false);
+  }, []);
+
+  useEffect(() => {
+    if (dismissed) return;
+
     const showTimer = setTimeout(() => {
       setIsVisible(true);
       setHasShown(true);
     }, 10000);
 
     return () => clearTimeout(showTimer);
-  }, []);
+  }, [dismissed]);
 
   useEffect(() => {
-    if (!hasShown) return;
+    if (!hasShown || dismissed) return;
 
     const interval = setInterval(() => {
       setIsVisible(false);
       setTimeout(() => {
-        setCurrentIndex((prev) => (prev + 1) % socialProofData.length);
+        const next = (currentIndex + 1) % socialProofData.length;
+        if (next === 0) cycleRef.current += 1;
+        if (cycleRef.current >= 3) {
+          setDismissed(true);
+          return;
+        }
+        setCurrentIndex(next);
         setIsVisible(true);
       }, 500);
     }, 25000);
 
     return () => clearInterval(interval);
-  }, [hasShown]);
+  }, [hasShown, dismissed, currentIndex]);
 
-  if (!hasShown) return null;
+  function handleDismiss() {
+    sessionStorage.setItem(STORAGE_KEY, "true");
+    setDismissed(true);
+  }
+
+  if (dismissed || !hasShown) return null;
 
   const proof = socialProofData[currentIndex];
 
@@ -55,7 +77,7 @@ export default function SocialProofToast() {
             person
           </span>
         </div>
-        <div className="min-w-0">
+        <div className="min-w-0 flex-1">
           <p className="text-sm text-on-surface">
             <span className="font-bold">{proof.name}</span>{" "}
             <span className="text-on-surface-variant">de {proof.location}</span>
@@ -63,6 +85,13 @@ export default function SocialProofToast() {
           <p className="text-sm text-primary font-medium">{proof.action}</p>
           <p className="text-xs text-on-surface-variant mt-1">{proof.time}</p>
         </div>
+        <button
+          onClick={handleDismiss}
+          className="flex-shrink-0 text-on-surface-variant hover:text-on-surface transition-colors p-0.5"
+          aria-label="Cerrar"
+        >
+          <span className="material-symbols-outlined text-lg">close</span>
+        </button>
       </div>
     </div>
   );
