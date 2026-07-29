@@ -3,7 +3,7 @@ import { Montserrat, Hanken_Grotesk } from "next/font/google";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import StickyCTA from "@/components/StickyCTA";
 import SocialProofToast from "@/components/SocialProofToast";
-import ExitPopup from "@/components/ExitPopup";
+
 import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
@@ -145,7 +145,7 @@ export default function RootLayout({
         <WhatsAppButton />
         <StickyCTA />
         <SocialProofToast />
-        <ExitPopup />
+
         <CookieConsent />
       </body>
     </html>
