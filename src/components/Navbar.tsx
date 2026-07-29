@@ -53,7 +53,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop CTA */}
-        <div className="hidden md:flex items-center gap-sm">
+        <div className="hidden md:flex items-center gap-sm md:ml-xl">
           <a
             href={buildWhatsAppUrl("Hola, me interesa una cotización de llantas")}
             target="_blank"
