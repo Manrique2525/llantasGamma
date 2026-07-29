@@ -2,15 +2,15 @@
 
 @theme inline {
   /* === Brand Colors === */
-  --color-primary: #9CA820;
+  --color-primary: #7CAD2B;
   --color-on-primary: #FFFFFF;
-  --color-primary-container: #9CA820;
+  --color-primary-container: #7CAD2B;
   --color-on-primary-container: #FFFFFF;
-  --color-primary-fixed: #9CA820;
-  --color-primary-fixed-dim: #9CA820;
+  --color-primary-fixed: #7CAD2B;
+  --color-primary-fixed-dim: #7CAD2B;
   --color-on-primary-fixed: #000000;
   --color-on-primary-fixed-variant: #1A1A00;
-  --color-inverse-primary: #9CA820;
+  --color-inverse-primary: #7CAD2B;
 
   --color-secondary: #6C6B6B;
   --color-on-secondary: #000000;
@@ -39,7 +39,7 @@
   --color-surface-container-high: #1A1A1A;
   --color-surface-container-highest: #222222;
   --color-surface-variant: #282828;
-  --color-surface-tint: #9CA820;
+  --color-surface-tint: #7CAD2B;
 
   --color-on-surface: #FFFFFF;
   --color-on-surface-variant: #6C6B6B;
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9CA820;
+  background: #7CAD2B;
 }
 
 /* === Utility Classes === */
@@ -164,19 +164,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-strip {
-  border-top: 2px solid #9CA820;
+  border-top: 2px solid #7CAD2B;
 }
 
 .metallic-glow {
-  box-shadow: 0 0 12px rgba(156, 168, 32, 0.2);
+  box-shadow: 0 0 12px rgba(124, 173, 43, 0.2);
 }
 
 .primary-glow {
-  box-shadow: 0px 0px 12px rgba(156, 168, 32, 0.3);
+  box-shadow: 0px 0px 12px rgba(124, 173, 43, 0.3);
 }
 
 .glow-active {
-  box-shadow: 0px 0px 12px rgba(156, 168, 32, 0.4);
+  box-shadow: 0px 0px 12px rgba(124, 173, 43, 0.4);
 }
 
 .glass-card {
@@ -189,11 +189,11 @@ h1, h2, h3, h4, h5, h6 {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: radial-gradient(ellipse 600px 400px at 20% 50%, rgba(156, 168, 32, 0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse 600px 400px at 20% 50%, rgba(124, 173, 43, 0.12) 0%, transparent 70%);
 }
 
 .section-glow {
-  background: linear-gradient(180deg, rgba(156, 168, 32, 0.04) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(124, 173, 43, 0.04) 0%, transparent 100%);
 }
 
 .mono-numbers {
@@ -219,8 +219,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hover-card-glow:hover {
-  border-color: #9CA820;
-  box-shadow: 0 0 15px rgba(156, 168, 32, 0.3);
+  border-color: #7CAD2B;
+  box-shadow: 0 0 15px rgba(124, 173, 43, 0.3);
 }
 
 /* === Scroll Reveal Animation === */
