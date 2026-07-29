@@ -577,12 +577,12 @@ export default function HomePage() {
           <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-surface-container-highest to-transparent z-10" />
           <ScrollReveal>
             <div className="mb-4 text-center">
-              <span className="text-label-sm font-label-bold font-weight-label-sm uppercase tracking-widest text-on-surface-variant">
+              <span className="text-label-sm font-label-bold font-weight-label-sm uppercase tracking-widest text-on-surface">
                 Distribuidor Oficial Certificado de 8 Marcas Líderes Mundiales
               </span>
             </div>
           </ScrollReveal>
-          <div className="animate-marquee flex items-center gap-lg whitespace-nowrap opacity-50 hover:opacity-100 transition-opacity">
+          <div className="animate-marquee flex items-center gap-lg whitespace-nowrap">
             {[
               "Michelin",
               "Bridgestone",
@@ -603,7 +603,7 @@ export default function HomePage() {
             ].map((brand, i) => (
               <span
                 key={i}
-                className="font-headline text-headline-md uppercase tracking-[0.2em] font-extrabold text-on-surface-variant"
+                className="font-headline text-headline-md uppercase tracking-[0.2em] font-extrabold text-on-surface"
               >
                 {brand}
               </span>
