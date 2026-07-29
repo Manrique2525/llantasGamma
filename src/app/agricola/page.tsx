@@ -41,7 +41,7 @@ export default function AgricolaPage() {
                 LLANTAS AGRÍCOLAS{" "}
                 <span className="text-primary">ENTREGA EN 24 HORAS</span>
               </h1>
-              <p className="font-body text-body-lg text-on-surface-variant mb-lg">
+              <p className="font-body text-body-lg text-on-surface mb-lg">
                 <strong className="text-on-surface">250+ medidas</strong> para tractores,
                 cosechadoras y pulverizadoras. Michelin AG, BKT, Firestone,
                 Trelleborg.{" "}
@@ -134,10 +134,10 @@ export default function AgricolaPage() {
                   <h3 className="font-headline text-headline-md font-weight-headline-md text-white mb-1">
                     Tractores
                   </h3>
-                  <p className="text-on-surface-variant text-body-md">
-                    Tracción extrema para laboreo pesado. 30+ medidas desde
-                    $2,500.
-                  </p>
+                    <p className="text-on-surface text-body-md">
+                      Tracción extrema para laboreo pesado. 30+ medidas desde
+                      $2,500.
+                    </p>
                   <span className="text-primary text-label-sm font-label-bold uppercase mt-2 inline-block">
                     Ver catálogo →
                   </span>
@@ -156,9 +156,9 @@ export default function AgricolaPage() {
                   <h3 className="font-headline text-headline-md font-weight-headline-md text-white mb-1">
                     Cosechadoras
                   </h3>
-                  <p className="text-on-surface-variant text-body-md">
-                    Flotación avanzada. 20+ medidas desde $3,200.
-                  </p>
+                    <p className="text-on-surface text-body-md">
+                      Flotación avanzada. 20+ medidas desde $3,200.
+                    </p>
                   <span className="text-primary text-label-sm font-label-bold uppercase mt-2 inline-block">
                     Ver catálogo →
                   </span>
@@ -177,9 +177,9 @@ export default function AgricolaPage() {
                   <h3 className="font-headline text-headline-md font-weight-headline-md text-white mb-1">
                     Pulverizadoras
                   </h3>
-                  <p className="text-on-surface-variant text-body-md">
-                    Precisión entre surcos. 15+ medidas desde $2,800.
-                  </p>
+                    <p className="text-on-surface text-body-md">
+                      Precisión entre surcos. 15+ medidas desde $2,800.
+                    </p>
                   <span className="text-primary text-label-sm font-label-bold uppercase mt-2 inline-block">
                     Ver catálogo →
                   </span>
@@ -198,7 +198,7 @@ export default function AgricolaPage() {
                   Alianzas de{" "}
                   <span className="text-primary">Alto Rendimiento</span>
                 </h2>
-                <p className="text-on-surface-variant mb-lg">
+                <p className="text-on-surface mb-lg">
                   Distribuimos las marcas líderes a nivel mundial, garantizando
                   medidas para cualquier aplicación.
                 </p>
@@ -368,7 +368,7 @@ export default function AgricolaPage() {
                   Hable con un{" "}
                   <span className="text-primary">Especialista</span>
                 </h2>
-                <p className="text-on-surface-variant mb-lg">
+                <p className="text-on-surface mb-lg">
                   Nuestro equipo técnico está listo para asesorarlo sobre la
                   mejor configuración de neumáticos para su flota. Respuesta en
                   menos de 2 horas durante temporada.
@@ -405,7 +405,7 @@ export default function AgricolaPage() {
                             {item.text}
                           </a>
                         ) : (
-                          <p className="text-on-surface-variant">{item.text}</p>
+                          <p className="text-on-surface">{item.text}</p>
                         )}
                       </div>
                     </div>

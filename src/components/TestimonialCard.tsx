@@ -39,7 +39,7 @@ export default function TestimonialCard({
           {rating}.0
         </span>
       </div>
-      <p className="text-body-md text-on-surface-variant mb-lg flex-1 leading-relaxed">
+      <p className="text-body-md text-on-surface mb-lg flex-1 leading-relaxed">
         &ldquo;{text}&rdquo;
       </p>
       {metricLabel && (

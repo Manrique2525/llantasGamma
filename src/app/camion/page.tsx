@@ -42,7 +42,7 @@ export default function CamionPage() {
                 <span className="text-primary">AHORRA 15%</span> EN COSTOS
                 OPERATIVOS
               </h1>
-              <p className="font-body text-body-lg text-on-surface-variant mb-lg">
+              <p className="font-body text-body-lg text-on-surface mb-lg">
                 <strong className="text-on-surface">200+ flotillas nos eligen.</strong>{" "}
                 Programa de mantenimiento predictivo + soporte en ruta 24/7.
                 Precios especiales para 10+ unidades.
@@ -176,7 +176,7 @@ export default function CamionPage() {
                   <h3 className="font-headline text-headline-md font-weight-headline-md mb-sm">
                     {seg.title}
                   </h3>
-                  <p className="text-on-surface-variant font-body text-body-md mb-lg">
+                  <p className="text-on-surface font-body text-body-md mb-lg">
                     {seg.desc}
                   </p>
                 </div>
@@ -255,7 +255,7 @@ export default function CamionPage() {
                   <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-md">
                     ATENCIÓN A FLOTILLAS Y LOGÍSTICA
                   </h2>
-                  <p className="text-body-lg font-body text-on-surface-variant mb-md">
+                  <p className="text-body-lg font-body text-on-surface mb-md">
                     Entendemos que{" "}
                     <strong className="text-on-surface">
                       un camión detenido es pérdida de dinero
@@ -364,7 +364,7 @@ export default function CamionPage() {
               <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg">
                 REALIDAD OPERATIVA
               </h2>
-              <p className="text-on-surface-variant">
+              <p className="text-on-surface">
                 Nuestros equipos en acción, garantizando precisión en cada
                 montaje. 50,000+ llantas montadas este año.
               </p>
@@ -422,7 +422,7 @@ export default function CamionPage() {
               <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-md">
                 COBERTURA DE SERVICIO
               </h2>
-              <p className="text-on-surface-variant">
+              <p className="text-on-surface">
                 Operamos en los principales nodos industriales: Monterrey,
                 Bajío, CDMX y Veracruz. Nuestra red de respuesta garantiza
                 atención en menos de 2 horas en zonas metropolitanas.

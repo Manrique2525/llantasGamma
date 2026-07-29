@@ -41,7 +41,7 @@ export default function SectionHeader({
         )}
       </h2>
       {subtitle && (
-        <p className="text-body-lg text-on-surface-variant">{subtitle}</p>
+        <p className="text-body-lg text-on-surface">{subtitle}</p>
       )}
     </div>
   );

@@ -39,7 +39,7 @@ export default function IndustrialPage() {
                 99.8% DE <span className="text-primary">UPTIME</span>{" "}
                 GARANTIZADO
               </h1>
-              <p className="font-body text-body-lg text-on-surface-variant mb-lg">
+              <p className="font-body text-body-lg text-on-surface mb-lg">
                 Montacargas, excavadoras, minería OTR.{" "}
                 <strong className="text-on-surface">
                   Soporte técnico en &lt;4 horas.
@@ -202,8 +202,8 @@ export default function IndustrialPage() {
               </div>
               <div className="z-10 relative">
                 <p className="text-on-surface-variant mb-4 font-body">
-                  Resistencia superior al corte y al desgaste para excavadoras
-                  y retroexcavadoras. 30+ medidas disponibles.
+                    <span className="text-on-surface">Resistencia superior al corte y al desgaste para excavadoras
+                    y retroexcavadoras. 30+ medidas disponibles.</span>
                 </p>
                 <button className="bg-on-surface text-background px-4 py-2 font-label-bold text-label-sm font-weight-label-sm uppercase">
                   Ver Medidas
@@ -230,8 +230,8 @@ export default function IndustrialPage() {
               </div>
               <div className="z-10 relative mt-4">
                 <p className="text-on-surface-variant mb-4 font-body text-label-sm">
-                  Dureza Extrema E-4 / L-4: Diseñada para terrenos rocosos con
-                  alto riesgo de cortes. 20+ medidas.
+                    <span className="text-on-surface">Dureza Extrema E-4 / L-4: Diseñada para terrenos rocosos con
+                    alto riesgo de cortes. 20+ medidas.</span>
                 </p>
               </div>
               <div className="absolute bottom-4 left-4 z-10">
@@ -272,7 +272,7 @@ export default function IndustrialPage() {
                   )}
                 </div>
               </div>
-              <p className="text-on-surface-variant font-body mb-lg">
+              <p className="text-on-surface font-body mb-lg">
                 Distribuidores oficiales de las marcas líderes en el sector
                 industrial global. Garantía directa de fábrica.
               </p>
@@ -331,7 +331,7 @@ export default function IndustrialPage() {
                       <h4 className="font-label-bold text-lg mb-1 uppercase group-hover:text-primary transition-colors">
                         {service.title}
                       </h4>
-                      <p className="text-on-surface-variant font-body">
+                      <p className="text-on-surface font-body">
                         {service.desc}
                       </p>
                     </div>
@@ -441,7 +441,7 @@ export default function IndustrialPage() {
                     SOLICITE UNA AUDITORÍA
                   </h2>
                 </div>
-                <p className="text-on-surface-variant font-body mb-lg">
+                <p className="text-on-surface font-body mb-lg">
                   Optimice sus costos operativos. Nuestros expertos realizarán un
                   diagnóstico detallado del estado de sus neumáticos y sugerirán
                   el plan de mantenimiento ideal para su operación.{" "}

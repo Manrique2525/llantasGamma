@@ -42,7 +42,7 @@ export default function AutoPage() {
                 LLANTAS PARA TU AUTO{" "}
                 <span className="text-primary">DESDE $899</span>
               </h1>
-              <p className="font-body text-body-lg text-on-surface-variant mb-lg">
+              <p className="font-body text-body-lg text-on-surface mb-lg">
                 Marcas premium: Michelin, Bridgestone, Continental.{" "}
                 <strong className="text-on-surface">
                   Instalación profesional incluida.
@@ -234,7 +234,7 @@ export default function AutoPage() {
                   <h3 className="font-headline text-headline-md font-weight-headline-md">
                     Garantía de Fábrica
                   </h3>
-                  <p className="text-on-surface-variant text-body-md mt-1">
+                  <p className="text-on-surface text-body-md mt-1">
                     Todos nuestros productos cuentan con garantía directa del
                     fabricante.
                   </p>
@@ -250,7 +250,7 @@ export default function AutoPage() {
                   <h3 className="font-headline text-headline-md font-weight-headline-md">
                     Técnicos Certificados
                   </h3>
-                  <p className="text-on-surface-variant text-body-md mt-1">
+                  <p className="text-on-surface text-body-md mt-1">
                     Nuestro equipo está certificado por las marcas que
                     distribuimos.
                   </p>
@@ -266,7 +266,7 @@ export default function AutoPage() {
                   <h3 className="font-headline text-headline-md font-weight-headline-md">
                     Entrega en 24-48h
                   </h3>
-                  <p className="text-on-surface-variant text-body-md mt-1">
+                  <p className="text-on-surface text-body-md mt-1">
                     Stock permanente de las medidas más demandadas en nuestra
                     bodega.
                   </p>
@@ -284,7 +284,7 @@ export default function AutoPage() {
                 <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-md">
                   Cotiza en 2 Minutos
                 </h2>
-                <p className="text-body-lg text-on-surface-variant mb-lg">
+                <p className="text-body-lg text-on-surface mb-lg">
                   Completa el formulario y te llamamos en menos de 10 minutos
                   con precio especial.{" "}
                   <strong className="text-primary">Sin compromiso.</strong>

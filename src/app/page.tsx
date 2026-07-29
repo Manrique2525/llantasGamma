@@ -84,7 +84,7 @@ export default function HomePage() {
                 <span className="text-primary">LLANTAS</span> CON ENTREGA EN 24
                 HORAS.
               </h1>
-              <p className="font-body text-body-lg text-on-surface-variant">
+              <p className="font-body text-body-lg text-on-surface">
                 <strong className="text-on-surface">25,000+ llantas en stock</strong> de
                 8 marcas oficiales. Auto, camión, agrícola e industrial.{" "}
                 <strong className="text-primary">
@@ -205,7 +205,7 @@ export default function HomePage() {
                   <h3 className="font-headline text-headline-md mb-sm">
                     {seg.title}
                   </h3>
-                  <p className="text-on-surface-variant font-body text-body-md mb-lg">
+                  <p className="text-on-surface font-body text-body-md mb-lg">
                     {seg.desc}
                   </p>
                 </div>
@@ -318,7 +318,7 @@ export default function HomePage() {
                     ¿Por Qué Elegirnos?
                   </h2>
                 </div>
-                <p className="text-body-lg text-on-surface-variant mb-lg leading-relaxed">
+                <p className="text-body-lg text-on-surface mb-lg leading-relaxed">
                   En GAMA no solo vendemos llantas — <strong className="text-on-surface">resolvemos problemas
                   operativos</strong>. Sabemos que cada hora detenida es dinero perdido,
                   por eso diseñamos un modelo de servicio pensado para que tu
@@ -361,7 +361,7 @@ export default function HomePage() {
                       Respuesta Rápida
                     </h3>
                   </div>
-                  <p className="text-body-md text-on-surface-variant">
+                  <p className="text-body-md text-on-surface">
                     Cotización en menos de 10 minutos. Entrega en 24-48 horas.
                     <strong className="text-primary">
                       {" "}Si no respondemos en 4 horas, te damos 10% de descuento.
@@ -378,7 +378,7 @@ export default function HomePage() {
                       Distribuidor Oficial
                     </h3>
                   </div>
-                  <p className="text-body-md text-on-surface-variant">
+                  <p className="text-body-md text-on-surface">
                     Somos distribuidor certificado de{" "}
                     <strong className="text-on-surface">Michelin, Bridgestone, Continental,
                     Goodyear y 4 marcas más</strong>. Garantía directa de fábrica.
@@ -394,7 +394,7 @@ export default function HomePage() {
                       Soporte 24/7
                     </h3>
                   </div>
-                  <p className="text-body-md text-on-surface-variant">
+                  <p className="text-body-md text-on-surface">
                     Línea directa las 24 horas. Asistencia en ruta para flotillas.
                     <strong className="text-on-surface"> Nuestro equipo técnico está disponible cuando nos necesitas.</strong>
                   </p>
@@ -409,7 +409,7 @@ export default function HomePage() {
                       Precios Competitivos
                     </h3>
                   </div>
-                  <p className="text-body-md text-on-surface-variant">
+                  <p className="text-body-md text-on-surface">
                     Precios de distribuidor con descuentos por volumen. Para flotillas
                     de 10+ unidades, <strong className="text-primary">precios especiales con programa de renovado</strong>.
                   </p>
@@ -599,11 +599,11 @@ export default function HomePage() {
           className="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl"
         >
           <div className="space-y-4">
-            <div className="inline-block border-l-2 border-primary pl-4 mb-md">
+            <div                className="inline-block border-l-2 border-primary pl-4 mb-md">
               <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg uppercase mb-xs">
                 Solicita Tu Cotización
               </h2>
-              <p className="text-on-surface-variant">
+              <p className="text-on-surface">
                 Respuesta en menos de 10 minutos. Sin compromiso.
               </p>
             </div>
@@ -679,7 +679,7 @@ export default function HomePage() {
               Visítanos en{" "}
               <span className="text-primary">Villahermosa</span>
             </h2>
-            <p className="text-body-lg text-on-surface-variant">
+            <p className="text-body-lg text-on-surface">
               Av Universidad 494, El Recreo, 86029 Villahermosa, Tabasco
             </p>
           </div>

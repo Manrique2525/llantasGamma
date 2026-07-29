@@ -82,7 +82,7 @@ export default function FAQAccordion() {
                 isOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <p className="px-lg pb-lg text-on-surface-variant leading-relaxed">
+              <p className="px-lg pb-lg text-on-surface leading-relaxed">
                 {item.answer}
               </p>
             </div>

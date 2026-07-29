@@ -8,11 +8,11 @@ export default function Footer() {
           <img
             src="/images/logo/logo-light-bg.jpeg"
             alt="Llantas Gama"
-            className="h-12 w-auto"
+            className="h-16 w-auto"
             width={160}
             height={66}
           />
-          <p className="text-on-surface-variant text-body-md">
+          <p className="text-on-surface text-body-md">
             Ingeniería de precisión y rendimiento para la industria moderna. 15 años de experiencia.
           </p>
           <div className="flex gap-3 pt-2">

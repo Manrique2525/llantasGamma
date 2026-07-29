@@ -159,7 +159,7 @@ export default function ContactForm({
         <h3 className="font-headline text-headline-md font-weight-headline-md mb-2">
           ¡Mensaje Enviado!
         </h3>
-        <p className="text-on-surface-variant mb-4">
+        <p className="text-on-surface mb-4">
           Te redirigimos a WhatsApp. Te contactaremos en menos de 10 minutos.
         </p>
         <button
