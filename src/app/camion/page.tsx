@@ -31,6 +31,7 @@ export default function CamionPage() {
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+            <div className="hero-glow" />
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop w-full py-xl">
             <div className="max-w-2xl">
@@ -415,7 +416,7 @@ export default function CamionPage() {
         {/* Contact & Coverage */}
         <section
           id="contacto-camion"
-          className="py-xl max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-xl"
+          className="py-xl max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-xl section-glow"
         >
           <div className="lg:col-span-5 space-y-lg">
             <div>

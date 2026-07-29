@@ -183,6 +183,18 @@ h1, h2, h3, h4, h5, h6 {
   backdrop-filter: blur(8px);
 }
 
+.hero-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(ellipse 600px 400px at 20% 50%, rgba(156, 168, 32, 0.12) 0%, transparent 70%);
+}
+
+.section-glow {
+  background: linear-gradient(180deg, rgba(156, 168, 32, 0.04) 0%, transparent 100%);
+}
+
 .mono-numbers {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   letter-spacing: 0.05em;

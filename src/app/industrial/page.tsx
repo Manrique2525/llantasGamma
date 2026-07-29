@@ -24,6 +24,7 @@ export default function IndustrialPage() {
         <section className="relative min-h-[500px] lg:min-h-[819px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10" />
+            <div className="hero-glow" style={{ zIndex: 11 }} />
             <img
               className="w-full h-full object-cover grayscale brightness-50"
               src="/images/industrial-hero.jpg"
@@ -431,7 +432,7 @@ export default function IndustrialPage() {
         {/* Contact Form */}
         <section
           id="contacto-industrial"
-          className="bg-surface py-xl border-t border-outline-variant"
+          className="bg-surface py-xl border-t border-outline-variant section-glow"
         >
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
             <div className="grid md:grid-cols-2 gap-xl">

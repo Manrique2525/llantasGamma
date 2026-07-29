@@ -31,6 +31,7 @@ export default function AgricolaPage() {
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
+            <div className="hero-glow" />
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop w-full py-xl">
             <div className="max-w-2xl">
@@ -360,7 +361,7 @@ export default function AgricolaPage() {
         </section>
 
         {/* Contact Form */}
-        <section id="contacto-agricola" className="py-xl bg-surface-container-low">
+        <section id="contacto-agricola" className="py-xl bg-surface-container-low section-glow">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-xl bg-surface-container-high ghost-border p-lg md:p-xl">
               <div>

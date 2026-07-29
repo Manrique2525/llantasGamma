@@ -32,6 +32,7 @@ export default function AutoPage() {
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+            <div className="hero-glow" />
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop w-full py-xl">
             <div className="max-w-2xl">
@@ -277,7 +278,7 @@ export default function AutoPage() {
         </section>
 
         {/* Contact & Lead Gen */}
-        <section id="contacto-auto" className="py-xl">
+        <section id="contacto-auto" className="py-xl section-glow">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-xl">
               <div>

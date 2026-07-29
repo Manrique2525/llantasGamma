@@ -65,6 +65,7 @@ export default function HomePage() {
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
+            <div className="hero-glow" />
           </div>
           <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto w-full">
             <div className="max-w-2xl space-y-md">
@@ -596,7 +597,7 @@ export default function HomePage() {
         {/* Contact & Form */}
         <section
           id="contacto"
-          className="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl"
+          className="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl section-glow"
         >
           <div className="space-y-4">
             <div                className="inline-block border-l-2 border-primary pl-4 mb-md">
