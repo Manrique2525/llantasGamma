@@ -300,7 +300,7 @@ export default function AgricolaPage() {
                   </a>
                 </p>
                 <div className="mt-xl pt-xl border-t border-outline-variant">
-                  <div className="flex items-center gap-lg">
+                  <div className="flex flex-col md:flex-row items-center gap-md md:gap-lg">
                     <div className="text-center">
                       <div className="text-primary font-bold text-headline-md font-weight-headline-md mono-numbers">
                         250+
@@ -309,7 +309,7 @@ export default function AgricolaPage() {
                         SKUs Agrícolas
                       </div>
                     </div>
-                    <div className="w-px h-10 bg-outline-variant" />
+                    <div className="hidden md:block w-px h-10 bg-outline-variant" />
                     <div className="text-center">
                       <div className="text-primary font-bold text-headline-md font-weight-headline-md mono-numbers">
                         24H
@@ -318,7 +318,7 @@ export default function AgricolaPage() {
                         Entrega Local
                       </div>
                     </div>
-                    <div className="w-px h-10 bg-outline-variant" />
+                    <div className="hidden md:block w-px h-10 bg-outline-variant" />
                     <div className="text-center">
                       <div className="text-primary font-bold text-headline-md font-weight-headline-md mono-numbers">
                         100+
