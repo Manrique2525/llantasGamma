@@ -614,7 +614,7 @@ export default function HomePage() {
                   icon: "call",
                   title: "Línea Directa",
                   text: "993 398 7711",
-                  href: "tel:9933987711",
+                  href: `tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "9933987711"}`,
                 },
                 {
                   icon: "chat",

@@ -5,7 +5,7 @@ import TireSearchForm from "@/components/TireSearchForm";
 import SectionHeader from "@/components/SectionHeader";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
-import { PHONE } from "@/lib/constants";
+import { PHONE, buildWhatsAppUrl } from "@/lib/constants";
 
 export const metadata = {
   title: "Llantas para Auto y Camioneta",
@@ -597,9 +597,17 @@ export default function AutoPage() {
                       <p className="text-label-sm font-weight-label-sm font-label-sm text-on-surface-variant uppercase">
                         WhatsApp
                       </p>
-                      <p className="text-headline-md font-weight-headline-md mono-numbers">
-                        {process.env.NEXT_PUBLIC_PHONE_DISPLAY || "993 398 7711"}
-                      </p>
+                      <a
+                        href={buildWhatsAppUrl(
+                          "Hola, me interesa una cotización de llantas"
+                        )}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-headline-md font-weight-headline-md mono-numbers hover:text-primary transition-colors"
+                      >
+                        {process.env.NEXT_PUBLIC_PHONE_DISPLAY ||
+                          "993 398 7711"}
+                      </a>
                     </div>
                   </div>
                 </div>

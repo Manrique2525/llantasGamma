@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { buildWhatsAppUrl } from "@/lib/constants";
 
 interface ContactFormProps {
   segment?: "general" | "auto" | "camion" | "agricola" | "industrial";
@@ -114,41 +115,38 @@ export default function ContactForm({
     let message = config.whatsappMessage;
 
     if (formData.name) {
-      message += `%0A%0ANombre: ${encodeURIComponent(formData.name)}`;
+      message += `\n\nNombre: ${formData.name}`;
     }
     if (formData.company) {
-      message += `%0AEmpresa: ${encodeURIComponent(formData.company)}`;
+      message += `\nEmpresa: ${formData.company}`;
     }
     if (formData.phone) {
-      message += `%0ATeléfono: ${encodeURIComponent(phoneDigits)}`;
+      message += `\nTeléfono: ${phoneDigits}`;
     }
     if (formData.email) {
-      message += `%0AEmail: ${encodeURIComponent(formData.email)}`;
+      message += `\nEmail: ${formData.email}`;
     }
     if (formData.service) {
-      message += `%0AServicio: ${encodeURIComponent(formData.service)}`;
+      message += `\nServicio: ${formData.service}`;
     }
     if (formData.message) {
-      message += `%0AMensaje: ${encodeURIComponent(formData.message)}`;
+      message += `\nMensaje: ${formData.message}`;
     }
 
-    const phone = process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "5219933987711";
-    const url = `https://wa.me/${phone}?text=${message}`;
+    const url = buildWhatsAppUrl(message);
 
-    setTimeout(() => {
-      window.open(url, "_blank");
-      setIsSubmitting(false);
-      setShowSuccess(true);
-      setTimeout(() => setShowSuccess(false), 5000);
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        company: "",
-        service: config.options[0],
-        message: "",
-      });
-    }, 800);
+    window.open(url, "_blank");
+    setIsSubmitting(false);
+    setShowSuccess(true);
+    setTimeout(() => setShowSuccess(false), 5000);
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      company: "",
+      service: config.options[0],
+      message: "",
+    });
   };
 
   if (showSuccess) {
