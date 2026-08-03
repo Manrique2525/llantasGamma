@@ -2,7 +2,6 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
-import TestimonialCard from "@/components/TestimonialCard";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
 import { PHONE, buildWhatsAppUrl } from "@/lib/constants";
@@ -10,7 +9,7 @@ import { PHONE, buildWhatsAppUrl } from "@/lib/constants";
 export const metadata = {
   title: "Llantas Agrícolas - Tractores, Cosechadoras, Pulverizadoras",
   description:
-    "250+ medidas agrícolas. Michelin AG, BKT, Firestone, Trelleborg. Servicio en campo. Entrega en 24 horas. Cotiza con especialista.",
+    "Cotización de medidas agrícolas para distintas aplicaciones. Michelin AG, BKT, Firestone, Trelleborg. Servicio en campo sujeto a ubicación, personal y disponibilidad.",
   alternates: {
     canonical: "https://llantasgama.com/agricola",
   },
@@ -47,13 +46,19 @@ export default function AgricolaPage() {
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-white mb-md leading-tight">
                 LLANTAS AGRÍCOLAS{" "}
-                <span className="text-primary">ENTREGA EN 24 HORAS</span>
+                <span className="text-primary">MULTIMARCA</span>
               </h1>
               <p className="font-body text-body-lg text-on-surface mb-lg">
-                <strong className="text-on-surface">250+ medidas</strong> para tractores,
-                cosechadoras y pulverizadoras. Michelin AG, BKT, Firestone,
-                Trelleborg.{" "}
-                <strong className="text-primary">Servicio en campo.</strong>
+                <strong className="text-on-surface">
+                  Cotización de medidas agrícolas en todas las medidas y
+                  aplicaciones
+                </strong>{" "}
+                para tractores, cosechadoras y pulverizadoras. Michelin AG,
+                BKT, Firestone, Trelleborg.{" "}
+                <strong className="text-primary">
+                  Servicio en campo sujeto a ubicación, personal y
+                  disponibilidad.
+                </strong>
               </p>
               <div className="flex flex-wrap gap-lg pt-sm">
                 <div className="flex items-center gap-2">
@@ -64,7 +69,7 @@ export default function AgricolaPage() {
                     agriculture
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    250+ Medidas
+                    Opciones Agrícolas Multimarca
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -86,7 +91,7 @@ export default function AgricolaPage() {
                     local_shipping
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    Entrega en 24 Horas
+                    Entrega Sujeta a Disponibilidad
                   </span>
                 </div>
               </div>
@@ -153,8 +158,7 @@ export default function AgricolaPage() {
                     Tractores
                   </h3>
                     <p className="text-on-surface text-body-md">
-                      Tracción extrema para laboreo pesado. 30+ medidas desde
-                      $2,500.
+                      Tracción extrema para laboreo pesado. 30+ medidas.
                     </p>
                   <span className="text-primary text-label-sm font-label-bold uppercase mt-2 inline-block">
                     Ver catálogo →
@@ -175,7 +179,7 @@ export default function AgricolaPage() {
                     Cosechadoras
                   </h3>
                     <p className="text-on-surface text-body-md">
-                      Flotación avanzada. 20+ medidas desde $3,200.
+                      Flotación avanzada. 20+ medidas.
                     </p>
                   <span className="text-primary text-label-sm font-label-bold uppercase mt-2 inline-block">
                     Ver catálogo →
@@ -196,7 +200,7 @@ export default function AgricolaPage() {
                     Pulverizadoras
                   </h3>
                     <p className="text-on-surface text-body-md">
-                      Precisión entre surcos. 15+ medidas desde $2,800.
+                      Precisión entre surcos. 15+ medidas.
                     </p>
                   <span className="text-primary text-label-sm font-label-bold uppercase mt-2 inline-block">
                     Ver catálogo →
@@ -217,8 +221,8 @@ export default function AgricolaPage() {
                   <span className="text-primary">Alto Rendimiento</span>
                 </h2>
                 <p className="text-on-surface mb-lg">
-                  Distribuimos las marcas líderes a nivel mundial, garantizando
-                  medidas para cualquier aplicación.
+                  Distribuimos marcas agrícolas especializadas y localizamos
+                  opciones para distintas aplicaciones agrícolas.
                 </p>
                 <div className="space-y-sm">
                   {[
@@ -301,31 +305,22 @@ export default function AgricolaPage() {
                 </p>
                 <div className="mt-xl pt-xl border-t border-outline-variant">
                   <div className="flex flex-col md:flex-row items-center gap-md md:gap-lg">
-                    <div className="text-center">
-                      <div className="text-primary font-bold text-headline-md font-weight-headline-md mono-numbers">
-                        250+
-                      </div>
-                      <div className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase">
-                        SKUs Agrícolas
-                      </div>
+                    <div className="flex-1 text-center">
+                      <p className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase">
+                        Acceso a opciones agrícolas multimarca
+                      </p>
                     </div>
                     <div className="hidden md:block w-px h-10 bg-outline-variant" />
-                    <div className="text-center">
-                      <div className="text-primary font-bold text-headline-md font-weight-headline-md mono-numbers">
-                        24H
-                      </div>
-                      <div className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase">
-                        Entrega Local
-                      </div>
+                    <div className="flex-1 text-center">
+                      <p className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase">
+                        Tiempo de entrega sujeto a medida y disponibilidad
+                      </p>
                     </div>
                     <div className="hidden md:block w-px h-10 bg-outline-variant" />
-                    <div className="text-center">
-                      <div className="text-primary font-bold text-headline-md font-weight-headline-md mono-numbers">
-                        100+
-                      </div>
-                      <div className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase">
-                        Haciendas Atendidas
-                      </div>
+                    <div className="flex-1 text-center">
+                      <p className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase">
+                        Atención a productores y empresas agrícolas
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -334,46 +329,26 @@ export default function AgricolaPage() {
           </div>
         </section>
 
-        {/* Testimonios Agrícola */}
+        {/* Experiencia */}
         <section className="py-xl bg-surface-container-low">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-            <SectionHeader
-              badge="Lo Que Dicen Nuestros Clientes"
-              badgeIcon="star"
-              title="Clientes"
-              titleHighlight="Agrícolas"
-              subtitle="+100 haciendas en el sureste confían en nosotros"
-              align="center"
-            />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-              <TestimonialCard
-                name="Ing. Alejandro Ruiz"
-                role="Propietario"
-                company="Agropecuaria La Esperanza, Tabasco"
-                text="Las llantas Michelin AG que nos instalaron duraron 2 temporadas más que las competidoras. El servicio en campo durante cosecha fue clave para no perder un solo día."
-                rating={5}
-                metric="+2 Temporadas"
-                metricLabel="Vida útil extendida"
+            <ScrollReveal>
+              <SectionHeader
+                badge="Nuestra Experiencia"
+                badgeIcon="verified"
+                title="Experiencia con"
+                titleHighlight="Productores y Empresas Agrícolas"
+                align="center"
               />
-              <TestimonialCard
-                name="Lic. María Fernández"
-                role="Gerente"
-                company="Hacienda San José, Chiapas"
-                text="Ganamos 15% más productividad con las llantas Trelleborg. La asesoría técnica nos ayudó a elegir la medida correcta para cada terreno."
-                rating={5}
-                metric="+15%"
-                metricLabel="Productividad mejorada"
-              />
-              <TestimonialCard
-                name="Ing. Roberto Díaz"
-                role="Jefe de Operaciones"
-                company="Campesinos Unidos, Veracruz"
-                text="Entrega en 24 horas cuando más lo necesitábamos. El equipo técnico vino al campo a revisar la presión. Excelente servicio y profesionalismo."
-                rating={5}
-                metric="24h"
-                metricLabel="Tiempo de entrega"
-              />
-            </div>
+            </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <div className="max-w-3xl mx-auto text-center">
+                <p className="text-body-lg text-on-surface">
+                  Atendemos necesidades de llantas agrícolas con asesoría de
+                  medida y aplicación, y seguimiento directo a cada unidad.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -388,14 +363,14 @@ export default function AgricolaPage() {
                 </h2>
                 <p className="text-on-surface mb-lg">
                   Nuestro equipo técnico está listo para asesorarlo sobre la
-                  mejor configuración de neumáticos para su flota. Respuesta en
-                  menos de 2 horas durante temporada.
+                  mejor configuración de neumáticos para su flota. Un asesor
+                  revisará la medida y aplicación solicitada.
                 </p>
                 <div className="space-y-sm">
                   {[
                     {
                       icon: "location_on",
-                      title: "Centro de Distribución Regional",
+                      title: "Punto de Atención en Villahermosa",
                       text: "Av Universidad 494, El Recreo. Villahermosa, Tab.",
                     },
                     {

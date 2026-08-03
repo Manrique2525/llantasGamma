@@ -50,12 +50,11 @@ const segmentConfig = {
   agricola: {
     title: "Hable con un Especialista",
     subtitle:
-      "Nuestro equipo técnico está listo para asesorarlo. Respuesta en menos de 2 horas.",
-    guarantee:
-      "Especialista te responde en <2 horas durante temporada",
+      "Completa el formulario y un asesor revisará la medida y aplicación solicitada.",
+    guarantee: "Asesoría técnica agrícola sin compromiso",
     options: [
       "Cotización de Llantas Agrícolas",
-      "Servicio en Campo",
+      "Servicio en campo (sujeto a disponibilidad)",
       "Asesoría Técnica de Suelo",
       "Programa de Temporada",
     ],
