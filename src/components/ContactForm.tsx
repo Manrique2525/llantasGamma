@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { buildWhatsAppUrl } from "@/lib/constants";
 
 interface ContactFormProps {
   segment?: "general" | "auto" | "camion" | "agricola" | "industrial";
@@ -11,8 +10,9 @@ interface ContactFormProps {
 const segmentConfig = {
   general: {
     title: "Solicita Tu Cotización",
-    subtitle: "Respuesta en menos de 10 minutos. Sin compromiso.",
-    guarantee: "Te llamamos en menos de 10 minutos | 10% dto. si no respondemos",
+    subtitle:
+      "Completa el formulario y un asesor dará seguimiento a tu solicitud. Sin compromiso.",
+    guarantee: "",
     options: [
       "Cotización de llantas",
       "Asesoría técnica",

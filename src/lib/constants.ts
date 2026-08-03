@@ -8,7 +8,7 @@ export const PHONE = {
 
 export const WHATSAPP_LINKS = {
   cotizacion: `https://wa.me/${PHONE.whatsapp}?text=${encodeURIComponent("Hola, me interesa una cotización de llantas")}`,
-  oferta: `https://wa.me/${PHONE.whatsapp}?text=${encodeURIComponent("Hola, vi la oferta en la página y me interesa un 10% de descuento")}`,
+  oferta: `https://wa.me/${PHONE.whatsapp}?text=${encodeURIComponent("Hola, me interesa conocer promociones vigentes")}`,
   newsletter: `https://wa.me/${PHONE.whatsapp}?text=${encodeURIComponent("Hola, quiero suscribirme al newsletter de ofertas y tips técnicos")}`,
 };
 

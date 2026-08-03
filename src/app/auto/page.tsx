@@ -89,7 +89,7 @@ export default function AutoPage() {
                     local_shipping
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    Entrega en 24-48 hrs
+                    Entrega sujeta a disponibilidad
                   </span>
                 </div>
               </div>
@@ -245,10 +245,10 @@ export default function AutoPage() {
                 </div>
                 <div>
                   <h3 className="font-headline text-headline-md font-weight-headline-md">
-                    Garantía de Fábrica
+                    Garantía
                   </h3>
                   <p className="text-on-surface text-body-md mt-1">
-                    Todos nuestros productos cuentan con garantía directa del
+                    Garantía aplicable según marca, producto y condiciones del
                     fabricante.
                   </p>
                 </div>
@@ -276,7 +276,7 @@ export default function AutoPage() {
                 </div>
                 <div>
                   <h3 className="font-headline text-headline-md font-weight-headline-md">
-                    Entrega en 24-48h
+                    Entrega sujeta a disponibilidad
                   </h3>
                   <p className="text-on-surface text-body-md mt-1">
                     Disponibilidad local y con nuestra red de proveedores.

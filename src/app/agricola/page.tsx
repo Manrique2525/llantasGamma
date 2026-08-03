@@ -124,7 +124,7 @@ export default function AgricolaPage() {
                 </span>
                 <span className="text-body-lg font-label-bold">
                   <span className="text-primary">Temporada de cosecha</span> —
-                  Stock limitado en medidas especiales. Aparta tu pedido hoy.
+                  Medidas especiales bajo pedido. Aparta tu pedido hoy.
                 </span>
               </div>
             </ScrollReveal>

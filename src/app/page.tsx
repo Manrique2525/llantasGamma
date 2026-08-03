@@ -186,30 +186,30 @@ export default function HomePage() {
               {
                 title: "Auto & Camioneta",
                 icon: "directions_car",
-                desc: "Michelin, Bridgestone, Continental desde $899. Instalación incluida.",
+                desc: "Llantas multimarca desde $899 por pieza en medidas participantes. Sujeto a disponibilidad.",
                 link: "/auto",
                 tag: "Desde $899",
               },
               {
                 title: "Camión",
                 icon: "local_shipping",
-                desc: "Programa de flotillas: ahorra 15% en costos operativos. Soporte 24/7.",
+                desc: "Programa de flotillas: inspecciones, historial de mantenimiento y seguimiento por unidad.",
                 link: "/camion",
-                tag: "Ahorra 15%",
+                tag: "Flotillas",
               },
               {
                 title: "Agrícola",
                 icon: "agriculture",
-                desc: "250+ medidas. Servicio en campo durante cosecha. Entrega sujeta a medida, marca y disponibilidad.",
+                desc: "Cotización de medidas agrícolas para distintas aplicaciones. Entrega sujeta a disponibilidad.",
                 link: "/agricola",
-                tag: "250+ Medidas",
+                tag: "Medidas Agrícolas",
               },
               {
                 title: "Industrial",
                 icon: "precision_manufacturing",
-                desc: "Montacargas, minería, excavadoras. 99.8% uptime garantizado.",
+                desc: "Cotización de llantas multimarca para montacargas y equipos de trabajo.",
                 link: "/industrial",
-                tag: "99.8% Uptime",
+                tag: "Multimarca",
               },
             ].map((seg) => (
               <Link
@@ -303,10 +303,10 @@ export default function HomePage() {
                 </div>
                 <div>
                   <div className="font-headline text-headline-md font-bold">
-                    24/7
+                    L-V
                   </div>
                   <div className="text-label-sm font-label-bold font-weight-label-sm uppercase tracking-widest text-on-surface-variant">
-                    Soporte técnico y asistencia en ruta
+                    Atención 8:30-17:30
                   </div>
                 </div>
               </div>
@@ -419,12 +419,12 @@ export default function HomePage() {
                       support_agent
                     </span>
                     <h3 className="font-headline text-headline-md font-weight-headline-md tracking-headline-lg">
-                      Soporte 24/7
+                      Atención Personalizada
                     </h3>
                   </div>
                   <p className="text-body-md text-on-surface">
-                    Línea directa las 24 horas. Asistencia en ruta para flotillas.
-                    <strong className="text-on-surface"> Nuestro equipo técnico está disponible cuando nos necesitas.</strong>
+                    Atención directa por teléfono y WhatsApp con seguimiento
+                    personalizado a cada unidad.
                   </p>
                 </div>
 
@@ -439,7 +439,7 @@ export default function HomePage() {
                   </div>
                   <p className="text-body-md text-on-surface">
                     Precios competitivos y opciones según presupuesto. Para flotillas
-                    de 10+ unidades, <strong className="text-primary">precios especiales con programa de renovado</strong>.
+                    de 10+ unidades, <strong className="text-primary">precios preferentes y seguimiento por unidad</strong>.
                   </p>
                 </div>
               </div>

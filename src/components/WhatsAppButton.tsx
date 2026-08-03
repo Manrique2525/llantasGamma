@@ -28,7 +28,7 @@ export default function WhatsAppButton({
         <div className="relative bg-white text-gray-800 px-4 py-3 rounded-lg shadow-xl max-w-[260px] animate-in fade-in slide-in-from-bottom-2">
           <p className="font-bold text-sm">¿Necesitas ayuda ahora?</p>
           <p className="text-xs text-gray-600 mt-1">
-            Escríbenos por WhatsApp y te atendemos en menos de 5 minutos
+            Escríbenos por WhatsApp y te ayudamos con tu cotización
           </p>
           <button
             onClick={() => setShowTooltip(false)}

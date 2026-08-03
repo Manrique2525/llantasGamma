@@ -11,27 +11,27 @@ const faqData: FAQItem[] = [
   {
     question: "¿Cuánto tarda la entrega?",
     answer:
-      "La entrega es en 24-48 horas en Villahermosa y zona metropolitana. Para otras zonas de Tabasco, coordinamos la entrega en menos de 72 horas. Contáctanos para confirmar disponibilidad en tu zona.",
+      "El tiempo de entrega se confirma al cotizar, ya que depende de la medida, marca y disponibilidad. Escríbenos por WhatsApp y te damos una fecha clara antes de comprometerte.",
   },
   {
     question: "¿Ofrecen garantía en las llantas?",
     answer:
-      "Sí, todas nuestras llantas cuentan con garantía directa de fábrica. El tiempo de garantía varía según la marca y modelo, pero generalmente es de 12 a 36 meses. Además, ofrecemos garantía adicional en instalación.",
+      "La garantía aplica según marca, producto y condiciones del fabricante. Al momento de cotizar te confirmamos la cobertura de la llanta que elijas.",
   },
   {
     question: "¿Trabajan con flotillas de empresas?",
     answer:
-      "Absolutamente. Tenemos un programa especial para flotillas de 10+ unidades con descuentos de hasta 15%, soporte técnico 24/7, y un equipo dedicado para gestionar tu cuenta. Muchas empresas de transportes en Tabasco ya confían en nosotros.",
+      "Sí. Ayudamos a empresas a mantener sus unidades disponibles mediante inspecciones, historial de mantenimiento, atención prioritaria y suministro de llantas y refacciones.",
   },
   {
     question: "¿Cuáles son las marcas que manejan?",
     answer:
-      "Somos distribuidores oficiales de 8 marcas líderes mundiales: Michelin, Bridgestone, Continental, Goodyear, Pirelli, Firestone, Yokohama y Hankook. Ofrecemos opciones para cada tipo de vehículo y presupuesto.",
+      "Trabajamos como proveedor multimarca: cotizamos opciones de distintas marcas según la medida, aplicación y presupuesto. Solicita tu cotización por WhatsApp.",
   },
   {
     question: "¿Hacen instalación de llantas?",
     answer:
-      "Sí, contamos con equipo profesional de instalación. Ofrecemos servicio de inflado, balanceo, alineación 3D y rotación. La instalación está incluida en la mayoría de nuestros paquetes.",
+      "Sí, ofrecemos instalación, balanceo y mantenimiento preventivo. Confirma la disponibilidad del servicio al cotizar.",
   },
   {
     question: "¿Aceptan pagos a crédito?",
@@ -39,9 +39,9 @@ const faqData: FAQItem[] = [
       "Sí, ofrecemos opciones de pago flexibles para empresas y flotillas. Trabajamos con transferencia bancaria, tarjeta de crédito/débito, y programas de crédito para clientes calificados. Solicita una cotización para conocer las opciones.",
   },
   {
-    question: "¿Qué pasa si no responden en 4 horas?",
+    question: "¿Cómo solicito una cotización?",
     answer:
-      "Si no te respondemos en un plazo de 4 horas, te damos un 10% de descuento en tu compra. Es nuestra garantía de servicio. Puedes contactarnos por WhatsApp, teléfono o formulario y siempre cumplimos con el tiempo de respuesta.",
+      "Escríbenos por WhatsApp al 993 398 7711 o completa el formulario de contacto. Un asesor dará seguimiento a tu solicitud.",
   },
 ];
 

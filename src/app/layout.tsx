@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Montserrat, Hanken_Grotesk } from "next/font/google";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import StickyCTA from "@/components/StickyCTA";
-import SocialProofToast from "@/components/SocialProofToast";
 
 import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
@@ -22,11 +21,11 @@ const hankenGrotesk = Hanken_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://llantasgama.com"),
   title: {
-    default: "Llantas Gama | Distribuidor Oficial de 8 Marcas Premium",
+    default: "Llantas Gama | Proveedor Multimarca en Villahermosa",
     template: "%s | Llantas Gama",
   },
   description:
-    "Venta de llantas Michelin, Bridgestone, Continental y más para auto, camión, agrícola e industrial. Distribuidor oficial certificado. Entrega en 24-48 hrs. Cotización gratis.",
+    "Venta e instalación de llantas multimarca para auto, camión, agrícola e industrial en Villahermosa, Tabasco. Solicita tu cotización por WhatsApp.",
   keywords: [
     "llantas",
     "neumáticos",
@@ -40,7 +39,7 @@ export const metadata: Metadata = {
     "llantas industriales",
     "Villahermosa",
     "Tabasco",
-    "distribuidor oficial",
+    "multimarca",
   ],
   alternates: {
     canonical: "https://llantasgama.com",
@@ -49,9 +48,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Llantas Gama | Distribuidor Oficial de 8 Marcas Premium",
+    title: "Llantas Gama | Proveedor Multimarca en Villahermosa",
     description:
-      "25,000+ llantas en stock. Auto, camión, agrícola e industrial. Entrega en 24-48 hrs.",
+      "Venta e instalación de llantas multimarca para auto, camión, agrícola e industrial en Villahermosa. Solicita tu cotización por WhatsApp.",
     url: "https://llantasgama.com",
     siteName: "Llantas Gama",
     locale: "es_MX",
@@ -61,15 +60,15 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Llantas Gama - Distribuidor Oficial de llantas en Villahermosa",
+        alt: "Llantas Gama - Llantas multimarca en Villahermosa",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Llantas Gama | Distribuidor Oficial de 8 Marcas Premium",
+    title: "Llantas Gama | Proveedor Multimarca en Villahermosa",
     description:
-      "25,000+ llantas en stock. Auto, camión, agrícola e industrial. Entrega en 24-48 hrs.",
+      "Venta e instalación de llantas multimarca para auto, camión, agrícola e industrial en Villahermosa. Solicita tu cotización por WhatsApp.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -102,7 +101,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               name: "Llantas Gama",
               description:
-                "Distribuidor oficial de llantas Michelin, Bridgestone, Continental y más. Auto, camión, agrícola e industrial.",
+                "Venta e instalación de llantas multimarca para auto, camión, agrícola e industrial en Villahermosa, Tabasco.",
               url: "https://llantasgama.com",
               telephone: "993 398 7711",
               address: {
@@ -153,7 +152,6 @@ export default function RootLayout({
           <WhatsAppButton />
         </div>
         <StickyCTA />
-        <SocialProofToast />
 
         <CookieConsent />
       </body>
