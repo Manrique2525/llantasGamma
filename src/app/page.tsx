@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import UrgencyBanner from "@/components/UrgencyBanner";
 import SectionHeader from "@/components/SectionHeader";
+import TestimonialCard from "@/components/TestimonialCard";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
 import AnimatedCounter from "@/components/AnimatedCounter";
@@ -447,25 +448,52 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Experiencia */}
+        {/* Testimonios */}
         <section className="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
           <ScrollReveal>
             <SectionHeader
-              badge="Nuestra Experiencia"
-              badgeIcon="verified"
-              title="Experiencia con"
-              titleHighlight="Particulares y Empresas de Villahermosa"
+              badge="Lo Que Dicen Nuestros Clientes"
+              badgeIcon="star"
+              title="Atención a Clientes"
+              titleHighlight="Particulares y Empresas"
+              subtitle="Resultados reales de empresas que ya optimizan sus costos operativos con nosotros."
             />
           </ScrollReveal>
-          <ScrollReveal delay={100}>
-            <div className="max-w-3xl mx-auto text-center">
-              <p className="text-body-lg text-on-surface">
-                Atendemos necesidades de llantas, frenos, suspensión, dirección
-                y mantenimiento preventivo, con seguimiento directo a cada
-                unidad.
-              </p>
-            </div>
-          </ScrollReveal>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <ScrollReveal delay={0}>
+              <TestimonialCard
+                name="Ing. Carlos Mendoza"
+                role="Director de Operaciones"
+                company="Transportes del Sureste"
+                text="Llevamos 5 años con Gama. Nuestros costos operativos bajaron 18% con su programa de flotillas. El soporte 24/7 ha sido clave para mantener nuestra flota en movimiento."
+                rating={5}
+                metric="-18%"
+                metricLabel="Reducción en costos operativos anuales"
+              />
+            </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <TestimonialCard
+                name="Ing. María García"
+                role="Propietaria"
+                company="Agropecuaria La Esperanza, Tab."
+                text="Las llantas Michelin AG que nos instalaron duraron 2 temporadas más que las competidoras. El servicio en campo durante cosecha fue la diferencia."
+                rating={5}
+                metric="+2 Temporadas"
+                metricLabel="Más de vida útil por juego de llantas"
+              />
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <TestimonialCard
+                name="Lic. Roberto Sánchez"
+                role="Gerente de Mantenimiento"
+                company="Minera del Carmen"
+                text="La auditoría de flotilla nos ahorró $500,000 en el primer año. El equipo técnico es de primer nivel y siempre disponibles."
+                rating={5}
+                metric="$500K MXN"
+                metricLabel="Ahorro en el primer año de servicio"
+              />
+            </ScrollReveal>
+          </div>
         </section>
 
         {/* Work Gallery */}
