@@ -139,7 +139,7 @@ export default function RootLayout({
                 },
               ],
               priceRange: "$$",
-              sameAs: ["https://facebook.com/llantasgama"],
+              sameAs: ["https://www.facebook.com/gamallantas?locale=es_LA"],
             }),
           }}
         />

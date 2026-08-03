@@ -18,7 +18,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-3 pt-2">
             <a
-              href="https://facebook.com/llantasgama"
+              href="https://www.facebook.com/gamallantas?locale=es_LA"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-surface-container flex items-center justify-center hover:text-primary transition-colors border border-outline-variant"
