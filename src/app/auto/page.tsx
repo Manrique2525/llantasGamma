@@ -11,7 +11,7 @@ import { PHONE } from "@/lib/constants";
 export const metadata = {
   title: "Llantas para Auto y Camioneta",
   description:
-    "Llantas Michelin, Bridgestone, Continental desde $899. Instalación profesional incluida. Cotiza en 2 minutos. Entrega en 24-48 hrs.",
+    "Llantas Michelin, Bridgestone, Continental desde $899 por pieza en medidas participantes. Sujeto a disponibilidad. Instalación profesional incluida. Solicita tu cotización por WhatsApp.",
   alternates: {
     canonical: "https://llantasgama.com/auto",
   },
@@ -55,7 +55,8 @@ export default function AutoPage() {
                 <strong className="text-on-surface">
                   Instalación profesional incluida.
                 </strong>{" "}
-                Cotiza en 2 minutos.
+                Llantas desde $899 por pieza en medidas participantes. Sujeto a
+                disponibilidad.
               </p>
               <div className="flex flex-wrap gap-lg pt-sm">
                 <div className="flex items-center gap-2">
@@ -66,7 +67,7 @@ export default function AutoPage() {
                     verified
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    Distribuidor Oficial
+                    Opciones multimarca
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -97,7 +98,7 @@ export default function AutoPage() {
                   href="/#contacto-auto"
                   className="bg-primary text-on-primary px-xl py-4 text-label-bold font-weight-label-bold uppercase tracking-label-bold primary-glow transition-all hover:scale-105 active:scale-95 text-center"
                 >
-                  Cotizar Mi Par de Llantas
+                  Cotizar Llantas Para Mi Vehículo
                 </Link>
                 <a
                   href={`tel:${PHONE.tel}`}
@@ -121,7 +122,7 @@ export default function AutoPage() {
                     Marcas Premium
                   </h2>
                   <p className="text-label-sm text-on-surface-variant mt-2 pl-4">
-                    Distribuidor oficial certificado con garantía de fábrica
+                    Opciones multimarca
                   </p>
                 </div>
               </div>
@@ -203,16 +204,10 @@ export default function AutoPage() {
                 badgeIcon="build"
                 title="Servicios"
                 titleHighlight="Especializados"
-                subtitle="Pack de seguridad: Alineación + Balanceo + Parchado = $899 (ahorra 20%)"
                 align="center"
               />
             </ScrollReveal>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-gutter">
-              <ServiceCard
-                icon="straighten"
-                title="Alineación 3D"
-                price="Desde $350"
-              />
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-gutter">
               <ServiceCard
                 icon="balance"
                 title="Balanceo"
@@ -266,11 +261,10 @@ export default function AutoPage() {
                 </div>
                 <div>
                   <h3 className="font-headline text-headline-md font-weight-headline-md">
-                    Técnicos Certificados
+                    Personal Técnico
                   </h3>
                   <p className="text-on-surface text-body-md mt-1">
-                    Nuestro equipo está certificado por las marcas que
-                    distribuimos.
+                    Personal técnico con procedimientos estandarizados.
                   </p>
                 </div>
               </div>
@@ -285,8 +279,7 @@ export default function AutoPage() {
                     Entrega en 24-48h
                   </h3>
                   <p className="text-on-surface text-body-md mt-1">
-                    Stock permanente de las medidas más demandadas en nuestra
-                    bodega.
+                    Disponibilidad local y con nuestra red de proveedores.
                   </p>
                 </div>
               </div>
@@ -300,11 +293,11 @@ export default function AutoPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-xl">
               <div>
                 <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg mb-md">
-                  Cotiza en 2 Minutos
+                  Solicita Tu Cotización por WhatsApp
                 </h2>
                 <p className="text-body-lg text-on-surface mb-lg">
-                  Completa el formulario y te llamamos en menos de 10 minutos
-                  con precio especial.{" "}
+                  Completa el formulario y un asesor dará seguimiento a tu
+                  solicitud.{" "}
                   <strong className="text-primary">Sin compromiso.</strong>
                 </p>
                 <div className="space-y-sm">

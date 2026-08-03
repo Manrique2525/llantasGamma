@@ -23,15 +23,14 @@ const segmentConfig = {
       "Hola, me interesa una cotización de llantas. ¿Podrían ayudarme?",
   },
   auto: {
-    title: "Cotiza en 2 Minutos",
+    title: "Solicita Tu Cotización por WhatsApp",
     subtitle:
-      "Completa el formulario y te llamamos en menos de 10 minutos con precio especial.",
-    guarantee: "Te llamamos en <10 minutos | 10% dto. si no respondemos",
+      "Completa el formulario y un asesor dará seguimiento a tu solicitud.",
+    guarantee: "",
     options: [
       "Cotización de llantas nuevas",
       "Llantas usadas",
       "Alineación y balanceo",
-      "Pack Seguridad ($899)",
     ],
     whatsappMessage:
       "Hola, necesito cotizar llantas para mi auto. ¿Me pueden ayudar?",
@@ -168,7 +167,7 @@ export default function ContactForm({
           ¡Mensaje Enviado!
         </h3>
         <p className="text-on-surface mb-4">
-          Te redirigimos a WhatsApp. Te contactaremos en menos de 10 minutos.
+          Te redirigimos a WhatsApp. Un asesor dará seguimiento a tu solicitud.
         </p>
         <button
           onClick={() => setShowSuccess(false)}
@@ -307,9 +306,11 @@ export default function ContactForm({
             "Enviar por WhatsApp"
           )}
         </button>
-        <p className="text-label-sm text-on-surface-variant text-center">
-          {config.guarantee}
-        </p>
+        {config.guarantee && (
+          <p className="text-label-sm text-on-surface-variant text-center">
+            {config.guarantee}
+          </p>
+        )}
       </form>
     </div>
   );
