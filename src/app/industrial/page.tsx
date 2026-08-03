@@ -2,15 +2,14 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
-import TestimonialCard from "@/components/TestimonialCard";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
 import { PHONE } from "@/lib/constants";
 
 export const metadata = {
-  title: "Llantas Industriales - Montacargas, Minería, Excavadoras",
+  title: "Llantas para Maquinaria Industrial y Construcción",
   description:
-    "99.8% uptime garantizado. Montacargas, excavadoras, minería OTR. Soporte técnico en <4 horas. Auditoría sin compromiso.",
+    "Cotizamos llantas para montacargas, minicargadores, retroexcavadoras y otros equipos de trabajo. La disponibilidad, instalación y tiempo de entrega se confirman según medida, equipo, ubicación y condiciones operativas.",
   alternates: {
     canonical: "https://llantasgama.com/industrial",
   },
@@ -36,7 +35,7 @@ export default function IndustrialPage() {
             <div className="max-w-2xl">
               <div className="flex flex-wrap items-center gap-3 mb-md">
                 <div className="inline-block px-3 py-1 bg-primary text-on-primary text-label-bold tracking-label-bold font-weight-label-bold tracking-widest">
-                  DIVISIÓN INDUSTRIAL
+                  EQUIPOS INDUSTRIALES
                 </div>
                 <div className="inline-flex items-center gap-1 px-3 py-1 bg-primary/10 border border-primary/30">
                   <span className="material-symbols-outlined text-primary text-[16px]" style={{ fontVariationSettings: "'FILL' 1" }}>schedule</span>
@@ -44,15 +43,16 @@ export default function IndustrialPage() {
                 </div>
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-white mb-md leading-tight">
-                99.8% DE <span className="text-primary">UPTIME</span>{" "}
-                GARANTIZADO
+                LLANTAS PARA MAQUINARIA{" "}
+                <span className="text-primary">
+                  INDUSTRIAL Y CONSTRUCCIÓN
+                </span>
               </h1>
               <p className="font-body text-body-lg text-on-surface mb-lg">
-                Montacargas, excavadoras, minería OTR.{" "}
-                <strong className="text-on-surface">
-                  Soporte técnico en &lt;4 horas.
-                </strong>{" "}
-                Si no llegamos, 10% de descuento.
+                Cotizamos llantas para montacargas, minicargadores,
+                retroexcavadoras y otros equipos de trabajo. La disponibilidad,
+                instalación y tiempo de entrega se confirman según medida,
+                equipo, ubicación y condiciones operativas.
               </p>
               <div className="flex flex-wrap gap-lg pt-sm">
                 <div className="flex items-center gap-2">
@@ -63,7 +63,7 @@ export default function IndustrialPage() {
                     verified
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    99.8% Uptime
+                    Cotización Multimarca
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -85,7 +85,7 @@ export default function IndustrialPage() {
                     schedule
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    Respuesta &lt;4 horas
+                    Seguimiento de Desgaste
                   </span>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function IndustrialPage() {
                   href="/#contacto-industrial"
                   className="bg-primary text-on-primary px-xl py-4 text-label-bold font-weight-label-bold uppercase tracking-label-bold primary-glow transition-all hover:scale-105 active:scale-95 text-center"
                 >
-                  Solicitar Auditoría GRATIS
+                  Solicitar Cotización GRATIS
                 </Link>
                 <a
                   href={`tel:${PHONE.tel}`}
@@ -105,53 +105,6 @@ export default function IndustrialPage() {
                 </a>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Response Time Banner */}
-        <section className="bg-surface-container-lowest py-sm border-y border-outline-variant overflow-hidden relative">
-          <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-surface-container-lowest to-transparent z-10" />
-          <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-surface-container-lowest to-transparent z-10" />
-          <div className="animate-marquee flex items-center gap-lg whitespace-nowrap">
-            {[
-              { text: "Tiempo de Respuesta:", type: "label" },
-              { text: "< 4 HORAS EN SITIO", type: "value" },
-              { text: "|", type: "sep" },
-              { text: "GARANTÍA: 10% DTO. SI NO LLEGAMOS", type: "muted" },
-              { text: "|", type: "sep" },
-              { text: "PRECISION", type: "muted italic" },
-              { text: "PERFORMANCE", type: "muted italic" },
-              { text: "RELIABILITY", type: "muted italic" },
-              { text: "|", type: "sep" },
-              { text: "Tiempo de Respuesta:", type: "label" },
-              { text: "< 4 HORAS EN SITIO", type: "value" },
-              { text: "|", type: "sep" },
-              { text: "GARANTÍA: 10% DTO. SI NO LLEGAMOS", type: "muted" },
-              { text: "|", type: "sep" },
-              { text: "PRECISION", type: "muted italic" },
-              { text: "PERFORMANCE", type: "muted italic" },
-              { text: "RELIABILITY", type: "muted italic" },
-            ].map((item, i) => (
-              <span
-                key={i}
-                className={`whitespace-nowrap ${
-                  item.type === "label"
-                    ? "font-label-bold uppercase text-on-surface"
-                    : item.type === "value"
-                    ? "text-primary font-label-bold mono-numbers"
-                    : item.type === "muted"
-                    ? "text-label-sm text-on-surface-variant font-label-bold"
-                    : item.type === "muted italic"
-                    ? "font-label-bold italic text-on-surface-variant"
-                    : "text-on-surface-variant"
-                }`}
-              >
-                {item.text === "Tiempo de Respuesta:" && (
-                  <span className="material-symbols-outlined text-primary align-middle mr-1" style={{ fontVariationSettings: "'FILL' 1" }}>timer</span>
-                )}
-                {item.text}
-              </span>
-            ))}
           </div>
         </section>
 
@@ -181,7 +134,7 @@ export default function IndustrialPage() {
                     <span className="material-symbols-outlined text-primary text-[18px]">
                       check_circle
                     </span>{" "}
-                    Sólidos y Neumáticos — 50+ medidas
+                    Sólidos y neumáticos
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-[18px]">
@@ -221,7 +174,7 @@ export default function IndustrialPage() {
               <div className="z-10 relative">
                 <p className="text-on-surface-variant mb-4 font-body">
                     <span className="text-on-surface">Resistencia superior al corte y al desgaste para excavadoras
-                    y retroexcavadoras. 30+ medidas disponibles.</span>
+                    y retroexcavadoras.</span>
                 </p>
                 <button className="bg-on-surface text-background px-4 py-2 font-label-bold text-label-sm font-weight-label-sm uppercase">
                   Ver Medidas
@@ -249,7 +202,7 @@ export default function IndustrialPage() {
               <div className="z-10 relative mt-4">
                 <p className="text-on-surface-variant mb-4 font-body text-label-sm">
                     <span className="text-on-surface">Dureza Extrema E-4 / L-4: Diseñada para terrenos rocosos con
-                    alto riesgo de cortes. 20+ medidas.</span>
+                    alto riesgo de cortes.</span>
                 </p>
               </div>
               <div className="absolute bottom-4 left-4 z-10">
@@ -275,7 +228,7 @@ export default function IndustrialPage() {
             <div className="md:col-span-8 bg-surface-container-highest ghost-border p-lg">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 gap-4">
                 <h3 className="font-headline text-headline-md font-weight-headline-md">
-                  Alianzas Estratégicas
+                  Opciones Multimarca
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {["MICHELIN OTR", "CAMSO", "TRELLEBORG", "CONTINENTAL"].map(
@@ -291,8 +244,8 @@ export default function IndustrialPage() {
                 </div>
               </div>
               <p className="text-on-surface font-body mb-lg">
-                Distribuidores oficiales de las marcas líderes en el sector
-                industrial global. Garantía directa de fábrica.
+                Cotizamos opciones multimarca como Michelin OTR, Camso,
+                Trelleborg y Continental.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
                 {["MICHELIN OTR", "CAMSO", "TRELLEBORG", "CONTINENTAL"].map(
@@ -312,31 +265,48 @@ export default function IndustrialPage() {
           </div>
         </section>
 
-        {/* Corporate Services */}
+        {/* Servicios Industriales */}
         <section className="bg-surface-container-low py-xl relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-xl items-center relative z-10">
             <div>
               <div className="inline-block border-l-2 border-primary pl-4 mb-md">
                 <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg uppercase">
-                  SERVICIOS CORPORATIVOS
+                  SERVICIOS INDUSTRIALES
                 </h2>
               </div>
               <div className="space-y-md">
                 {[
                   {
-                    icon: "engineering",
-                    title: "Mantenimiento Predictivo",
-                    desc: "Monitoreo de presión y temperatura en tiempo real para flotas industriales. Evite fallas catastróficas.",
+                    icon: "straighten",
+                    title: "Identificación de Medida",
                   },
                   {
-                    icon: "package_2",
-                    title: "Gestión de Stock In-Situ",
-                    desc: "Administramos su inventario crítico directamente en sus instalaciones para respuesta inmediata.",
+                    icon: "compare_arrows",
+                    title: "Comparación de Alternativas",
                   },
                   {
-                    icon: "groups",
+                    icon: "currency_exchange",
+                    title: "Cotización Multimarca",
+                  },
+                  {
+                    icon: "local_shipping",
+                    title: "Suministro sobre Pedido",
+                  },
+                  {
+                    icon: "handyman",
+                    title: "Coordinación de Instalación",
+                  },
+                  {
+                    icon: "visibility",
+                    title: "Inspección Visual Programada",
+                  },
+                  {
+                    icon: "monitor_heart",
+                    title: "Seguimiento de Desgaste",
+                  },
+                  {
+                    icon: "school",
                     title: "Capacitación de Operadores",
-                    desc: "Talleres técnicos sobre cuidado y prolongación de la vida útil del neumático.",
                   },
                 ].map((service) => (
                   <div key={service.title} className="flex gap-4 group">
@@ -349,9 +319,6 @@ export default function IndustrialPage() {
                       <h4 className="font-label-bold text-lg mb-1 uppercase group-hover:text-primary transition-colors">
                         {service.title}
                       </h4>
-                      <p className="text-on-surface font-body">
-                        {service.desc}
-                      </p>
                     </div>
                   </div>
                 ))}
@@ -360,89 +327,49 @@ export default function IndustrialPage() {
             <div className="relative">
               <div className="absolute -top-12 -right-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
               <div className="bg-surface-container-high p-lg ghost-border relative z-10">
-                <div className="flex justify-between items-center mb-lg">
-                  <h3 className="font-headline text-headline-md font-weight-headline-md">
-                    Plan Empresarial
-                  </h3>
-                  <span className="bg-primary/20 text-primary border border-primary/40 px-3 py-1 text-label-sm font-weight-label-sm font-label-bold uppercase">
-                    Más Solicitado
-                  </span>
-                </div>
-                <div className="space-y-3 mb-lg">
-                  {[
-                    "Soporte 24/7",
-                    "Visitas Técnicas Mensuales",
-                    "Precios Flotantes de Fábrica",
-                  ].map((feature) => (
-                    <div
-                      key={feature}
-                      className="flex justify-between items-center py-2 border-b border-outline-variant"
-                    >
-                      <span className="text-on-surface-variant font-body">
-                        {feature}
-                      </span>
-                      <span className="material-symbols-outlined text-primary">
-                        done
-                      </span>
-                    </div>
-                  ))}
-                </div>
+                <h3 className="font-headline text-headline-md font-weight-headline-md mb-lg">
+                  Cotización de Llantas Industriales
+                </h3>
+                <p className="text-on-surface font-body mb-lg">
+                  Cotizamos llantas para montacargas, minicargadores,
+                  retroexcavadoras y otros equipos de trabajo. La disponibilidad,
+                  instalación y tiempo de entrega se confirman según medida,
+                  equipo, ubicación y condiciones operativas.
+                </p>
                 <div>
                   <Link
                     href="/#contacto-industrial"
                     className="block w-full bg-primary text-on-primary py-4 font-label-bold uppercase text-label-bold tracking-label-bold font-weight-label-bold hover:brightness-110 text-center"
                   >
-                    Solicitar Propuesta Personalizada
+                    Solicitar Cotización
                   </Link>
-                  <p className="text-label-sm text-on-surface-variant text-center mt-2">
-                    Planes desde $5,000/mes | Incluye soporte 24/7
-                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Testimonios Industrial */}
+        {/* Experiencia */}
         <section className="py-xl">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-            <SectionHeader
-              badge="Resultados Industriales"
-              badgeIcon="factory"
-              title="Clientes"
-              titleHighlight="Industriales"
-              subtitle="Empresas que confían en nosotros para mantener su operación al 100%."
-              align="center"
-            />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-              <TestimonialCard
-                name="Ing. Fernando López"
-                role="Gerente de Mantenimiento"
-                company="Grupo Industrial del Sur"
-                text="La auditoría de neumáticos nos identificó $800,000 en ahorro potencial. Su plan de mantenimiento predictivo eliminó las paradas no programadas."
-                rating={5}
-                metric="$800K MXN"
-                metricLabel="Ahorro anual identificado"
+            <ScrollReveal>
+              <SectionHeader
+                badge="Nuestra Experiencia"
+                badgeIcon="verified"
+                title="Experiencia con"
+                titleHighlight="Empresas Industriales"
+                align="center"
               />
-              <TestimonialCard
-                name="Ing. Carlos Ruiz"
-                role="Director de Operaciones"
-                company="Minera del Carmen, S.A."
-                text="Sus llantas OTR Michelin duraron 40% más que las competidoras. El soporte en sitio es excepcional — siempre responden en menos de 4 horas."
-                rating={5}
-                metric="+40%"
-                metricLabel="Vida útil extendida"
-              />
-              <TestimonialCard
-                name="Lic. María García"
-                role="Jefa de Logística"
-                company="Almacenes Centrales"
-                text="Pasamos de 3 paradas mensuales a cero. El plan empresarial con visitas técnicas mensuales transformó nuestra operación de montacargas."
-                rating={5}
-                metric="0 Paradas"
-                metricLabel="Paradas no programadas"
-              />
-            </div>
+            </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <div className="max-w-3xl mx-auto text-center">
+                <p className="text-body-lg text-on-surface">
+                  Atendemos necesidades de llantas para equipos de trabajo, con
+                  identificación de medida, cotización multimarca y seguimiento
+                  a cada unidad.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -456,15 +383,15 @@ export default function IndustrialPage() {
               <div>
                 <div className="inline-block border-l-2 border-primary pl-4 mb-md">
                   <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg uppercase">
-                    SOLICITE UNA AUDITORÍA
+                    SOLICITE UNA COTIZACIÓN
                   </h2>
                 </div>
                 <p className="text-on-surface font-body mb-lg">
-                  Optimice sus costos operativos. Nuestros expertos realizarán un
-                  diagnóstico detallado del estado de sus neumáticos y sugerirán
-                  el plan de mantenimiento ideal para su operación.{" "}
+                  Optimice sus costos operativos. Nuestro equipo le cotiza
+                  llantas multimarca para su equipo de trabajo, con opciones
+                  según medida, equipo y condiciones operativas.{" "}
                   <strong className="text-primary">
-                    Auditoría sin compromiso.
+                    Cotización sin compromiso.
                   </strong>
                 </p>
                 <div className="space-y-sm">
@@ -476,7 +403,7 @@ export default function IndustrialPage() {
                     </div>
                     <div>
                       <p className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase font-label-bold">
-                        Atención Inmediata
+                        Línea Directa
                       </p>
                       <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "01800426299"}`} className="font-label-bold text-lg mono-numbers hover:text-primary transition-colors">
                         {process.env.NEXT_PUBLIC_PHONE_DISPLAY || "01-800-GAMA-IND"}
@@ -491,7 +418,7 @@ export default function IndustrialPage() {
                     </div>
                     <div>
                       <p className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase font-label-bold">
-                        Sede Industrial
+                        Punto de Atención
                       </p>
                       <p className="font-label-bold text-lg">
                         Av Universidad 494, El Recreo, 86029 Villahermosa, Tab.

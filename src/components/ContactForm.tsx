@@ -62,18 +62,17 @@ const segmentConfig = {
       "Hola, necesito cotizar llantas agrícolas para mi hacienda.",
   },
   industrial: {
-    title: "Agendar Auditoría GRATIS",
+    title: "Solicitar Cotización",
     subtitle:
-      "Optimice sus costos operativos. Diagnóstico detallado sin compromiso.",
-    guarantee:
-      "Te llamamos en <2 horas | Incluye diagnóstico de 12 puntos",
+      "Cotizamos llantas multimarca para su equipo de trabajo. Sin compromiso.",
+    guarantee: "Cotización sin compromiso",
     options: [
       "Logística / Montacargas",
       "Construcción / Minería",
       "Otro",
     ],
     whatsappMessage:
-      "Hola, necesito una auditoría de neumáticos industriales.",
+      "Hola, necesito una cotización de llantas industriales.",
   },
 };
 
