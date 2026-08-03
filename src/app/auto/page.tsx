@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TireSearchForm from "@/components/TireSearchForm";
 import SectionHeader from "@/components/SectionHeader";
-import ServiceCard from "@/components/ServiceCard";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
 import { PHONE } from "@/lib/constants";
@@ -78,7 +77,7 @@ export default function AutoPage() {
                     verified
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    Garantía de fábrica
+                    Garantía según fabricante
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -195,7 +194,7 @@ export default function AutoPage() {
           </div>
         </section>
 
-        {/* Service Cards */}
+        {/* Service Categories */}
         <section className="py-xl bg-surface-container-low">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
             <ScrollReveal>
@@ -204,31 +203,188 @@ export default function AutoPage() {
                 badgeIcon="build"
                 title="Servicios"
                 titleHighlight="Especializados"
+                subtitle="Llantas y servicio automotriz completo para tu vehículo."
                 align="center"
               />
             </ScrollReveal>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-gutter">
-              <ServiceCard
-                icon="balance"
-                title="Balanceo"
-                price="Desde $200"
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+              {[
+                {
+                  icon: "tire_repair",
+                  title: "Llantas",
+                  items: [
+                    "Montaje y desmontaje",
+                    "Balanceo computarizado",
+                    "Rotación de llantas",
+                    "Reparación de ponchaduras",
+                    "Reparación de cejas",
+                    "Cambio de válvulas",
+                  ],
+                },
+                {
+                  icon: "car_repair",
+                  title: "Frenos",
+                  items: [
+                    "Balatas delanteras y traseras",
+                    "Zapatas",
+                    "Discos y tambores",
+                    "Calipers",
+                    "Purgado convencional y ABS",
+                    "Servicio completo de frenos",
+                  ],
+                },
+                {
+                  icon: "handyman",
+                  title: "Suspensión",
+                  items: [
+                    "Amortiguadores",
+                    "Bases y horquillas",
+                    "Bujes y rótulas",
+                    "Bieletas",
+                    "Gomas y barras estabilizadoras",
+                    "Resortes",
+                  ],
+                },
+                {
+                  icon: "steering",
+                  title: "Dirección",
+                  items: [
+                    "Terminales y varillas",
+                    "Cremalleras y cajas de dirección",
+                    "Bombas y mangueras hidráulicas",
+                    "Diagnóstico de dirección eléctrica (EPS)",
+                  ],
+                },
+                {
+                  icon: "build",
+                  title: "Afinación",
+                  items: [
+                    "Afinación menor y mayor",
+                    "Cambio de bujías y bobinas",
+                    "Cambio de filtros",
+                    "Limpieza de cuerpo de aceleración",
+                    "Limpieza de inyectores",
+                  ],
+                },
+                {
+                  icon: "ac_unit",
+                  title: "Sistema de Enfriamiento",
+                  items: [
+                    "Radiadores",
+                    "Bombas de agua",
+                    "Termostatos",
+                    "Mangueras y depósitos recuperadores",
+                    "Cambio de anticongelante",
+                  ],
+                },
+                {
+                  icon: "settings",
+                  title: "Transmisión y Mecánica",
+                  items: [
+                    "Clutch y collarín",
+                    "Soportes de motor y transmisión",
+                    "Bandas, poleas y tensores",
+                    "Alternadores y marchas",
+                    "Baterías",
+                    "Diagnóstico electrónico",
+                  ],
+                },
+                {
+                  icon: "diagnosis",
+                  title: "Diagnóstico y TPMS",
+                  items: [
+                    "Escaneo computarizado",
+                    "Diagnóstico electrónico y preventivo",
+                    "Inspección multipuntos",
+                    "Diagnóstico de desgaste irregular",
+                    "Programación TPMS",
+                    "Cambio de sensores TPMS",
+                  ],
+                },
+              ].map((cat) => (
+                <div
+                  key={cat.title}
+                  className="bg-surface ghost-border p-lg flex flex-col hover:border-primary transition-colors"
+                >
+                  <div className="flex items-center gap-3 mb-md">
+                    <span className="w-11 h-11 bg-surface-variant rounded-full flex items-center justify-center">
+                      <span className="material-symbols-outlined text-primary">
+                        {cat.icon}
+                      </span>
+                    </span>
+                    <h3 className="font-headline text-[18px]">
+                      {cat.title}
+                    </h3>
+                  </div>
+                  <ul className="space-y-2 flex-1">
+                    {cat.items.map((item) => (
+                      <li key={item} className="flex items-start gap-2">
+                        <span
+                          className="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                          style={{ fontVariationSettings: "'FILL' 1" }}
+                        >
+                          check_circle
+                        </span>
+                        <span className="text-label-sm text-on-surface">
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href="#contacto-auto"
+                    className="mt-md text-label-sm font-label-bold text-primary uppercase hover:text-primary/70 transition-colors"
+                  >
+                    Cotizar →
+                  </Link>
+                </div>
+              ))}
+            </div>
+            <p className="mt-lg text-center text-label-sm text-on-surface-variant">
+              Precios de referencia: Balanceo desde $200 · Parchado desde $150 ·
+              Montaje incluido con compra · Checkup de suspensión desde $500.
+              Precios sujetos a confirmación según servicio y vehículo.
+            </p>
+          </div>
+        </section>
+
+        {/* Refacciones */}
+        <section className="py-xl bg-surface-container-lowest">
+          <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+            <ScrollReveal>
+              <SectionHeader
+                badge="Refacciones"
+                badgeIcon="inventory_2"
+                title="Refacciones"
+                titleHighlight="Disponibles"
+                subtitle="Cotizamos refacciones según marca, medida y disponibilidad."
+                align="center"
               />
-              <ServiceCard
-                icon="build_circle"
-                title="Parchado"
-                price="Desde $150"
-              />
-              <ServiceCard
-                icon="tire_repair"
-                title="Montaje"
-                price="Incluido con compra"
-                cta="Cotizar"
-              />
-              <ServiceCard
-                icon="car_repair"
-                title="Suspensión"
-                price="Checkup desde $500"
-              />
+            </ScrollReveal>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+              {[
+                { icon: "car_repair", label: "Suspensión" },
+                { icon: "steering", label: "Dirección" },
+                { icon: "car_repair", label: "Frenos" },
+                { icon: "build", label: "Afinación" },
+                { icon: "ac_unit", label: "Enfriamiento" },
+                { icon: "bolt", label: "Sistema eléctrico" },
+                { icon: "settings", label: "Transmisión" },
+                { icon: "water_drop", label: "Lubricantes y consumibles" },
+              ].map((ref) => (
+                <Link
+                  key={ref.label}
+                  href="#contacto-auto"
+                  className="ghost-border bg-surface p-lg flex flex-col items-center gap-3 text-center hover:border-primary transition-all group"
+                >
+                  <span className="material-symbols-outlined text-primary text-[36px]">
+                    {ref.icon}
+                  </span>
+                  <span className="text-label-sm font-label-bold uppercase text-on-surface">
+                    {ref.label}
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
         </section>

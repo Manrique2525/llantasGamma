@@ -74,7 +74,7 @@ export default function IndustrialPage() {
                     verified
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    Garantía de fábrica
+                    Garantía según fabricante
                   </span>
                 </div>
                 <div className="flex items-center gap-2">

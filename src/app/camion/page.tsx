@@ -73,7 +73,7 @@ export default function CamionPage() {
                     verified
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    Garantía de fábrica
+                    Garantía según fabricante
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -206,7 +206,7 @@ export default function CamionPage() {
         <section className="py-sm bg-surface-container-lowest border-y border-outline-variant overflow-hidden">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex items-center gap-lg opacity-60">
             <span className="whitespace-nowrap font-label-bold uppercase text-on-surface-variant">
-              Distribuidor Oficial:
+              Opciones Multimarca:
             </span>
             <div className="animate-marquee flex flex-1 items-center gap-lg grayscale hover:grayscale-0 transition-all">
               {[
@@ -298,6 +298,125 @@ export default function CamionPage() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Programa Fast Lane Flotillas */}
+        <section className="py-xl bg-surface-container-low">
+          <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+            <ScrollReveal>
+              <SectionHeader
+                badge="Programa Empresarial"
+                badgeIcon="speed"
+                title="Programa Fast Lane"
+                titleHighlight="Flotillas"
+                subtitle="Administración, mantenimiento y control de llantas para tu flotilla."
+                align="center"
+              />
+            </ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+              {[
+                {
+                  icon: "folder_open",
+                  title: "Administración de Flotillas",
+                  items: [
+                    "Expediente por unidad",
+                    "Historial de mantenimiento",
+                    "Recordatorios de servicio",
+                    "Control de llantas",
+                    "Reportes de desgaste",
+                  ],
+                },
+                {
+                  icon: "build",
+                  title: "Mantenimiento Preventivo",
+                  items: [
+                    "Servicios programados",
+                    "Inspecciones periódicas",
+                    "Revisiones de seguridad",
+                  ],
+                },
+                {
+                  icon: "car_repair",
+                  title: "Mantenimiento Correctivo",
+                  items: [
+                    "Frenos",
+                    "Suspensión",
+                    "Dirección",
+                    "Afinación",
+                    "Sistema de enfriamiento",
+                    "Mecánica general",
+                  ],
+                },
+                {
+                  icon: "tire_repair",
+                  title: "Gestión de Llantas",
+                  items: [
+                    "Venta de llantas",
+                    "Rotación",
+                    "Control de desgaste",
+                    "Reportes de rendimiento",
+                    "Diagnóstico de fallas",
+                  ],
+                },
+                {
+                  icon: "priority_high",
+                  title: "Atención Prioritaria",
+                  items: [
+                    "Agenda preferente",
+                    "Diagnóstico rápido",
+                    "Entrega prioritaria",
+                  ],
+                },
+                {
+                  icon: "local_shipping",
+                  title: "Servicio Móvil",
+                  items: [
+                    "Atención en instalaciones del cliente",
+                    "Cambio de llantas",
+                    "Reparaciones menores",
+                    "Diagnósticos",
+                  ],
+                },
+              ].map((block) => (
+                <div
+                  key={block.title}
+                  className="bg-surface ghost-border p-lg flex flex-col hover:border-primary transition-colors"
+                >
+                  <div className="flex items-center gap-3 mb-md">
+                    <span className="w-11 h-11 bg-surface-variant rounded-full flex items-center justify-center">
+                      <span className="material-symbols-outlined text-primary">
+                        {block.icon}
+                      </span>
+                    </span>
+                    <h3 className="font-headline text-[18px]">
+                      {block.title}
+                    </h3>
+                  </div>
+                  <ul className="space-y-2 flex-1">
+                    {block.items.map((item) => (
+                      <li key={item} className="flex items-start gap-2">
+                        <span
+                          className="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                          style={{ fontVariationSettings: "'FILL' 1" }}
+                        >
+                          check_circle
+                        </span>
+                        <span className="text-label-sm text-on-surface">
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href="#contacto-camion"
+                    className="mt-md text-label-sm font-label-bold text-primary uppercase hover:text-primary/70 transition-colors"
+                  >
+                    Solicitar información →
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
         </section>
