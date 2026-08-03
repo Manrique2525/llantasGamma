@@ -30,15 +30,15 @@ const galleryImages = [
   },
   {
     src: "/images/homepage-gallery-3.jpg",
-    alt: "Alineación 3D láser",
-    label: "Alineación 3D",
-    desc: "Precisión láser milimétrica",
+    alt: "Revisión de alineación y desgaste de neumáticos",
+    label: "Revisión de Alineación",
+    desc: "Detección de desgaste de neumáticos",
   },
   {
     src: "/images/homepage-gallery-4.jpg",
     alt: "Balanceado industrial",
     label: "Balanceado Industrial",
-    desc: "50,000+ llantas montadas este año",
+    desc: "Experiencia en instalación, balanceo y mantenimiento automotriz",
   },
 ];
 
@@ -80,7 +80,7 @@ export default function HomePage() {
                     precision_manufacturing
                   </span>
                   <span className="text-label-sm font-label-bold font-weight-label-sm tracking-widest uppercase">
-                    Distribuidor Oficial de 8 Marcas
+                    Proveedor multimarca
                   </span>
                 </div>
                 <div className="inline-flex items-center gap-xs px-3 py-1 bg-primary/10 border border-primary/30">
@@ -97,14 +97,16 @@ export default function HomePage() {
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-on-surface">
                 TU PROVEEDOR DE{" "}
-                <span className="text-primary">LLANTAS</span> CON ENTREGA EN 24
-                HORAS.
+                <span className="text-primary">LLANTAS</span> CON ENTREGA SUJETA
+                A MEDIDA, MARCA Y DISPONIBILIDAD.
               </h1>
               <p className="font-body text-body-lg text-on-surface">
-                <strong className="text-on-surface">25,000+ llantas en stock</strong> de
-                8 marcas oficiales. Auto, camión, agrícola e industrial.{" "}
+                <strong className="text-on-surface">
+                  Acceso a inventario multimarca para distintas aplicaciones.
+                </strong>{" "}
+                Auto, camión, agrícola e industrial.{" "}
                 <strong className="text-primary">
-                  Cotización en menos de 10 minutos.
+                  Solicita tu cotización por WhatsApp.
                 </strong>
               </p>
               <div className="flex flex-wrap gap-lg pt-sm">
@@ -116,7 +118,7 @@ export default function HomePage() {
                     verified
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    Distribuidor Oficial Certificado
+                    Venta e instalación de llantas multimarca
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -127,7 +129,7 @@ export default function HomePage() {
                     verified
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    Garantía de fábrica
+                    Garantía aplicable según marca, producto y condiciones del fabricante
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -138,7 +140,7 @@ export default function HomePage() {
                     local_shipping
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    Entrega en 24-48 hrs
+                    Entrega sujeta a medida, marca y disponibilidad
                   </span>
                 </div>
               </div>
@@ -199,7 +201,7 @@ export default function HomePage() {
               {
                 title: "Agrícola",
                 icon: "agriculture",
-                desc: "250+ medidas. Servicio en campo durante cosecha. Entrega en 24 hrs.",
+                desc: "250+ medidas. Servicio en campo durante cosecha. Entrega sujeta a medida, marca y disponibilidad.",
                 link: "/agricola",
                 tag: "250+ Medidas",
               },
@@ -262,10 +264,10 @@ export default function HomePage() {
                 </div>
                 <div>
                   <div className="font-headline text-headline-md font-bold">
-                    <AnimatedCounter target={25000} suffix="+" />
+                    Acceso a inventario multimarca
                   </div>
                   <div className="text-label-sm font-label-bold font-weight-label-sm uppercase tracking-widest text-on-surface-variant">
-                    Llantas en stock de 8 marcas oficiales
+                    para distintas aplicaciones
                   </div>
                 </div>
               </div>
@@ -282,10 +284,10 @@ export default function HomePage() {
                 </div>
                 <div>
                   <div className="font-headline text-headline-md font-bold">
-                    &lt;4 Horas
+                    Atención local en Villahermosa
                   </div>
                   <div className="text-label-sm font-label-bold font-weight-label-sm uppercase tracking-widest text-on-surface-variant">
-                    Tiempo de respuesta en zona metropolitana
+                    y zona metropolitana
                   </div>
                 </div>
               </div>
@@ -352,18 +354,18 @@ export default function HomePage() {
                 <div className="grid grid-cols-2 gap-4 mb-lg">
                   <div className="bg-surface-container p-4 ghost-border text-center">
                     <div className="font-headline text-headline-md font-bold text-primary">
-                      10%
+                      Atención directa
                     </div>
                     <div className="text-label-sm text-on-surface-variant uppercase">
-                      Descuento si no respondemos en 4 hrs
+                      y seguimiento personalizado
                     </div>
                   </div>
                   <div className="bg-surface-container p-4 ghost-border text-center">
                     <div className="font-headline text-headline-md font-bold text-primary">
-                      24-48h
+                      Disponibilidad
                     </div>
                     <div className="text-label-sm text-on-surface-variant uppercase">
-                      Entrega garantizada
+                      y tiempo de entrega confirmados al cotizar
                     </div>
                   </div>
                 </div>
@@ -387,9 +389,10 @@ export default function HomePage() {
                     </h3>
                   </div>
                   <p className="text-body-md text-on-surface">
-                    Cotización en menos de 10 minutos. Entrega en 24-48 horas.
+                    Solicita tu cotización por WhatsApp. Entrega sujeta a medida,
+                    marca y disponibilidad.
                     <strong className="text-primary">
-                      {" "}Si no respondemos en 4 horas, te damos 10% de descuento.
+                      {" "}Atención directa y seguimiento personalizado.
                     </strong>
                   </p>
                 </div>
@@ -400,13 +403,14 @@ export default function HomePage() {
                       verified
                     </span>
                     <h3 className="font-headline text-headline-md font-weight-headline-md tracking-headline-lg">
-                      Distribuidor Oficial
+                      Proveedor Multimarca
                     </h3>
                   </div>
                   <p className="text-body-md text-on-surface">
-                    Somos distribuidor certificado de{" "}
+                    Venta e instalación de llantas multimarca:{" "}
                     <strong className="text-on-surface">Michelin, Bridgestone, Continental,
-                    Goodyear y 4 marcas más</strong>. Garantía directa de fábrica.
+                    Goodyear y 4 marcas más</strong>. Garantía aplicable según marca,
+                    producto y condiciones del fabricante.
                   </p>
                 </div>
 
@@ -435,7 +439,7 @@ export default function HomePage() {
                     </h3>
                   </div>
                   <p className="text-body-md text-on-surface">
-                    Precios de distribuidor con descuentos por volumen. Para flotillas
+                    Precios competitivos y opciones según presupuesto. Para flotillas
                     de 10+ unidades, <strong className="text-primary">precios especiales con programa de renovado</strong>.
                   </p>
                 </div>
@@ -450,8 +454,8 @@ export default function HomePage() {
             <SectionHeader
               badge="Lo Que Dicen Nuestros Clientes"
               badgeIcon="star"
-              title="+1,200 Clientes"
-              titleHighlight="Confían en Nosotros"
+              title="Atención a Clientes"
+              titleHighlight="Particulares y Empresas"
               subtitle="Resultados reales de empresas que ya optimizan sus costos operativos con nosotros."
             />
           </ScrollReveal>
@@ -500,7 +504,7 @@ export default function HomePage() {
               badgeIcon="precision_manufacturing"
               title="Capacidad"
               titleHighlight="Operativa"
-              subtitle="Más de 50,000 llantas montadas este año con precisión técnica y equipamiento de vanguardia."
+              subtitle="Experiencia en instalación, balanceo y mantenimiento automotriz."
             />
           </ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-gutter">
@@ -564,7 +568,7 @@ export default function HomePage() {
           <ScrollReveal>
             <div className="mb-4 text-center">
               <span className="text-label-sm font-label-bold font-weight-label-sm uppercase tracking-widest text-on-surface-variant">
-                Distribuidor Oficial Certificado de 8 Marcas Líderes Mundiales
+                Venta e instalación de llantas multimarca
               </span>
             </div>
           </ScrollReveal>
@@ -629,7 +633,7 @@ export default function HomePage() {
                 Solicita Tu Cotización
               </h2>
               <p className="text-on-surface">
-                Respuesta en menos de 10 minutos. Sin compromiso.
+                Solicita tu cotización por WhatsApp. Sin compromiso.
               </p>
             </div>
             <div className="grid grid-cols-1 gap-4">
