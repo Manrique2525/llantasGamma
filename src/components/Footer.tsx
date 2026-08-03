@@ -26,12 +26,6 @@ export default function Footer() {
               <span className="material-symbols-outlined">public</span>
             </a>
             <a
-              href={`mailto:${process.env.NEXT_PUBLIC_EMAIL || "ventas@llantasgama.com"}`}
-              className="w-10 h-10 bg-surface-container flex items-center justify-center hover:text-primary transition-colors border border-outline-variant"
-            >
-              <span className="material-symbols-outlined">mail</span>
-            </a>
-            <a
               href={buildWhatsAppUrl("Hola, me interesa una cotización de llantas")}
               target="_blank"
               rel="noopener noreferrer"
@@ -48,12 +42,13 @@ export default function Footer() {
           </h4>
           <ul className="space-y-2 text-on-surface-variant text-body-md">
             <li>Av Universidad 494, El Recreo</li>
-            <li>86029 Villahermosa, Tab.</li>
+            <li>86020 Villahermosa, Tab.</li>
             <li>
-              <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "01800426299"}`} className="hover:text-primary transition-colors">
-                Tel: {process.env.NEXT_PUBLIC_PHONE_DISPLAY || "01-800-GAMA-99"}
+              <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "9933987711"}`} className="hover:text-primary transition-colors">
+                Tel/WhatsApp: {process.env.NEXT_PUBLIC_PHONE_DISPLAY || "993 398 7711"}
               </a>
             </li>
+            <li>Lun-Vie 8:30-17:30 · Sáb 8:30-13:30</li>
           </ul>
         </div>
 

@@ -104,13 +104,13 @@ export default function RootLayout({
               description:
                 "Distribuidor oficial de llantas Michelin, Bridgestone, Continental y más. Auto, camión, agrícola e industrial.",
               url: "https://llantasgama.com",
-              telephone: "01-800-GAMA-99",
+              telephone: "993 398 7711",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Av Universidad 494, El Recreo",
                 addressLocality: "Villahermosa",
                 addressRegion: "Tabasco",
-                postalCode: "86029",
+                postalCode: "86020",
                 addressCountry: "MX",
               },
               geo: {
@@ -118,19 +118,26 @@ export default function RootLayout({
                 latitude: 18.015,
                 longitude: -92.9163,
               },
-              openingHoursSpecification: {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                ],
-                opens: "08:00",
-                closes: "18:00",
-              },
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                  ],
+                  opens: "08:30",
+                  closes: "17:30",
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: ["Saturday"],
+                  opens: "08:30",
+                  closes: "13:30",
+                },
+              ],
               priceRange: "$$",
               sameAs: ["https://facebook.com/llantasgama"],
             }),

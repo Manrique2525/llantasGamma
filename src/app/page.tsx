@@ -90,7 +90,7 @@ export default function HomePage() {
                     schedule
                   </span>
                   <span className="text-label-sm font-bold font-weight-label-sm tracking-widest uppercase text-primary">
-                    Lun-Vie 8AM-5PM
+                    Lun-Vie 8:30-17:30
                   </span>
                 </div>
               </div>
@@ -613,28 +613,28 @@ export default function HomePage() {
                 {
                   icon: "call",
                   title: "Línea Directa",
-                  text: "01-800-GAMA-99",
-                  href: "tel:01800426299",
+                  text: "993 398 7711",
+                  href: "tel:9933987711",
                 },
                 {
                   icon: "chat",
-                  title: "WhatsApp 24/7",
-                  text: "+52 1 81 2345 6789",
+                  title: "WhatsApp",
+                  text: "993 398 7711",
                   href: buildWhatsAppUrl("Hola, me interesa una cotización de llantas"),
                 },
                 {
-                  icon: "mail",
-                  title: "Email Corporativo",
-                  text: "ventas@llantasgama.com",
-                  href: "mailto:ventas@llantasgama.com",
+                  icon: "schedule",
+                  title: "Horario",
+                  text: "Lun-Vie 8:30-17:30 · Sáb 8:30-13:30",
                 },
                 {
                   icon: "location_on",
                   title: "Ubicación",
-                  text: "Av Universidad 494, El Recreo, 86029 Villahermosa, Tab.",
+                  text: "Av Universidad 494, El Recreo, 86020 Villahermosa, Tab.",
                   href: "https://maps.google.com/?q=Av+Universidad+494+Villahermosa+Tabasco",
                 },
-              ].map((item) => (
+              ].map((item) =>
+                item.href ? (
                 <a
                   key={item.title}
                   href={item.href}
@@ -656,7 +656,23 @@ export default function HomePage() {
                     <div className="text-body-md">{item.text}</div>
                   </div>
                 </a>
-              ))}
+                ) : (
+                <div
+                  key={item.title}
+                  className="p-4 bg-surface-container ghost-border flex items-start gap-4"
+                >
+                  <span className="material-symbols-outlined text-primary mt-1">
+                    {item.icon}
+                  </span>
+                  <div>
+                    <div className="font-label-bold uppercase text-primary text-xs mb-1">
+                      {item.title}
+                    </div>
+                    <div className="text-body-md">{item.text}</div>
+                  </div>
+                </div>
+                )
+              )}
             </div>
           </div>
           <ContactForm segment="general" />
@@ -681,12 +697,12 @@ export default function HomePage() {
               <span className="text-primary">Villahermosa</span>
             </h2>
             <p className="text-body-lg text-on-surface">
-              Av Universidad 494, El Recreo, 86029 Villahermosa, Tabasco
+              Av Universidad 494, El Recreo, 86020 Villahermosa, Tabasco
             </p>
           </div>
           <div className="w-full h-[400px] lg:h-[500px] ghost-border overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.8!2d-92.9163!3d18.0150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85efd5e3b3b3b3b3%3A0x1234567890abcdef!2sAv%20Universidad%20494%2C%20El%20Recreo%2C%2086029%20Villahermosa%2C%20Tab.!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.8!2d-92.9163!3d18.0150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85efd5e3b3b3b3b3%3A0x1234567890abcdef!2sAv%20Universidad%20494%2C%20El%20Recreo%2C%2086020%20Villahermosa%2C%20Tab.!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
               width="100%"
               height="100%"
               style={{ border: 0 }}

@@ -39,7 +39,7 @@ export default function IndustrialPage() {
                 </div>
                 <div className="inline-flex items-center gap-1 px-3 py-1 bg-primary/10 border border-primary/30">
                   <span className="material-symbols-outlined text-primary text-[16px]" style={{ fontVariationSettings: "'FILL' 1" }}>schedule</span>
-                  <span className="text-label-sm font-bold text-primary tracking-widest uppercase">Lun-Vie 8AM-5PM</span>
+                  <span className="text-label-sm font-bold text-primary tracking-widest uppercase">Lun-Vie 8:30-17:30</span>
                 </div>
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-white mb-md leading-tight">
@@ -405,8 +405,8 @@ export default function IndustrialPage() {
                       <p className="text-label-sm font-weight-label-sm text-on-surface-variant uppercase font-label-bold">
                         Línea Directa
                       </p>
-                      <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "01800426299"}`} className="font-label-bold text-lg mono-numbers hover:text-primary transition-colors">
-                        {process.env.NEXT_PUBLIC_PHONE_DISPLAY || "01-800-GAMA-IND"}
+                      <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "9933987711"}`} className="font-label-bold text-lg mono-numbers hover:text-primary transition-colors">
+                        {process.env.NEXT_PUBLIC_PHONE_DISPLAY || "993 398 7711"}
                       </a>
                     </div>
                   </div>
@@ -421,7 +421,7 @@ export default function IndustrialPage() {
                         Punto de Atención
                       </p>
                       <p className="font-label-bold text-lg">
-                        Av Universidad 494, El Recreo, 86029 Villahermosa, Tab.
+                        Av Universidad 494, El Recreo, 86020 Villahermosa, Tab.
                       </p>
                     </div>
                   </div>

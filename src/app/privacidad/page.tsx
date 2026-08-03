@@ -29,8 +29,8 @@ export default function PrivacidadPage() {
                 1. Responsable
               </h2>
               <p>
-                Llantas Gama (en adelante, "el Responsable"), con domicilio en
-                Av Universidad 494, El Recreo, 86029 Villahermosa, Tabasco,
+                Llantas Gama (en adelante, &ldquo;el Responsable&rdquo;), con domicilio en
+                Av Universidad 494, El Recreo, 86020 Villahermosa, Tabasco,
                 México, es el responsable del tratamiento de sus datos
                 personales.
               </p>
@@ -97,9 +97,13 @@ export default function PrivacidadPage() {
                 <li><strong>Oposición</strong> — Oponerse al tratamiento de sus datos</li>
               </ul>
               <p className="mt-2">
-                Para ejercer sus derechos ARCO, envíe su solicitud a:{" "}
-                <a href="mailto:ventas@llantasgama.com" className="text-primary hover:underline">
-                  ventas@llantasgama.com
+                Para ejercer sus derechos ARCO, llámenos o escríbanos por
+                WhatsApp al:{" "}
+                <a
+                  href={`tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "9933987711"}`}
+                  className="text-primary hover:underline"
+                >
+                  993 398 7711
                 </a>
               </p>
             </div>

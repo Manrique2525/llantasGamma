@@ -41,7 +41,7 @@ export default function AgricolaPage() {
                 </div>
                 <div className="inline-flex items-center gap-1 px-3 py-1 bg-primary/10 border border-primary/30">
                   <span className="material-symbols-outlined text-primary text-[16px]" style={{ fontVariationSettings: "'FILL' 1" }}>schedule</span>
-                  <span className="text-label-sm font-bold text-primary tracking-widest uppercase">Lun-Vie 8AM-5PM</span>
+                  <span className="text-label-sm font-bold text-primary tracking-widest uppercase">Lun-Vie 8:30-17:30</span>
                 </div>
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-white mb-md leading-tight">
@@ -375,14 +375,9 @@ export default function AgricolaPage() {
                     },
                     {
                       icon: "call",
-                      title: "Línea Directa Agrícola",
-                      text: "01-800-GAMA-AGRO",
-                      href: `tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "01800426299"}`,
-                    },
-                    {
-                      icon: "mail",
-                      title: "Consultas Técnicas",
-                      text: "agro@llantasgama.com",
+                      title: "Teléfono / WhatsApp",
+                      text: "993 398 7711",
+                      href: `tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "9933987711"}`,
                     },
                   ].map((item) => (
                     <div key={item.title} className="flex items-start gap-4">
