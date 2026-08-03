@@ -2,7 +2,6 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
-import TestimonialCard from "@/components/TestimonialCard";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
 import { PHONE } from "@/lib/constants";
@@ -10,7 +9,7 @@ import { PHONE } from "@/lib/constants";
 export const metadata = {
   title: "Llantas para Camión y Flotillas",
   description:
-    "Programa de flotillas: ahorra 15% en costos operativos. 200+ flotillas atendidas. Soporte en ruta 24/7. Cotización corporativa gratis.",
+    "Llantas y mantenimiento para flotillas en Villahermosa. Ayudamos a empresas a mantener sus unidades disponibles mediante inspecciones, historial de mantenimiento, atención prioritaria y suministro de llantas y refacciones.",
   alternates: {
     canonical: "https://llantasgama.com/camion",
   },
@@ -46,14 +45,13 @@ export default function CamionPage() {
                 </div>
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-white mb-md leading-tight">
-                LLANTAS PARA FLOTILLAS |{" "}
-                <span className="text-primary">AHORRA 15%</span> EN COSTOS
-                OPERATIVOS
+                LLANTAS Y MANTENIMIENTO PARA{" "}
+                <span className="text-primary">FLOTILLAS EN VILLAHERMOSA</span>
               </h1>
               <p className="font-body text-body-lg text-on-surface mb-lg">
-                <strong className="text-on-surface">200+ flotillas nos eligen.</strong>{" "}
-                Programa de mantenimiento predictivo + soporte en ruta 24/7.
-                Precios especiales para 10+ unidades.
+                Ayudamos a empresas a mantener sus unidades disponibles mediante
+                inspecciones, historial de mantenimiento, atención prioritaria y
+                suministro de llantas y refacciones.
               </p>
               <div className="flex flex-wrap gap-lg pt-sm">
                 <div className="flex items-center gap-2">
@@ -64,7 +62,7 @@ export default function CamionPage() {
                     local_shipping
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    200+ Flotillas Atendidas
+                    Atención a Flotillas
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -86,7 +84,7 @@ export default function CamionPage() {
                     schedule
                   </span>
                   <span className="text-label-sm text-on-surface-variant">
-                    Soporte en Ruta 24/7
+                    Seguimiento por Unidad
                   </span>
                 </div>
               </div>
@@ -109,34 +107,22 @@ export default function CamionPage() {
           </div>
         </section>
 
-        {/* ROI Banner */}
+        {/* Beneficios */}
         <section className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 py-lg border-y border-primary/20">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
             <ScrollReveal>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
                 <div>
-                  <div className="font-headline text-[36px] font-bold text-primary">
-                    15%
-                  </div>
-                  <div className="text-label-sm font-label-bold uppercase tracking-wider text-on-surface-variant">
-                    Ahorro promedio en costos operativos
-                  </div>
+                  <p className="text-body-lg text-on-surface">
+                    Identificamos oportunidades para reducir desgaste irregular,
+                    servicios reactivos y tiempo muerto.
+                  </p>
                 </div>
                 <div>
-                  <div className="font-headline text-[36px] font-bold text-primary">
-                    200+
-                  </div>
-                  <div className="text-label-sm font-label-bold uppercase tracking-wider text-on-surface-variant">
-                    Flotillas atendidas en el sureste
-                  </div>
-                </div>
-                <div>
-                  <div className="font-headline text-[36px] font-bold text-primary">
-                    &lt;2 hrs
-                  </div>
-                  <div className="text-label-sm font-label-bold uppercase tracking-wider text-on-surface-variant">
-                    Tiempo de respuesta en zona metropolitana
-                  </div>
+                  <p className="text-body-lg text-on-surface">
+                    Atención en Villahermosa y servicios foráneos bajo
+                    programación y evaluación de cobertura.
+                  </p>
                 </div>
               </div>
             </ScrollReveal>
@@ -158,14 +144,14 @@ export default function CamionPage() {
                 icon: "distance",
                 title: "Long Haul",
                 desc: "Máxima eficiencia de combustible para trayectos de larga distancia en autopista.",
-                tag: "120,000 KM GARANTIZADOS",
+                tag: "Seleccionamos la llanta de acuerdo con ruta, carga, posición, tipo de operación y presupuesto.",
                 cta: "Ver opciones Long Haul",
               },
               {
                 icon: "local_shipping",
                 title: "Regional",
                 desc: "Versatilidad para paradas frecuentes y diversos tipos de pavimentos urbanos.",
-                tag: "80,000 KM GARANTIZADOS",
+                tag: "Seleccionamos la llanta de acuerdo con ruta, carga, posición, tipo de operación y presupuesto.",
                 cta: "Ver opciones Regional",
                 active: true,
               },
@@ -173,7 +159,7 @@ export default function CamionPage() {
                 icon: "construction",
                 title: "Servicio Mixto",
                 desc: "Resistencia extrema para aplicaciones dentro y fuera de carretera (On/Off Road).",
-                tag: "60,000 KM GARANTIZADOS",
+                tag: "Seleccionamos la llanta de acuerdo con ruta, carga, posición, tipo de operación y presupuesto.",
                 cta: "Ver opciones Mixto",
               },
             ].map((seg) => (
@@ -261,10 +247,10 @@ export default function CamionPage() {
                 />
                 <div className="absolute bottom-4 right-4 bg-primary text-on-primary p-4 ghost-border">
                   <p className="font-headline text-headline-md font-weight-headline-md leading-none">
-                    24/7
+                    Seguimiento
                   </p>
                   <p className="text-label-sm font-weight-label-sm uppercase">
-                    Asistencia en Ruta
+                    Por Unidad
                   </p>
                 </div>
               </div>
@@ -278,9 +264,7 @@ export default function CamionPage() {
                     <strong className="text-on-surface">
                       un camión detenido es pérdida de dinero
                     </strong>
-                    . Nuestro programa de mantenimiento predictivo reduce costos
-                    operativos hasta un 15%. Ya lo hacen 200+ flotillas en el
-                    sureste.
+                    . Mantenimiento preventivo y seguimiento por unidad.
                   </p>
                 </div>
                 <div className="space-y-md">
@@ -290,12 +274,12 @@ export default function CamionPage() {
                       desc: "Análisis técnico de distribución de peso y presión para maximizar vida útil.",
                     },
                     {
-                      title: "Servicio en Carretera Nacional",
-                      desc: "Red de cobertura en 15 estados con respuesta en menos de 4 horas.",
+                      title: "Servicios Foráneos",
+                      desc: "Atención en Villahermosa y servicios foráneos bajo programación y evaluación de cobertura.",
                     },
                     {
                       title: "Gestión de Cascos y Renovado",
-                      desc: "Maximizamos la vida útil de cada neumático mediante procesos certificados.",
+                      desc: "Gestión de cascos y renovado con seguimiento del estado de cada unidad.",
                     },
                   ].map((item) => (
                     <div key={item.title} className="flex items-start gap-4">
@@ -313,65 +297,32 @@ export default function CamionPage() {
                     </div>
                   ))}
                 </div>
-                <div className="bg-surface-container p-4 ghost-border">
-                  <div className="flex justify-between mb-2">
-                    <span className="font-label-bold text-label-bold tracking-label-bold font-weight-label-bold uppercase">
-                      Disponibilidad de Stock
-                    </span>
-                    <span className="mono-numbers text-primary">99%</span>
-                  </div>
-                  <div className="w-full h-2 bg-secondary-container">
-                    <div
-                      className="h-full bg-primary glow-active"
-                      style={{ width: "99%" }}
-                    />
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Testimonios Flotillas */}
+        {/* Experiencia */}
         <section className="py-xl bg-surface-container-lowest">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-            <SectionHeader
-              badge="Resultados Comprobados"
-              badgeIcon="trending_up"
-              title="Lo Que Dicen"
-              titleHighlight="Nuestros Clientes"
-              subtitle="200+ flotillas ya optimizan sus costos operativos con nosotros."
-              align="center"
-            />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-              <TestimonialCard
-                name="Ing. Carlos Mendoza"
-                role="Director de Operaciones"
-                company="Transportes del Sureste"
-                text="Llevamos 5 años con Gama. Nuestros costos operativos bajaron 18% con su programa de flotillas. El soporte 24/7 ha sido clave para mantener nuestra flota en movimiento."
-                rating={5}
-                metric="-18%"
-                metricLabel="Costos operativos reducidos"
+            <ScrollReveal>
+              <SectionHeader
+                badge="Nuestra Experiencia"
+                badgeIcon="verified"
+                title="Experiencia con"
+                titleHighlight="Particulares y Empresas de Villahermosa"
+                align="center"
               />
-              <TestimonialCard
-                name="Ing. Fernando López"
-                role="Gerente de Flotilla"
-                company="Grupo Logístico del Sur"
-                text="La auditoría inicial nos identificó 3 camiones con desgaste irregular. Con su programa de rotación, extendemos la vida útil 40%."
-                rating={5}
-                metric="+40%"
-                metricLabel="Vida útil extendida"
-              />
-              <TestimonialCard
-                name="Lic. Roberto Sánchez"
-                role="Gerente de Mantenimiento"
-                company="Minera del Carmen"
-                text="La auditoría de flotilla nos ahorró $500,000 en el primer año. El equipo técnico es de primer nivel y siempre disponibles cuando los necesitamos."
-                rating={5}
-                metric="$500K MXN"
-                metricLabel="Ahorro primer año"
-              />
-            </div>
+            </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <div className="max-w-3xl mx-auto text-center">
+                <p className="text-body-lg text-on-surface">
+                  Atendemos necesidades de llantas, frenos, suspensión,
+                  dirección y mantenimiento preventivo, con seguimiento directo
+                  a cada unidad.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -384,7 +335,7 @@ export default function CamionPage() {
               </h2>
               <p className="text-on-surface">
                 Nuestros equipos en acción, garantizando precisión en cada
-                montaje. 50,000+ llantas montadas este año.
+                montaje.
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
@@ -396,8 +347,8 @@ export default function CamionPage() {
                 },
                 {
                   src: "/images/camion-service-2.jpg",
-                  label: "Alineación 3D",
-                  desc: "Precisión láser",
+                  label: "Verificación de Desgaste",
+                  desc: "Inspección de la unidad",
                 },
                 {
                   src: "/images/camion-service-3.jpg",
@@ -441,9 +392,8 @@ export default function CamionPage() {
                 COBERTURA DE SERVICIO
               </h2>
               <p className="text-on-surface">
-                Operamos en los principales nodos industriales: Monterrey,
-                Bajío, CDMX y Veracruz. Nuestra red de respuesta garantiza
-                atención en menos de 2 horas en zonas metropolitanas.
+                Atención en Villahermosa y servicios foráneos bajo programación
+                y evaluación de cobertura.
               </p>
             </div>
             <div className="aspect-video w-full ghost-border overflow-hidden">

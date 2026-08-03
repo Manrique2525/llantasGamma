@@ -37,10 +37,8 @@ const segmentConfig = {
   },
   camion: {
     title: "Cotización Corporativa",
-    subtitle:
-      "Completa el formulario y recibe una propuesta personalizada en menos de 2 horas.",
-    guarantee:
-      "Te llamamos en <2 horas | Auditoría sin compromiso incluida",
+    subtitle: "Completa el formulario y recibe una propuesta personalizada.",
+    guarantee: "Auditoría sin compromiso incluida",
     options: [
       "1-10 Unidades",
       "11-50 Unidades",
