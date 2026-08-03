@@ -6,7 +6,7 @@ import { useState } from "react";
 import { buildWhatsAppUrl } from "@/lib/constants";
 
 const navLinks = [
-  { href: "/", label: "Home" },
+  { href: "/", label: "Inicio" },
   { href: "/auto", label: "Auto/Camioneta" },
   { href: "/camion", label: "Camión" },
   { href: "/agricola", label: "Agrícola" },

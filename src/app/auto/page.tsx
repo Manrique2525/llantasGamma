@@ -342,7 +342,7 @@ export default function AutoPage() {
             </div>
             <p className="mt-lg text-center text-label-sm text-on-surface-variant">
               Precios de referencia: Balanceo desde $200 · Parchado desde $150 ·
-              Montaje incluido con compra · Checkup de suspensión desde $500.
+              Montaje incluido con compra · Revisión de suspensión desde $500.
               Precios sujetos a confirmación según servicio y vehículo.
             </p>
           </div>

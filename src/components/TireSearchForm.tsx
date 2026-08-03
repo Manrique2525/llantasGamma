@@ -14,7 +14,7 @@ export default function TireSearchForm({
   fields,
   commonSizes,
   whatsappMessage,
-  fallbackLabel = "Llámanos",
+  fallbackLabel = "No encuentras tu medida",
 }: TireSearchFormProps) {
   const [values, setValues] = useState<Record<string, string>>({});
 

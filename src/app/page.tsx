@@ -165,7 +165,7 @@ export default function HomePage() {
                 <TireSearchForm
                   fields={[{ label: "Medida", placeholder: "ej. 205/55R16" }]}
                   whatsappMessage="Hola, me interesa una cotización de llantas"
-                  fallbackLabel="¿No encuentras tu medida"
+                  fallbackLabel="No encuentras tu medida"
                 />
               </div>
             </div>
@@ -184,7 +184,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
             {[
               {
-                title: "Auto & Camioneta",
+                title: "Auto/Camioneta",
                 icon: "directions_car",
                 desc: "Llantas multimarca desde $899 por pieza en medidas participantes. Sujeto a disponibilidad.",
                 link: "/auto",
@@ -303,7 +303,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <div className="font-headline text-headline-md font-bold">
-                    L-V
+                    Lun-Vie
                   </div>
                   <div className="text-label-sm font-label-bold font-weight-label-sm uppercase tracking-widest text-on-surface-variant">
                     Atención 8:30-17:30

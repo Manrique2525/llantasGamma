@@ -20,7 +20,7 @@ export default function PrivacidadPage() {
             Aviso de <span className="text-primary">Privacidad</span>
           </h1>
           <p className="text-label-sm text-on-surface-variant mb-xl">
-            Última actualización: Julio 2026
+            Última actualización: julio de 2026
           </p>
 
           <div className="space-y-lg text-body-md text-on-surface leading-relaxed">
@@ -60,7 +60,7 @@ export default function PrivacidadPage() {
               <p>Sus datos serán utilizados para:</p>
               <ul className="list-disc pl-6 mt-2 space-y-1">
                 <li>Proporcionar cotizaciones de llantas y servicios</li>
-                <li>Contactarlo vía WhatsApp o telefónica para dar seguimiento a su solicitud</li>
+                <li>Contactarlo vía WhatsApp o telefónicamente para dar seguimiento a su solicitud</li>
                 <li>Brindar asesoría técnica especializada</li>
                 <li>Dar cumplimiento a obligaciones derivadas de la relación comercial</li>
               </ul>

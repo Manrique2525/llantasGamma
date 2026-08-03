@@ -50,8 +50,7 @@ export default function AgricolaPage() {
               </h1>
               <p className="font-body text-body-lg text-on-surface mb-lg">
                 <strong className="text-on-surface">
-                  Cotización de medidas agrícolas en todas las medidas y
-                  aplicaciones
+                  Cotización de medidas agrícolas para distintas aplicaciones
                 </strong>{" "}
                 para tractores, cosechadoras y pulverizadoras. Michelin AG,
                 BKT, Firestone, Trelleborg.{" "}

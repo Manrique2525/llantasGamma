@@ -36,7 +36,7 @@ const faqData: FAQItem[] = [
   {
     question: "¿Aceptan pagos a crédito?",
     answer:
-      "Sí, ofrecemos opciones de pago flexibles para empresas y flotillas. Trabajamos con transferencia bancaria, tarjeta de crédito/débito, y programas de crédito para clientes calificados. Solicita una cotización para conocer las opciones.",
+       "Sí, ofrecemos opciones de pago flexibles para empresas y flotillas. Trabajamos con transferencia bancaria, tarjeta de crédito/débito y programas de crédito para clientes calificados. Solicita una cotización para conocer las opciones.",
   },
   {
     question: "¿Cómo solicito una cotización?",

@@ -383,12 +383,12 @@ export default function IndustrialPage() {
               <div>
                 <div className="inline-block border-l-2 border-primary pl-4 mb-md">
                   <h2 className="font-headline text-[22px] md:text-[26px] lg:text-headline-lg tracking-headline-lg font-weight-headline-lg uppercase">
-                    SOLICITE UNA COTIZACIÓN
+                    SOLICITA TU COTIZACIÓN
                   </h2>
                 </div>
                 <p className="text-on-surface font-body mb-lg">
-                  Optimice sus costos operativos. Nuestro equipo le cotiza
-                  llantas multimarca para su equipo de trabajo, con opciones
+                  Optimiza tus costos operativos. Nuestro equipo te cotiza
+                  llantas multimarca para tu equipo de trabajo, con opciones
                   según medida, equipo y condiciones operativas.{" "}
                   <strong className="text-primary">
                     Cotización sin compromiso.

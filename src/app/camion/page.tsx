@@ -136,7 +136,7 @@ export default function CamionPage() {
             badgeIcon="category"
             title="Segmentos"
             titleHighlight="Especializados"
-            subtitle="Diseñadas matemáticamente para cada tipo de ruta y exigencia de carga."
+            subtitle="Diseñadas técnicamente para cada tipo de ruta y exigencia de carga."
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             {[
