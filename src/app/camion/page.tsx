@@ -302,25 +302,43 @@ export default function CamionPage() {
           </div>
         </section>
 
-        {/* Experiencia */}
+        {/* Qué revisamos en una flotilla */}
         <section className="py-xl bg-surface-container-lowest">
           <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
             <ScrollReveal>
               <SectionHeader
-                badge="Nuestra Experiencia"
-                badgeIcon="verified"
-                title="Experiencia con"
-                titleHighlight="Particulares y Empresas de Villahermosa"
+                badge="Auditoría de Flotilla"
+                badgeIcon="fact_check"
+                title="¿Qué revisamos en"
+                titleHighlight="una flotilla?"
                 align="center"
               />
             </ScrollReveal>
             <ScrollReveal delay={100}>
-              <div className="max-w-3xl mx-auto text-center">
-                <p className="text-body-lg text-on-surface">
-                  Atendemos necesidades de llantas, frenos, suspensión,
-                  dirección y mantenimiento preventivo, con seguimiento directo
-                  a cada unidad.
-                </p>
+              <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-sm">
+                {[
+                  "Identificación de unidades",
+                  "Condición de llantas",
+                  "Profundidad de piso",
+                  "Presión",
+                  "Desgaste irregular",
+                  "Próximos mantenimientos",
+                  "Frenos",
+                  "Suspensión",
+                  "Prioridades de reparación",
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-3">
+                    <span
+                      className="material-symbols-outlined text-primary"
+                      style={{ fontVariationSettings: "'FILL' 1" }}
+                    >
+                      check_circle
+                    </span>
+                    <span className="text-body-md text-on-surface">
+                      {item}
+                    </span>
+                  </div>
+                ))}
               </div>
             </ScrollReveal>
           </div>
