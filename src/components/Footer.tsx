@@ -99,7 +99,7 @@ export default function Footer() {
             Newsletter
           </h4>
           <p className="text-on-surface-variant text-label-sm">
-            Ofertas exclusivas y tips técnicos directo a tu WhatsApp.
+            Ofertas exclusivas y tips técnicos directamente a tu WhatsApp.
           </p>
           <a
             href={buildWhatsAppUrl("Hola, quiero suscribirme al newsletter de ofertas y tips técnicos")}

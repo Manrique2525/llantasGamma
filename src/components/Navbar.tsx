@@ -74,7 +74,7 @@ export default function Navbar() {
         <button
           className="md:hidden text-on-surface p-1"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Menu"
+          aria-label="Menú"
           aria-expanded={mobileOpen}
         >
           <span className="material-symbols-outlined text-[28px]">
