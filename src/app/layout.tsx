@@ -1,7 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Montserrat, Hanken_Grotesk } from "next/font/google";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import StickyCTA from "@/components/StickyCTA";
+import JsonLd from "@/components/JsonLd";
+import {
+  tireShopJsonLd,
+  organizationJsonLd,
+  websiteJsonLd,
+} from "@/lib/jsonld";
 
 import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
@@ -18,16 +24,31 @@ const hankenGrotesk = Hanken_Grotesk({
   weight: ["400", "500", "700"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#000000",
+  colorScheme: "dark",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://llantasgama.com"),
   title: {
-    default: "Llantas Gama | Proveedor Multimarca en Villahermosa",
+    default: "Llantas Gama | Llantera en Villahermosa, Tabasco",
     template: "%s | Llantas Gama",
   },
   description:
-    "Venta e instalación de llantas multimarca para auto, camión, agrícola e industrial en Villahermosa, Tabasco. Solicita tu cotización por WhatsApp.",
+    "Llantera en Villahermosa, Tabasco. Venta e instalación de llantas multimarca para auto, camión, agrícola e industrial. Alineación, balanceo y reparación. Cotiza por WhatsApp.",
   keywords: [
-    "llantas",
+    "llantera",
+    "llantera en Villahermosa",
+    "llanteras cerca de mí",
+    "venta de llantas",
+    "venta de llantas en Villahermosa",
+    "cambio de llantas",
+    "reparación de llantas",
+    "alineación y balanceo",
+    "vulcanizadora",
+    "llantas económicas",
+    "llantas nuevas",
     "neumáticos",
     "Michelin",
     "Bridgestone",
@@ -47,29 +68,24 @@ export const metadata: Metadata = {
       "es-MX": "https://llantasgama.com",
     },
   },
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
-    title: "Llantas Gama | Proveedor Multimarca en Villahermosa",
+    title: "Llantas Gama | Llantera en Villahermosa, Tabasco",
     description:
       "Venta e instalación de llantas multimarca para auto, camión, agrícola e industrial en Villahermosa. Solicita tu cotización por WhatsApp.",
     url: "https://llantasgama.com",
     siteName: "Llantas Gama",
     locale: "es_MX",
     type: "website",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Llantas Gama - Llantas multimarca en Villahermosa",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Llantas Gama | Proveedor Multimarca en Villahermosa",
+    title: "Llantas Gama | Llantera en Villahermosa, Tabasco",
     description:
       "Venta e instalación de llantas multimarca para auto, camión, agrícola e industrial en Villahermosa. Solicita tu cotización por WhatsApp.",
-    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -88,63 +104,15 @@ export default function RootLayout({
       className={`dark ${montserrat.variable} ${hankenGrotesk.variable} h-full antialiased`}
     >
       <head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Llantas Gama",
-              description:
-                "Venta e instalación de llantas multimarca para auto, camión, agrícola e industrial en Villahermosa, Tabasco.",
-              url: "https://llantasgama.com",
-              telephone: "993 398 7711",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Av Universidad 494, El Recreo",
-                addressLocality: "Villahermosa",
-                addressRegion: "Tabasco",
-                postalCode: "86020",
-                addressCountry: "MX",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: 18.015,
-                longitude: -92.9163,
-              },
-              openingHoursSpecification: [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                  ],
-                  opens: "08:30",
-                  closes: "17:30",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: ["Saturday"],
-                  opens: "08:30",
-                  closes: "13:30",
-                },
-              ],
-              priceRange: "$$",
-              sameAs: ["https://www.facebook.com/gamallantas?locale=es_LA"],
-            }),
-          }}
-        />
       </head>
       <body className="min-h-full flex flex-col bg-background text-on-surface selection:bg-primary selection:text-on-primary">
+        <JsonLd data={tireShopJsonLd()} />
+        <JsonLd data={organizationJsonLd()} />
+        <JsonLd data={websiteJsonLd()} />
         <a href="#main-content" className="skip-link">
           Saltar al contenido
         </a>

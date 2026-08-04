@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -5,14 +6,23 @@ import TireSearchForm from "@/components/TireSearchForm";
 import SectionHeader from "@/components/SectionHeader";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/jsonld";
 import { PHONE, buildWhatsAppUrl } from "@/lib/constants";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Llantas para Auto y Camioneta",
   description:
     "Llantas Michelin, Bridgestone, Continental desde $899 por pieza en medidas participantes. Sujeto a disponibilidad. Instalación profesional incluida. Solicita tu cotización por WhatsApp.",
   alternates: {
     canonical: "https://llantasgama.com/auto",
+  },
+  openGraph: {
+    title: "Llantas para Auto y Camioneta en Villahermosa | Llantas Gama",
+    description:
+      "Llantas para auto y camioneta desde $899 por pieza en medidas participantes. Sujeto a disponibilidad. Instalación profesional incluida. Cotiza por WhatsApp.",
+    url: "https://llantasgama.com/auto",
+    type: "website",
   },
 };
 
@@ -617,6 +627,12 @@ export default function AutoPage() {
           </div>
         </section>
       </main>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Inicio", href: "https://llantasgama.com" },
+          { name: "Auto y Camioneta", href: "https://llantasgama.com/auto" },
+        ])}
+      />
       <Footer />
     </>
   );

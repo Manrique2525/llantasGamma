@@ -1,17 +1,27 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/jsonld";
 import { PHONE } from "@/lib/constants";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Llantas para Maquinaria Industrial y Construcción",
   description:
     "Cotizamos llantas para montacargas, minicargadores, retroexcavadoras y otros equipos de trabajo. La disponibilidad, instalación y tiempo de entrega se confirman según medida, equipo, ubicación y condiciones operativas.",
   alternates: {
     canonical: "https://llantasgama.com/industrial",
+  },
+  openGraph: {
+    title: "Llantas Industriales en Villahermosa | Llantas Gama",
+    description:
+      "Cotizamos llantas para montacargas, minicargadores y retroexcavadoras en Villahermosa. Disponibilidad e instalación confirmadas según medida y equipo.",
+    url: "https://llantasgama.com/industrial",
+    type: "website",
   },
 };
 
@@ -432,6 +442,15 @@ export default function IndustrialPage() {
           </div>
         </section>
       </main>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Inicio", href: "https://llantasgama.com" },
+          {
+            name: "Llantas Industriales",
+            href: "https://llantasgama.com/industrial",
+          },
+        ])}
+      />
       <Footer />
     </>
   );

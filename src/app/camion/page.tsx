@@ -1,17 +1,27 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/jsonld";
 import { PHONE } from "@/lib/constants";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Llantas para Camión y Flotillas",
   description:
     "Llantas y mantenimiento para flotillas en Villahermosa. Ayudamos a empresas a mantener sus unidades disponibles mediante inspecciones, historial de mantenimiento, atención prioritaria y suministro de llantas y refacciones.",
   alternates: {
     canonical: "https://llantasgama.com/camion",
+  },
+  openGraph: {
+    title: "Llantas para Camión y Flotillas en Villahermosa | Llantas Gama",
+    description:
+      "Llantas y mantenimiento para flotillas en Villahermosa. Inspecciones, historial de mantenimiento, atención prioritaria y suministro de llantas y refacciones.",
+    url: "https://llantasgama.com/camion",
+    type: "website",
   },
 };
 
@@ -433,6 +443,12 @@ export default function CamionPage() {
           </div>
         </section>
       </main>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Inicio", href: "https://llantasgama.com" },
+          { name: "Camión y Flotillas", href: "https://llantasgama.com/camion" },
+        ])}
+      />
       <Footer />
     </>
   );

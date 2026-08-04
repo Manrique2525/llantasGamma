@@ -1,17 +1,27 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/jsonld";
 import { PHONE, buildWhatsAppUrl } from "@/lib/constants";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Llantas Agrícolas - Tractores, Cosechadoras, Pulverizadoras",
   description:
     "Cotización de medidas agrícolas para distintas aplicaciones. Michelin AG, BKT, Firestone, Trelleborg. Servicio en campo sujeto a ubicación, personal y disponibilidad.",
   alternates: {
     canonical: "https://llantasgama.com/agricola",
+  },
+  openGraph: {
+    title: "Llantas Agrícolas en Villahermosa | Llantas Gama",
+    description:
+      "Cotización de medidas agrícolas para tractores, cosechadoras y pulverizadoras. Michelin AG, BKT, Firestone, Trelleborg. Servicio en campo en Villahermosa.",
+    url: "https://llantasgama.com/agricola",
+    type: "website",
   },
 };
 
@@ -404,6 +414,12 @@ export default function AgricolaPage() {
           </div>
         </section>
       </main>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Inicio", href: "https://llantasgama.com" },
+          { name: "Llantas Agrícolas", href: "https://llantasgama.com/agricola" },
+        ])}
+      />
       <Footer />
     </>
   );
