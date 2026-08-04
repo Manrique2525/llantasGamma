@@ -95,9 +95,9 @@ export default function HomePage() {
                 </div>
               </div>
               <h1 className="font-headline text-[28px] md:text-[36px] lg:text-headline-xl tracking-headline-xl font-weight-headline-xl text-on-surface">
-                TU PROVEEDOR DE{" "}
-                <span className="text-primary">LLANTAS</span> CON ENTREGA SUJETA
-                A MEDIDA, MARCA Y DISPONIBILIDAD.
+                Tu proveedor confiable de{" "}
+                <span className="text-primary">llantas</span> con entrega en
+                toda la región.
               </h1>
               <p className="font-body text-body-lg text-on-surface">
                 <strong className="text-on-surface">

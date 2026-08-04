@@ -246,7 +246,7 @@ export default function AutoPage() {
                   ],
                 },
                 {
-                  icon: "steering",
+                  icon: "swap_driving_apps_wheel",
                   title: "Dirección",
                   items: [
                     "Terminales y varillas",
@@ -364,7 +364,7 @@ export default function AutoPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
               {[
                 { icon: "car_repair", label: "Suspensión" },
-                { icon: "steering", label: "Dirección" },
+                { icon: "swap_driving_apps_wheel", label: "Dirección" },
                 { icon: "car_repair", label: "Frenos" },
                 { icon: "build", label: "Afinación" },
                 { icon: "ac_unit", label: "Enfriamiento" },
