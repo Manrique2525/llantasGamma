@@ -20,66 +20,88 @@ export default function PrivacidadPage() {
             Aviso de <span className="text-primary">Privacidad</span>
           </h1>
           <p className="text-label-sm text-on-surface-variant mb-xl">
-            Última actualización: julio de 2026
+            Última actualización: agosto de 2026
           </p>
 
           <div className="space-y-lg text-body-md text-on-surface leading-relaxed">
             <div>
               <h2 className="font-headline text-headline-md font-weight-headline-md mb-sm">
-                1. Responsable
+                1. Identidad y Domicilio del Responsable
               </h2>
               <p>
-                Llantas Gama (en adelante, &ldquo;el Responsable&rdquo;), con domicilio en
-                Av Universidad 494, El Recreo, 86020 Villahermosa, Tabasco,
-                México, es el responsable del tratamiento de sus datos
+                LLANTEROS GAMA VAZQUEZ (en adelante, &ldquo;GAMA&rdquo;), con domicilio en
+                Avenida Universidad 494, Col. El Recreo, C.P. 86020, Villahermosa,
+                Tabasco, es el responsable del tratamiento de sus datos
                 personales.
               </p>
             </div>
 
             <div>
               <h2 className="font-headline text-headline-md font-weight-headline-md mb-sm">
-                2. Datos que recolectamos
+                2. Datos Personales Sometidos a Tratamiento
               </h2>
               <p>
-                A través de nuestros formularios de contacto y cotización,
-                recolectamos los siguientes datos personales:
-              </p>
-              <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>Nombre completo</li>
-                <li>Teléfono / WhatsApp</li>
-                <li>Correo electrónico</li>
-                <li>Empresa (opcional)</li>
-                <li>Mensaje o descripción de su solicitud</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="font-headline text-headline-md font-weight-headline-md mb-sm">
-                3. Finalidad del tratamiento
-              </h2>
-              <p>Sus datos serán utilizados para:</p>
-              <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>Proporcionar cotizaciones de llantas y servicios</li>
-                <li>Contactarlo vía WhatsApp o telefónicamente para dar seguimiento a su solicitud</li>
-                <li>Brindar asesoría técnica especializada</li>
-                <li>Dar cumplimiento a obligaciones derivadas de la relación comercial</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="font-headline text-headline-md font-weight-headline-md mb-sm">
-                4. Transferencia de datos
-              </h2>
-              <p>
-                Sus datos personales pueden ser transferidos a{" "}
-                <strong className="text-primary">WhatsApp LLC (Meta Platforms, Inc.)</strong>{" "}
-                al momento de enviar el formulario de contacto, con la finalidad
-                de establecer comunicación directa. Al aceptar este aviso, usted
-                consiente dicha transferencia.
+                Para las finalidades establecidas en este aviso, GAMA recabará
+                las siguientes categorías de datos:
               </p>
               <p className="mt-2">
-                No compartimos sus datos con terceros no relacionados sin su
-                consentimiento expreso, salvo obligación legal.
+                <strong className="text-primary">Datos de Identificación y Contacto:</strong>{" "}
+                Nombre, identificación oficial, RFC, comprobante de domicilio y
+                correos electrónicos.
+              </p>
+              <p className="mt-2">
+                <strong className="text-primary">Datos Comerciales y Corporativos:</strong>{" "}
+                Acta constitutiva, poderes notariales, referencias comerciales y
+                descripción operativa de la empresa.
+              </p>
+              <p className="mt-2">
+                <strong className="text-primary">Datos Patrimoniales y Financieros:</strong>{" "}
+                Carátulas de estados de cuenta bancarios, información de saldos
+                promedio mensuales, historial crediticio y bienes declarados por
+                el obligado solidario.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="font-headline text-headline-md font-weight-headline-md mb-sm">
+                3. Finalidades del Tratamiento
+              </h2>
+              <p>
+                La información recabada será utilizada para las siguientes
+                finalidades necesarias para la relación jurídica:
+              </p>
+              <ul className="list-disc pl-6 mt-2 space-y-1">
+                <li><strong>Evaluación de Solvencia:</strong> Analizar la capacidad de pago y determinar la viabilidad de apertura de líneas de crédito.</li>
+                <li><strong>Gestión Comercial:</strong> Suministro de productos (llantas y refacciones) y prestación de servicios de mantenimiento.</li>
+                <li><strong>Administración y Cobranza:</strong> Facturación, gestión de pagos y, en su caso, ejecución de procesos de recuperación de adeudos.</li>
+                <li><strong>Seguridad Operativa:</strong> Identificación de personal autorizado para la solicitud y recepción de mercancías.</li>
+              </ul>
+              <p className="mt-2">
+                <strong className="text-primary">Finalidades secundarias:</strong>{" "}
+                Envío de promociones o actualizaciones técnicas sobre nuestros
+                servicios.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="font-headline text-headline-md font-weight-headline-md mb-sm">
+                4. Transferencia de Datos
+              </h2>
+              <p>
+                GAMA podrá transferir sus datos personales a terceros nacionales
+                o extranjeros en los siguientes supuestos:
+              </p>
+              <ul className="list-disc pl-6 mt-2 space-y-1">
+                <li>Autoridades competentes para el cumplimiento de obligaciones legales.</li>
+                <li>Instituciones bancarias para la gestión de pagos.</li>
+                <li>Despachos jurídicos y agencias de cobranza para la recuperación de cartera vencida.</li>
+                <li>Burós o sociedades de información crediticia para la validación de perfiles de riesgo.</li>
+              </ul>
+              <p className="mt-2">
+                Adicionalmente, al enviar nuestros formularios web, sus datos
+                son transferidos a{" "}
+                <strong className="text-primary">WhatsApp LLC (Meta Platforms, Inc.)</strong>{" "}
+                para establecer comunicación directa con usted.
               </p>
             </div>
 
@@ -88,46 +110,58 @@ export default function PrivacidadPage() {
                 5. Derechos ARCO
               </h2>
               <p>
-                Usted tiene derecho a:
+                Usted tiene derecho a conocer qué datos tenemos de su persona
+                (<strong>Acceso</strong>), solicitar su corrección (
+                <strong>Rectificación</strong>), pedir que los eliminemos de
+                nuestros registros (<strong>Cancelación</strong>) u oponerse al
+                uso de los mismos para fines específicos (
+                <strong>Oposición</strong>).
               </p>
-              <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li><strong>Acceso</strong> — Conocer qué datos tenemos de usted</li>
-                <li><strong>Rectificación</strong> — Corregir datos inexactos</li>
-                <li><strong>Cancelación</strong> — Solicitar la eliminación de sus datos</li>
-                <li><strong>Oposición</strong> — Oponerse al tratamiento de sus datos</li>
-              </ul>
               <p className="mt-2">
-                Para ejercer sus derechos ARCO, llámenos o escríbanos por
-                WhatsApp al:{" "}
+                Para ejercer estos derechos, puede enviar una solicitud por
+                escrito al correo electrónico{" "}
                 <a
-                  href={`tel:${process.env.NEXT_PUBLIC_PHONE_TEL || "9933987711"}`}
+                  href="mailto:grupollanterogama@gmail.com"
                   className="text-primary hover:underline"
                 >
-                  993 398 7711
-                </a>
+                  grupollanterogama@gmail.com
+                </a>{" "}
+                o directamente en nuestras oficinas.
               </p>
             </div>
 
             <div>
               <h2 className="font-headline text-headline-md font-weight-headline-md mb-sm">
-                6. Uso de cookies
+                6. Mecanismos de Seguridad
+              </h2>
+              <p>
+                GAMA implementa medidas de seguridad técnicas, administrativas y
+                físicas para proteger su información contra daño, pérdida,
+                alteración o uso no autorizado, garantizando que el acceso a los
+                datos patrimoniales esté limitado exclusivamente al personal
+                encargado de la gestión de riesgos y dirección general.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="font-headline text-headline-md font-weight-headline-md mb-sm">
+                7. Cambios al Aviso de Privacidad
+              </h2>
+              <p>
+                Cualquier modificación a este aviso le será comunicada a través
+                de nuestro correo electrónico.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="font-headline text-headline-md font-weight-headline-md mb-sm">
+                8. Uso de cookies
               </h2>
               <p>
                 Este sitio utiliza cookies técnicas necesarias para su
                 funcionamiento. No utilizamos cookies de rastreo o publicitarias
                 sin su consentimiento. Puede aceptar o rechazar las cookies
                 mediante el banner disponible en la página.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="font-headline text-headline-md font-weight-headline-md mb-sm">
-                7. Cambios al aviso de privacidad
-              </h2>
-              <p>
-                Nos reservamos el derecho de modificar este aviso en cualquier
-                momento. Las modificaciones serán publicadas en esta misma
-                página. Le recomendamos revisar periódicamente esta sección.
               </p>
             </div>
           </div>
