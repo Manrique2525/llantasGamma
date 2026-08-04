@@ -49,17 +49,6 @@ export default function PrivacidadPage() {
                 Nombre, identificación oficial, RFC, comprobante de domicilio y
                 correos electrónicos.
               </p>
-              <p className="mt-2">
-                <strong className="text-primary">Datos Comerciales y Corporativos:</strong>{" "}
-                Acta constitutiva, poderes notariales, referencias comerciales y
-                descripción operativa de la empresa.
-              </p>
-              <p className="mt-2">
-                <strong className="text-primary">Datos Patrimoniales y Financieros:</strong>{" "}
-                Carátulas de estados de cuenta bancarios, información de saldos
-                promedio mensuales, historial crediticio y bienes declarados por
-                el obligado solidario.
-              </p>
             </div>
 
             <div>
@@ -71,9 +60,7 @@ export default function PrivacidadPage() {
                 finalidades necesarias para la relación jurídica:
               </p>
               <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li><strong>Evaluación de Solvencia:</strong> Analizar la capacidad de pago y determinar la viabilidad de apertura de líneas de crédito.</li>
                 <li><strong>Gestión Comercial:</strong> Suministro de productos (llantas y refacciones) y prestación de servicios de mantenimiento.</li>
-                <li><strong>Administración y Cobranza:</strong> Facturación, gestión de pagos y, en su caso, ejecución de procesos de recuperación de adeudos.</li>
                 <li><strong>Seguridad Operativa:</strong> Identificación de personal autorizado para la solicitud y recepción de mercancías.</li>
               </ul>
               <p className="mt-2">
