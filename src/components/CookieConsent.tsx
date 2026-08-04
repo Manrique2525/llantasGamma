@@ -44,6 +44,14 @@ export default function CookieConsent() {
           </a>.
         </p>
         <div className="flex flex-col-reverse md:flex-row gap-sm w-full md:w-auto">
+          <a
+            href="/privacidad"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full md:w-auto bg-primary-container text-on-primary px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:brightness-110 transition-all active:scale-95 text-center"
+          >
+            Ver Aviso de Privacidad
+          </a>
           <button
             onClick={handleReject}
             className="w-full md:w-auto border border-outline text-on-surface px-xl py-md text-label-bold font-weight-label-bold uppercase tracking-label-bold hover:bg-white hover:text-background transition-all active:scale-95"
