@@ -69,8 +69,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.png",
-    apple: "/apple-touch-icon.png",
+    icon: [{ url: "/favicon.png", sizes: "128x128", type: "image/png" }],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
     title: "Llantas Gama | Llantera en Villahermosa, Tabasco",
